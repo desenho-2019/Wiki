@@ -1,4 +1,4 @@
-# Plano de Arquitetura
+#Arquitetura
 
 #### Histórico de revisões
 |   Data   |  Versão  |        Descrição       |          Autor(es)          |
@@ -61,6 +61,9 @@ O PostgreSQL é um sistema gerenciador de banco de dados objeto relacional (SGBD
 ### 5. Referências
 
 [2]https://pt.wikipedia.org/wiki/Angular_(framework)
+
 [3]https://code.tutsplus.com/pt/tutorials/building-restful-apis-with-flask-diy--cms-26625
+
 [3]https://imasters.com.br/back-end/flask-x-django-como-escolher-o-framework-correto-para-seu-aplicativo-web
+
 [4]https://www.educacaoetecnologia.org/artigo/2011/06/09/quais-as-vantagens-de-utilizar-postgresql/
