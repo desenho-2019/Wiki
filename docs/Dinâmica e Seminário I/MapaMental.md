@@ -38,7 +38,7 @@ Mapa mental que contempla o conteúdo foco da aplicação, que seria a coleta e 
 
 **Versão 1.0**
 
-![Mapa Mental 1.0 - Rafael Bragança](img/mapaMentalRafael.jpg)
+[![Mapa Mental 1.0 - Rafael Bragança](img/mapaMentalRafael.jpg)](img/mapaMentalRafael.jpg)
 
 ### 2.5 Mapa Mental
 

@@ -14,11 +14,11 @@ O Diagrama de Ishikawa, também conhecido como Diagrama de Causa e Efeito ou Dia
 
 ## 2.1 Entrada de dados pelo usuário
 
-![Mapa Mental 1.0 - Rafael Bragança](img/fishBoneRafaelEntrada.jpg)<br>
+[![Causa-Efeito 1.0 - Rafael Bragança](img/fishBoneRafaelEntrada.jpg)](img/fishBoneRafaelEntrada.jpg)<br>
 
 ## 2.2 Dificuldades de implementação
 
-![Mapa Mental 1.0 - Rafael Bragança](img/fishBoneRafaelComplicacoes.jpg)<br>
+[![Causa-Efeito 1.0 - Rafael Bragança](img/fishBoneRafaelComplicacoes.jpg)](img/fishBoneRafaelComplicacoes.jpg)<br>
 
 ## Referências
 
