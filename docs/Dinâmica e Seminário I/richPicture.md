@@ -5,21 +5,26 @@
 |:--------:|:--------:|:----------------------:|:---------------------------:|
 |22/08/2019|   0.1    | Iniciando o documento       |  Rafael Bragança   |
 |23/08/2019|   0.2    | Adicionando Rich Picture 1.0 |  Lucas Gomes     |
+| 23/08/2019 | 0.3 | Adicionando RP 3.0 | André Lucas |
 
-##Introdução
+## 1. Introdução
 
 Texto
 
-##Rich Pictures
+## 2. Rich Picture
 
-Autor:  Lucas Gomes de Oliveira
+**Versão 1**
 
 ![Rich Picture 1.0 - Lucas Gomes](img/RichPicture1_Lucas.jpeg)
 
-Autor: Cauê Oliveira
+**Versão 1**
 
-![Rich Picture 1.0 - Cauê Mateus](img/RichPicture_Cauê.jpg)<br>
+![Rich Picture 2.0 - Cauê Mateus](img/RichPicture_Cauê.jpg)<br>
 
-##Referências
+**Versão 1**
+
+![Rich Picture 3.0 - André Lucas](img/RichPicture3.jpeg)<br>
+
+## Referências
 
 Texto
