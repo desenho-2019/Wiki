@@ -24,7 +24,7 @@ Autor: Cauê Oliveira
 
 Versão 1.0
 
-![Mapa Mental 1.0 - Cauê Mateus](img/MindMap_Cauê.png)<br>
+[![Mapa Mental 1.0 - Cauê Mateus](img/MindMap_Cauê.png)](https://ibb.co/j4mm6dS)<br>
 
 Autor:  Lucas Gomes de Oliveira
 
