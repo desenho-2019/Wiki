@@ -18,7 +18,13 @@ Autor: Victor Rodrigues Silva
 
 Versão 1.0
 
-![Mapa Mental 1.0 - Victor Rodrigues](img/MapaMental1_Victor.png)
+![Mapa Mental 1.0 - Victor Rodrigues](img/MapaMental1_Victor.png)<br>
+
+Autor: Cauê Oliveira
+
+Versão 1.0
+
+![Mapa Mental 1.0 - Cauê Mateus](img/MindMap_Cauê.png)<br>
 
 Autor:  Lucas Gomes de Oliveira
 
