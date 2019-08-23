@@ -1,0 +1,10 @@
+site_name: Wiki Grupo 3
+nav:
+    - Início: index.md
+    - Definições do Projeto: 
+        - Tema: definicoes/tema.md 
+        - Plano de Arquitetura: definicoes/arquitetura.md
+    - Dinâmica e Seminário I:
+        - 5w2h: dinamica_01/5w2h.md
+        - Rich Picture: dinamica_01/richPicture.md
+theme: readthedocs
