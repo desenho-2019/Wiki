@@ -14,7 +14,7 @@ Texto
 
 Autor:  Lucas Gomes de Oliveira
 
-![Rich Picture 1.0 - Lucas Gomes](img/RichPicture1_Lucas.jpg)
+![Rich Picture 1.0 - Lucas Gomes](img/RichPicture1_Lucas.jpeg)
 
 Autor: Cauê Oliveira
 

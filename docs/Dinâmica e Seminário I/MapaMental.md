@@ -30,4 +30,4 @@ Autor:  Lucas Gomes de Oliveira
 
 Versão 1.0
 
-![Mapa Mental 1.0 - Lucas Gomes](img/MapaMental1_Lucas.jpg)
+![Mapa Mental 1.0 - Lucas Gomes](img/MapaMental1_Lucas.jpeg)
