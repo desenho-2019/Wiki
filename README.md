@@ -20,3 +20,7 @@
 
 ## Deploy para o GitHub
     - mkdocs gh-deploy
+
+## Deploy Continuo
+    - O Travis está rodando no repositório, dessa forma, só é necessário
+    subir as atualizações na master.
