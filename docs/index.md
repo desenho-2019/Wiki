@@ -11,3 +11,5 @@
 | Weiller Fernandes Pereira | 13/0137995 | [WeillerFernandes](https://github.com/WeillerFernandes) | weillerfernandes@gmail.com |
 | André Lucas Ferreira Lemos de Souza | 15/0005563 | [andrelucasf](https://github.com/andrelucasf) | andre.lucas.lemos@hotmail.com |
 | Cauê Mateus Oliveira | 14/0056068 | [caue96](https://github.com/caue96) | cauemateus@hotmail.com |
+| João Gabriel Saliba Ribeiro | 15/0012934 | [joaosaliba](https://github.com/joaosaliba) | joao_salibaa@hotmail.com |
+| Caio Gabriel Araújo Medeiros | 15/0007329 | [CaioGabrielAraujo](https://github.com/CaioGabrielAraujo) | caiohgabriel@gmail.com |

@@ -8,6 +8,7 @@
 | 23/08/2019 | 0.3 | Adicionando RP 3.0 | André Lucas |
 |23/08/2019|   0.4    | Introdução       |  Rafael Bragança   |
 |23/08/2019|   0.5    | Adicionando itens 2.3 e 2.4       |  Rafael Bragança   |
+|23/08/2019|   0.6    | Adicionando itens 2.5       |  João Gabriel   |
 
 ## 1. Introdução
 
@@ -55,6 +56,11 @@ ajudar a desenvolver uma compreensão compartilhada de uma determinada situaçã
 
 ![Rich Picture 3.0 - Weiller](img/weillerRichPicture.png)<br>
 
+## 2.5
+
+**Versão 1**
+
+[![Rich Picture 3.0 - João Gabriel](img/RichPictureJoaoSaliba.png)](img/RichPictureJoaoSaliba.png)<br>
 
 
 
