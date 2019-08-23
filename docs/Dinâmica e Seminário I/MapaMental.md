@@ -8,26 +8,30 @@
 
 ## 1. Introdução
 
+Mapa mental é um diagrama que permite que você organize ideias de forma simples e lógica, representando-as visualmente, facilitando o processo de memorização. Ele começa com um tema central, que evolui através de linhas ou “ramos” relacionando os subtópicos do tema.
+
 ## 2. Mapas Mentais
 
-### 2.1 Mapa Mental 1: Conteúdo da aplicação.
+### 2.1 Mapa Mental: Conteúdo da aplicação.
 
 Mapa mental que contempla o conteúdo foco da aplicação, que seria a coleta e compartilhamento de dados referentes a desenvolvimento de software, como os custos, tempo, gestão de pessoal e tecnologias utilizadas no desenvolvimento desde projetos inteiros até uma simples feature.
 
-Autor: Victor Rodrigues Silva
-
-Versão 1.0
+**Versão 1.0**
 
 ![Mapa Mental 1.0 - Victor Rodrigues](img/MapaMental1_Victor.png)<br>
 
-Autor: Cauê Oliveira
+### 2.2 Mapa Mental
 
-Versão 1.0
+**Versão 1.0**
 
 [![Mapa Mental 1.0 - Cauê Mateus](img/MindMap_Cauê.png)](https://ibb.co/j4mm6dS)<br>
 
-Autor:  Lucas Gomes de Oliveira
+### 2.2 Mapa Mental
 
-Versão 1.0
+**Versão 1.0**
 
 ![Mapa Mental 1.0 - Lucas Gomes](img/MapaMental1_Lucas.jpeg)
+
+## Referências
+
+[1] AMORIM, Rebeca. Como fazer um mapa mental. Disponível em https://geekiegames.geekie.com.br/blog/como-fazer-um-mapa-mental/
