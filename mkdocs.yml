@@ -8,7 +8,7 @@ theme:
     logo: 'favicon.png'
 
 repo_name: 'Estima'
-repo_url: 'https://desenho-2019.github.io/Wiki/'
+repo_url: 'https://github.com/desenho-2019'
 
 plugins:
     - search
