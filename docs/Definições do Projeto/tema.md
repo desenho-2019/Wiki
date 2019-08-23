@@ -1,4 +1,4 @@
-#Tema
+# Tema
 
 #### Histórico de revisões
 |   Data   |  Versão  |        Descrição       |          Autor(es)          |
@@ -22,4 +22,4 @@ para que o usuário possa ter uma base na estimativa de seus projetos pessoais.
 Ao cadastrar um projeto na plataforma, o sistema, a partir dos dados já existentes,
 estimará para o usuário os pontos supracitados. Espera-se que, com a utilização da
 plataforma por mais e mais usuários, a aplicação seja capaz de estimar com uma boa
-precisão os custos e prazos reais do projeto em questão.  
+precisão os custos e prazos reais do projeto em questão.
