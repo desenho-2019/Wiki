@@ -5,6 +5,7 @@
 |:--------:|:--------:|:----------------------:|:---------------------------:|
 |22/08/2019|   0.1    | Iniciando o documento       |  Victor Rodrigues   |
 |23/08/2019|   0.2    | Adicionando Mapa Mental 1.0    |  Lucas Gomes |
+|23/08/2019|   0.3    | Adicionando item 2.4    |  Rafael Bragança |
 
 ## 1. Introdução
 
@@ -26,11 +27,18 @@ Mapa mental que contempla o conteúdo foco da aplicação, que seria a coleta e 
 
 [![Mapa Mental 1.0 - Cauê Mateus](img/MindMap_Cauê.png)](https://ibb.co/j4mm6dS)<br>
 
-### 2.2 Mapa Mental
+
+### 2.3 Mapa Mental
 
 **Versão 1.0**
 
 ![Mapa Mental 1.0 - Lucas Gomes](img/MapaMental1_Lucas.jpeg)
+
+### 2.4 Mapa Mental
+
+**Versão 1.0**
+
+![Mapa Mental 1.0 - Rafael Bragança](img/mapaMentalRafael.jpg)
 
 ## Referências
 
