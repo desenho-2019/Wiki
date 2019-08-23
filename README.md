@@ -1,5 +1,22 @@
 # Wiki
 
-## Welcome to GitHub Pages
+## Instalação
+    - sudo apt install mkdocs
+    ou
+    - pip install mkdocs
 
-You can use the [editor on GitHub](https://github.com/desenho-2019/Wiki/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
+## Inicializando o servidor local
+    - mkdocs serve
+    - Abra o seu navegador e digite a seguinte URL http://localhost:8000/
+
+## Editando paginas
+    - site_name: My Docs
+      nav:
+          - Home: index.md
+          - About: about.md
+
+## Gerando os arquivos estáticos
+    - mkdocs build
+
+## Deploy para o GitHub
+    - mkdocs gh-deploy
