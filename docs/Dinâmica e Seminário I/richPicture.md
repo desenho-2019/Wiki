@@ -11,7 +11,7 @@ Texto
 
 ##Rich Pictures
 
-Imagens
+![Rich Picture 1.0 - Cauê Mateus](img/RichPicture_Cauê.jpg)<br>
 
 ##Referências
 
