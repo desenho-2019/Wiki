@@ -1,4 +1,4 @@
-site_name: Estima
+site_name: Roomatch
 
 theme:
     name: material
@@ -7,7 +7,7 @@ theme:
         primary: 'white'
     logo: 'favicon.png'
 
-repo_name: 'Estima'
+repo_name: 'Roomatch'
 repo_url: 'https://github.com/desenho-2019'
 
 plugins:
