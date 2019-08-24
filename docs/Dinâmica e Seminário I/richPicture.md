@@ -9,6 +9,7 @@
 |23/08/2019|   0.4    | Introdução       |  Rafael Bragança   |
 |23/08/2019|   0.5    | Adicionando itens 2.3 e 2.4       |  Rafael Bragança   |
 |23/08/2019|   0.6    | Adicionando itens 2.5       |  João Gabriel   |
+|23/08/2019|   0.7    | Adicionando Rich Picture 2.0       |  Caio César Beleza  |
 
 ## 1. Introdução
 
@@ -45,7 +46,12 @@ ajudar a desenvolver uma compreensão compartilhada de uma determinada situaçã
 **Versão 1**
 
 ![Rich Picture 3.0 - Caio César](img/richPictureCaioCesar.png)<br>
+Autor: Caio César Beleza
 
+**Versão 2**
+
+![Rich Picture 3.0 - Caio César](img/RP2.0CaioCesar.png)<br>
+Autor: Caio César Beleza
 ## 2.4
 
 **Versão 1**
