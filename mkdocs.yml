@@ -1,13 +1,14 @@
-site_name: Roomatch
+site_name: Cafofo
 
 theme:
     name: material
     language: 'pt'
     palette:
-        primary: 'white'
+        primary: 'cyan'
+        accent: 'orange'
     logo: 'favicon.png'
 
-repo_name: 'Roomatch'
+repo_name: 'Cafofo'
 repo_url: 'https://github.com/desenho-2019'
 
 plugins:
