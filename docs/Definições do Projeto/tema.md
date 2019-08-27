@@ -5,21 +5,13 @@
 |:--------:|:--------:|:----------------------:|:---------------------------:|
 |22/08/2019|   0.1    | Iniciando o documento       |  Rafael Bragança   |
 |22/08/2019|   0.2    | Iniciando o documento       |  Rafael Bragança   |
+|26/08/2019|   0.3    | Atualizando o documento     |  Weiller Fernandes |
 
 ## Visão Geral
 
-O Estima é um projeto ser desenvolvido pelos alunos deste grupo e se trata de uma
-plataforma que será capaz de auxiliar os profissionais da área de tecnologia a
-estimarem, principalmente, tempo e custo de projetos de software a partir
-de de um ambiente colaborativo.
+O Cafofo é um projeto a ser desenvolvido pelos alunos deste grupo para a disciplina de Arquitetura e Desenho de Software e se trata de uma
+plataforma que tem como objetivo central auxiliar estudantes, calouros e veteranos de uma determinada Universidade a encontrarem quartos para alugar, seja em repúblicas ou casas, e também auxiliar as pessoas que queiram anunciar seus quartos para aluguel. Por se tratar de uma ferramenta voltada para isso, os estudantes que necessitam de um local próximo a sua faculdade terão mais facilidade em achar um lugar adequado, sem precisar ficar procurando em vários sites de anúncios que muitas vezes são abrangentes demais e possuem anúncios que não interessam no momento.  
 
 ## Fluxo Básico
 
-Ao realizar login, o usuário terá acesso aos dados sobre projetos contidos no
-banco de dados da aplicação. Informações como numero de integrantes da equipe,
-escopo do projeto, tempo gasto na sua execução e preço cobrado estarão disponíveis
-para que o usuário possa ter uma base na estimativa de seus projetos pessoais.
-Ao cadastrar um projeto na plataforma, o sistema, a partir dos dados já existentes,
-estimará para o usuário os pontos supracitados. Espera-se que, com a utilização da
-plataforma por mais e mais usuários, a aplicação seja capaz de estimar com uma boa
-precisão os custos e prazos reais do projeto em questão.
+Ao realizar login, o usuário que deseja anunciar um quarto poderá criar um anúncio novo ou editar anúncios já existentes, carregando fotos do quarto, adicionando uma descrição, definindo custos e localização. O usuário que deseja alugar um quarto poderá pesquisar quartos disponíveis, filtrar resultados, favoritar quartos, compartilhar anúncios, dentre outras funcionalidades.
