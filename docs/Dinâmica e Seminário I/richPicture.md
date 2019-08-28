@@ -4,6 +4,7 @@
 |   Data   |  Versão  |        Descrição       |          Autor(es)          |
 |:--------:|:--------:|:----------------------:|:---------------------------:|
 |22/08/2019|   0.1    | Iniciando o documento       |  Rafael Bragança   |
+|28/08/2019|   0.2    | Adicionando Rich Picture       |  Caio César Beleza   |
 
 ## 1. Introdução
 
@@ -21,9 +22,9 @@ ajudar a desenvolver uma compreensão compartilhada de uma determinada situaçã
 
 **Versão 1**
 
-![Rich Picture 1.0](img/)
+![Rich Picture 1.0](img/RPCaioCesar.png)
 
-Autor:
+Autor: Caio César Beleza
 
 
 ## Referências
