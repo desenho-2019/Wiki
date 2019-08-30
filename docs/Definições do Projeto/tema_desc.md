@@ -211,13 +211,17 @@ Autor: Caio César Beleza
 
 # 6. Conclusão
 
-Devido a falta de interação do grupo com o tema decidimos por meio de votação escolher outro tema. Também levamos em conta a dependência que teriamos de dados inseridos pelos usuários para que o projeto desse resultado. Veja o [tema atual](#tema) escolhido pelo grupo.
+Devido a falta de interação do grupo com o tema decidimos por meio de votação escolher outro tema. Também levamos em conta a dependência que teriamos de dados inseridos pelos usuários para que o projeto desse resultado. Veja o [tema atual](../tema.md) escolhido pelo grupo.
 
 
 # 7. Referências
 
 [1] Aula 02 de Arquitetura e Desenho de Software da UnB-Gama - Prof: Milene Serrano
+
 [2] ROCHA, Hugo. 5W2H: o que significa, para que serve, como fazer e exemplos. Disponível em https://klickpages.com.br/blog/5w2h-o-que-significa/
+
 [3] https://pt.wikipedia.org/wiki/Diagrama_de_Ishikawa
+
 [4] AMORIM, Rebeca. Como fazer um mapa mental. Disponível em https://geekiegames.geekie.com.br/blog/como-fazer-um-mapa-mental/
+
 [5] https://en.wikipedia.org/wiki/Rich_picture
