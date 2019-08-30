@@ -211,7 +211,7 @@ Autor: Caio César Beleza
 
 # 6. Conclusão
 
-Devido a falta de interação do grupo com o tema decidimos por meio de votação escolher outro tema. Também levamos em conta a dependência que teriamos de dados inseridos pelos usuários para que o projeto desse resultado. Veja o [tema atual](../tema.md) escolhido pelo grupo.
+Devido a falta de interação do grupo com o tema decidimos por meio de votação escolher outro tema. Também levamos em conta a dependência que teriamos de dados inseridos pelos usuários para que o projeto desse resultado. Veja o [tema atual](../tema) escolhido pelo grupo.
 
 
 # 7. Referências
