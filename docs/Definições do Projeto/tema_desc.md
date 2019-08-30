@@ -2,20 +2,21 @@
 
 
 #### Histórico de revisões
+
 |   Data   |  Versão  |        Descrição       |          Autor(es)          |
 |:--------:|:--------:|:----------------------:|:---------------------------:|
 |30/08/2019|   0.1    | Iniciando e adicionando o documento       |  André Lucas   |
 
-# 1. Tema
+## 1. Tema
 
-## Visão Geral
+### Visão Geral
 
 O Estima é um projeto ser desenvolvido pelos alunos deste grupo e se trata de uma
 plataforma que será capaz de auxiliar os profissionais da área de tecnologia a
 estimarem, principalmente, tempo e custo de projetos de software a partir
 de de um ambiente colaborativo.
 
-## Fluxo Básico
+### Fluxo Básico
 
 Ao realizar login, o usuário terá acesso aos dados sobre projetos contidos no
 banco de dados da aplicação. Informações como numero de integrantes da equipe,
@@ -26,19 +27,19 @@ estimará para o usuário os pontos supracitados. Espera-se que, com a utilizaç
 plataforma por mais e mais usuários, a aplicação seja capaz de estimar com uma boa
 precisão os custos e prazos reais do projeto em questão.
 
-# 2. 5W2H
+## 2. 5W2H
 
 A 5W2H é uma ferramenta de gestão empregada no planejamento estratégico de empresas. Ela parte de uma meta para organizar as ações e determinar o que será feito para alcançá-la, por qual razão, por quem, como, quando e onde será feito, além de estimar quanto isso custará.
 
 Em geral proposta na forma de planilha ou tabela, a metodologia costuma ser utilizada em projetos para avaliar, acompanhar e garantir que as atividades sejam executadas com clareza e excelência por todos os envolvidos.
 
-## 2.1
+### 2.1
 
 **Versão 1.0**
 
 ![5W2H 1.0 - Cauê Mateus](img/5w2h_Cauê.png)<br>
 
-## 2.2
+### 2.2
 
 **Versão 1.0**
 
@@ -58,7 +59,7 @@ Em geral proposta na forma de planilha ou tabela, a metodologia costuma ser util
 |**How much (Quanto custa fazer isso?)**|
 |Será feita após a definição concreta das tecnologias|
 
-## 2.3
+### 2.3
 
 **Versão 1.0**
 
@@ -78,37 +79,37 @@ Em geral proposta na forma de planilha ou tabela, a metodologia costuma ser util
 |**How much (Quanto custa fazer isso?)**|
 |De maneira teórica, nada. Os custos adjacentes com gasolina, alimentação, reuniões e demais não podem ser calculados no momento. |
 
-## 2.4
+### 2.4
 
 **Versão 1.0**
 
 ![5W2H 1.0 - Caio Cesar](img/5w2hCaioCesar.png)<br>
 
-## 2.5
+### 2.5
 
 **Versão 1.0**
 
 ![5W2H 1.0 - Weiller](img/5w2hweiller.png)<br>
 
-## 2.6
+### 2.6
 
 **Versão 1.0**
 
 [![5W2H 1.0 - João Gabriel](img/5W2HJoaoSaliba.png)](img/5W2HJoaoSaliba.png)<br>
 
-# 3. Diagrama Causa-Efeito
+## 3. Diagrama Causa-Efeito
 
 O Diagrama de Ishikawa, também conhecido como Diagrama de Causa e Efeito ou Diagrama Espinha de peixe[1], é um gráfico cuja finalidade é organizar o raciocínio em discussões de um problema prioritário, em processos diversos, especialmente na produção industrial. Esta técnica é utilizada para descobrir, organizar e resumir conhecimento de um grupo a respeito das possíveis causas que contribuem para um determinado efeito.
 
-## 3.1 Entrada de dados pelo usuário
+### 3.1 Entrada de dados pelo usuário
 
 [![Causa-Efeito 1.0 - Rafael Bragança](img/fishBoneRafaelEntrada.jpg)](img/fishBoneRafaelEntrada.jpg)<br>
 
-## 3.2 Dificuldades de implementação
+### 3.2 Dificuldades de implementação
 
 [![Causa-Efeito 1.0 - Rafael Bragança](img/fishBoneRafaelComplicacoes.jpg)](img/fishBoneRafaelComplicacoes.jpg)<br>
 
-# 4. Mapa Mental
+## 4. Mapa Mental
 
 Mapa mental é um diagrama que permite que você organize ideias de forma simples e lógica, representando-as visualmente, facilitando o processo de memorização. Ele começa com um tema central, que evolui através de linhas ou “ramos” relacionando os subtópicos do tema.
 
@@ -152,7 +153,7 @@ Mapa mental que contempla o conteúdo foco da aplicação, que seria a coleta e 
 
 [![Mapa Mental 1.0 - João Gabriel](img/MapaMentalJoaoSaliba.png)](img/MapaMentalJoaoSaliba.png)
 
-# 5. Rich Picture
+## 5. Rich Picture
 
 O Rich Picture fornece um mecanismo para aprender sobre problemas complexos ou
 mal definidos, desenhando representações detalhadas ("ricas") deles.
@@ -169,19 +170,19 @@ ajudar a desenvolver uma compreensão compartilhada de uma determinada situaçã
 
 ![Rich Picture 1.0 - Lucas Gomes](img/RichPicture1_Lucas.jpeg)
 
-## 5.1
+### 5.1
 
 **Versão 1**
 
 ![Rich Picture 2.0 - Cauê Mateus](img/RichPicture_Cauê.jpg)<br>
 
-## 5.2
+### 5.2
 
 **Versão 1**
 
 ![Rich Picture 3.0 - André Lucas](img/RichPicture3.jpeg)<br>
 
-## 5.3
+### 5.3
 
 **Versão 1**
 
@@ -193,7 +194,7 @@ Autor: Caio César Beleza
 ![Rich Picture 3.0 - Caio César](img/RP2.0CaioCesar.png)<br>
 Autor: Caio César Beleza
 
-## 5.4
+### 5.4
 
 **Versão 1**
 
@@ -203,18 +204,18 @@ Autor: Caio César Beleza
 
 ![Rich Picture 3.0 - Weiller](img/weillerRichPicture.png)<br>
 
-## 5.5
+### 5.5
 
 **Versão 1**
 
 [![Rich Picture 3.0 - João Gabriel](img/RichPictureJoaoSaliba.png)](img/RichPictureJoaoSaliba.png)<br>
 
-# 6. Conclusão
+## 6. Conclusão
 
-Devido a falta de interação do grupo com o tema decidimos por meio de votação escolher outro tema. Também levamos em conta a dependência que teriamos de dados inseridos pelos usuários para que o projeto desse resultado. Veja o [tema atual](../tema) escolhido pelo grupo.
+Devido a falta de interação do grupo com o tema decidimos por meio de votação escolher outro tema. Também levamos em conta a dependência que teriamos de dados inseridos pelos usuários para que o projeto desse resultado. Veja o [tema atual](../tema/) escolhido pelo grupo.
 
 
-# 7. Referências
+## 7. Referências
 
 [1] Aula 02 de Arquitetura e Desenho de Software da UnB-Gama - Prof: Milene Serrano
 
