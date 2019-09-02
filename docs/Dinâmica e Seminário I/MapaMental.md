@@ -4,6 +4,7 @@
 |   Data   |  Versão  |        Descrição       |          Autor(es)          |
 |:--------:|:--------:|:----------------------:|:---------------------------:|
 |22/08/2019|   0.1    | Iniciando o documento       |  Victor Rodrigues   |
+|01/09/2019|   0.2    | Adicionando Mapa mental 1.0       |  Caio César Beleza   |
 
 ## 1. Introdução
 
@@ -17,9 +18,9 @@ Mapa mental que contempla o conteúdo foco da aplicação, que seria a coleta e 
 
 **Versão 1.0**
 
-![Mapa Mental 1.0](img/)
+![Mapa Mental 1.0](img/MMentalCaioCesar.png)
 
-Autor:
+Autor: Caio César Beleza
 
 ## Referências
 
