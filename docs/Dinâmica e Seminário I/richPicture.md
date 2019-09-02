@@ -5,6 +5,7 @@
 |:--------:|:--------:|:----------------------:|:---------------------------:|
 |22/08/2019|   0.1    | Iniciando o documento       |  Rafael Bragança   |
 |28/08/2019|   0.2    | Adicionando Rich Picture       |  Caio César Beleza   |
+|01/09/2019|   0.3    | Adicionando Rich Picture v2      |  Lucas Gomes   |
 
 ## 1. Introdução
 
@@ -26,6 +27,11 @@ ajudar a desenvolver uma compreensão compartilhada de uma determinada situaçã
 
 Autor: Caio César Beleza
 
+**Versão 2**
+
+![Rich Picture 2.0](img/RichPictureCafofo.png)
+
+Autor: Lucas Gomes
 
 ## Referências
 
