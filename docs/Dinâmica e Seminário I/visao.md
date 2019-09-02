@@ -14,17 +14,17 @@
 
 # Sumário
 
-1. Introdução
+1. Introdução<br>
     1.1 Propósito
-2. Posicionamento
-    2.1 Oportunidade de negócio
+2. Posicionamento<br>
+    2.1 Oportunidade de negócio<br>
     2.2 Instrução do problema
-3. Visão geral do produto
-    3.1 Escopo do produto
+3. Visão geral do produto<br>
+    3.1 Escopo do produto<br>
     3.2 Recursos do produto
-4. Visão geral do usuário
-    4.1 Perfis das partes interessadas
-    4.2 Perfis do usuário
+4. Visão geral do usuário<br>
+    4.1 Perfis das partes interessadas<br>
+    4.2 Perfis do usuário<br>
     4.3 Alternativas e concorrência
 5. Referências
 
