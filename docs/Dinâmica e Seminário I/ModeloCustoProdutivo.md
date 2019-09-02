@@ -1,5 +1,11 @@
 # Modelo de Custo Produtivo
 
+#### Histórico de revisões
+|   Data   |  Versão  |        Descrição       |          Autor(es)          |
+|:--------:|:--------:|:----------------------:|:---------------------------:|
+|28/08/2019|   0.1    | Iniciando o documento       |  João Gabriel  |
+|02/09/2019|   0.2    | Adicionando Histórico de revisões       |  João Gabriel   |
+
 ## 1. Introdução
 
 O modelo de Custo produtivo aplicado neste projeto será o COCOMO( ou Constructive Cost Model), em que é utilizado para esticar custo e tempo de software, que foi baseado em uma hierarquia de modelos de software. Sendo implementado:
