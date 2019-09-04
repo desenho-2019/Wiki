@@ -3,7 +3,8 @@
 #### Histórico de revisões <!-- omit in toc -->
 |    Data    | Versão |       Descrição       |    Autor(es)     |
 | :--------: | :----: | :-------------------: | :--------------: |
-| 04/09/2019 |  0.1   | Iniciando o documento | Victor Rodrigues e Weyller Fernandes |
+| 04/09/2019 |  0.1   | Iniciando o documento | Victor Rodrigues e Weiller Fernandes |
+| 04/09/2019 |  0.2  | Adicionando versão 1.0 | Victor Rodrigues e Weiller Fernandes |
 
 ## Sumário <!-- omit in toc -->
   - [1. Introdução](#1-introdu%c3%a7%c3%a3o)
@@ -12,7 +13,7 @@
 
 ## 1. Introdução
 
-Este diagrama é uma ferramenta visual no qual é usada para controlar o cronograma e estipular os prazos de entregas dos artefatos, desenvolvimento e finalização do projeto. Seu principal objetivo é verificar interdependências entre atividades e mostras as atividades e tarefas realiazdas no decorrer do tempo.
+Este diagrama é uma ferramenta visual no qual é usada para controlar o cronograma e estipular os prazos de entregas dos artefatos, desenvolvimento e finalização do projeto. Seu principal objetivo é verificar interdependências entre atividades e mostrar as atividades e tarefas realizadas no decorrer do tempo.
 
 ## 2. Diagrama
 
