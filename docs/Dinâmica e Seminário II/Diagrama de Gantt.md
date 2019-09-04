@@ -26,3 +26,6 @@ Versão inicial discutida e acordada entre o grupo.
 * Artefatos a serem melhor detalhados em próximas versões.
 
 ## 3. Referências
+
+[1]https://www.voitto.com.br/blog/artigo/diagrama-de-gantt
+[2]https://ads-unigrade-2019-1.github.io/Wiki/dinamica02/DiagramaGantt/
