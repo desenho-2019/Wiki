@@ -9,8 +9,8 @@
 | 27/08/2019 |  0.4   | Adicionando Visão geral do produto | Victor Rodrigues |
 | 27/08/2019 |  0.5   | Adicionando Visão geral do usuário | Victor Rodrigues |
 | 27/08/2019 |  0.6   | Referências | Victor Rodrigues |
-| 01/09/2019 |  0.7   | Instrução do problema | @caue96 |
-| 01/09/2019 |  0.8   | Correção de erros e revisão | @caue96 |
+| 01/09/2019 |  0.7   | Instrução do problema | [Cauê](https://github.com/caue96) |
+| 01/09/2019 |  0.8   | Correção de erros e revisão | [Cauê](https://github.com/caue96) |
 | 04/09/2019 | 1.0 | Sumário e revisão | Victor Rodrigues |
 
 ## Sumário <!-- omit in toc -->
@@ -32,7 +32,7 @@
 
 ## 1.1. Propósito
 
-Este artigo apresenta as justificativas para o desenvolvimento do sistema Cafofo, e visa auxiliar na compreensão do contexto que o sistema estará inserido.
+Este documento apresenta as justificativas para o desenvolvimento do sistema Cafofo, e visa auxiliar na compreensão do contexto que o sistema estará inserido.
 Serão também apresentadas as funcionalidades que devem ser atendidas pelo Cafofo e seu funcionamento, tendo em vista que o documento será atualizado durante o processo de desenvolvimento.
 
 

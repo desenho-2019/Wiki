@@ -7,7 +7,7 @@
 ## Histórico de Versão
 |**Versão**| **Data** |**Descrição** |      **Nome**      |
 |   ---    |   ---    |     ---      |        ---         |
-|1.0       |17/08/2019|Criação da ata|Cauê Mateus Oliveira|
+|   1.0    |17/08/2019|Criação da ata|[Cauê](https://github.com/caue96)|
 
 ## Pauta da Reunião
 - Definição de projeto a ser desenvolvido e requisitos iniciais;
@@ -17,14 +17,14 @@
 - Primeiros artefatos a serem desenvolvidos.
 
 ## Integrantes Presentes
-- [x] André Lucas<br>
-- [x] Caio Araújo<br>
-- [x] Caio César<br>
-- [x] Cauê Mateus<br>
-- [x] João Saliba<br>
-- [x] Lucas Gomes<br>
-- [x] Rafael Bragança<br>
-- [ ] Weiller Fernandes<br>
+- [x] [André Lucas](https://github.com/andrelucasf)<br>
+- [x] [Caio Araújo]()<br>
+- [x] [Caio César](https://github.com/Caiocbeleza)<br>
+- [x] [Cauê Mateus](https://github.com/caue96)<br>
+- [x] [João Saliba](https://github.com/joaosaliba)<br>
+- [x] [Lucas Gomes](https://github.com/LGomees)<br>
+- [x] [Rafael Bragança](https://github.com/rafaelbrg)<br>
+- [ ] [Weiller Fernandes](https://github.com/WeillerFernandes)<br>
 
 ### **Definição de Projeto**
 O única ideia de projeto que tivemos e foi a ideia que ficou definida como a que iremos desenvolver será um *software* de estimativa de tempo e custo de projetos. Várias funcionalidades foram levantadas, porém nenhuma delas definida. Com isso ficou de fazermos o levantamento de requisitos do sistema posteriormente, porém essa discussão nos auxiliou na busca de materiais na internet que nos permitisse fazer um estudo prévio de como faríamos para desenvolver esse *software*.
