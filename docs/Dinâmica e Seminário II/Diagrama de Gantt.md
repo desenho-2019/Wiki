@@ -20,6 +20,8 @@ Este diagrama é uma ferramenta visual no qual é usada para controlar o cronogr
 
 Versão inicial discutida e acordada entre o grupo.
 
-Diagrama aqui.
+![Teste](img/Diagrama_Gantt_V1.png)
 
+* Artefatos a serem melhor detalhados em próximas versões.
 
+## 3. Referências
