@@ -6,6 +6,9 @@
 |02/09/2019|   0.1    | Criação do Documento |  [Rafael](https://github.com/rafaelbrg) |
 |04/09/2019|   0.2    | Adicionados os topicos 2 e 3 |  [Rafael](https://github.com/rafaelbrg) |
 |04/09/2019|   0.3    | Adicionados os topicos 4 |  [Rafael](https://github.com/rafaelbrg) |
+|04/09/2019|   0.3    | Adicionados os topicos 5 e 6 |  [Rafael](https://github.com/rafaelbrg) |
+|04/09/2019|   0.3    | Adicionados os topicos 7 e 8 |  [Rafael](https://github.com/rafaelbrg) |
+
 
 ## 1. Introdução
 
@@ -46,3 +49,21 @@ As reuniões serão planejadas pelo membro Rafael Bragança, a fim de agilizar o
 <p align = "justify">A API será responsável pelas regras de negócio da aplicação e será alimentada pelos dados contidos no DataBase. Essa relação também vale para quando a API precisar manter dados no DataBase. A API também será responsável por alimentar o WebAPP com esses dados para a visualização dos usuários da aplicação.</p>
 
 <p align = "justify"> Os papéis serão fixos à um membros mas poderão ser atribuidos a outros membros de acordo com a necessidade da equipe.</p>
+
+
+## 6. Repositórios
+
+A organização do projeto está dividida da sequinte forma:
+
+* **WebAPP**: Repositório que contém o código da aplicação desenvolvida em python.
+* **API**: Repositório que tem o código da API do aplicativo.
+* **Wiki**: Repositório que contém os arquivos do mkdocs (github pages), documentos e artefatos da nossa wiki.
+
+
+## 7. Issues
+
+ <p align = "justify">As issues serão alocadas na ferramenta de controle do github para que possamos ter uma boa rastreabilidade e acompanhamento do projeto. A toda issue também é atribuído critérios de aprovação no qual são decididos durante as reuniões presenciais.
+
+## 8. Referências
+
+[1] Scrum Master, para garantir Valores e Práticas!, Acesso em 02 de setembro de 2019. Disponível em:http://www.metodoagil.com/scrum-master/
