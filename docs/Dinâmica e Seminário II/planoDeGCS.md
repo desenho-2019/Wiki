@@ -4,8 +4,10 @@
 
 |   Data   |  Versão  |        Descrição       |          Autor(es)          |
 |:--------:|:--------:|:----------------------:|:---------------------------:|
-|26/03/2019|   0.1    | Criação do Documento de GCS           |  [Rafael](https://github.com/rafaelbrg) |
-|26/03/2019|   0.2    | Adicionada Introdução e Itens de Configuração  |  [Rafael](https://github.com/rafaelbrg) |
+|31/08/2019|   0.1    | Criação do Documento de GCS           |  [Rafael](https://github.com/rafaelbrg) |
+|02/09/2019|   0.2    | Adicionada Introdução e Itens de Configuração  |  [Rafael](https://github.com/rafaelbrg) |
+|02/09/2019|   0.3    | Adicionada Politica de commits |  [Rafael](https://github.com/rafaelbrg) |
+|03/09/2019|   0.4    | Adicionada Politica de branchs |  [Rafael](https://github.com/rafaelbrg) |
 
 ## 1. Introdução
 
@@ -38,3 +40,26 @@
 * Commits devem descrever o que está sendo alterado, se houver mais de uma alteração (pertinente ao commit) ela deve ser adicionada na descrição do commit
 * Devem iniciar com letras maiúsculas.
 * Devem iniciar com um verbo no particípio informando seu objetivo. Ex: "Deleted old files"
+
+### 3.2 Política de Branches
+
+<br>
+
+[![img](img/imgg)](img/img)
+
+<br>
+
+* <p align = "justify"> A <i>Master</i> será a branch principal do projeto em um dado repositório.</p>
+
+* <p align = "justify">A <i>Master</i> será a branch estável do projeto e só sera atualizada, a partir da branch <i>development<i>, quando um <i>pull request<i> for aceito. É proíbido que membros subam commits diretamente na <i>Master</i>.</p>
+
+ * A única exceção para essa régra sera no repositório da Wiki.
+
+* <p align = "justify">As branches auxiliares são para a resolução das funcionalidades ou correções de erro. Cada <i>Tarefa</i> ou <i>bugfix</i> terá sua própria branch, criada a partir da branch <i>development</i>, e terá como nomenclatura o seguinte padrão: </p>
+
+   ``` TF[ID da Tarefa no RoadMap]-[Nome da Tarefa] ``` ou <br>
+   ``` FIX[ID da issue a ser resolvida]-[Nome da issue] ``` ou <br>
+   ``` FIX[Nome da correcao ou configuracao] ``` ou <br>
+   ``` TE-[Nome da Tarefa Extra] ```<br>
+
+* Para cada Feature uma nova branch deve ser criada com base no último commit da develop.
