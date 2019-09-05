@@ -8,7 +8,7 @@
 |02/09/2019|   0.2    | Adicionada Introdução e Itens de Configuração  |  [Rafael](https://github.com/rafaelbrg) |
 |02/09/2019|   0.3    | Adicionada Politica de commits |  [Rafael](https://github.com/rafaelbrg) |
 |03/09/2019|   0.4    | Adicionada Politica de branchs |  [Rafael](https://github.com/rafaelbrg) |
-|05/09/2019|   0.4    | Adicionados os topicos 4,5 e 6 |  [Rafael](https://github.com/rafaelbrg) |
+|05/09/2019|   0.5    | Adicionados os topicos 4,5 e 6 |  [Rafael](https://github.com/rafaelbrg) |
 
 
 ## 1. Introdução
@@ -68,7 +68,7 @@
 
 #### 3.2.1 Conflitos
 
-* Se um pull request causar algum tipo de conflito, deve ser resolvido primeiro pela equipe que desenvolveu o que está causando conflito, prezando pela integridade e organização do histórico de commits, e então deve ser refeito o pedido para avaliação do merge.
+* Se um pull request causar algum tipo de conflito, é deve da equipe responsável pelo pull request resolver o conflito, prezando pela integridade e organização do histórico de commits, e então deve ser refeito o pedido para avaliação do merge.
 
 ### 3.3 Política de Aprovação do Código
 
