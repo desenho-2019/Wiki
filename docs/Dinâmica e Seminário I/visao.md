@@ -1,6 +1,6 @@
-# Documento de Visão
+# Documento de Visão <!-- omit in toc -->
 
-#### Histórico de revisões
+#### Histórico de revisões <!-- omit in toc -->
 |    Data    | Versão |       Descrição       |    Autor(es)     |
 | :--------: | :----: | :-------------------: | :--------------: |
 | 27/08/2019 |  0.1   | Iniciando o documento | Victor Rodrigues |
@@ -9,30 +9,30 @@
 | 27/08/2019 |  0.4   | Adicionando Visão geral do produto | Victor Rodrigues |
 | 27/08/2019 |  0.5   | Adicionando Visão geral do usuário | Victor Rodrigues |
 | 27/08/2019 |  0.6   | Referências | Victor Rodrigues |
-| 01/09/2019 |  0.7   | Instrução do problema | @caue96 |
-| 01/09/2019 |  0.8   | Correção de erros e revisão | @caue96 |
+| 01/09/2019 |  0.7   | Instrução do problema | [Cauê](https://github.com/caue96) |
+| 01/09/2019 |  0.8   | Correção de erros e revisão | [Cauê](https://github.com/caue96) |
+| 04/09/2019 | 1.0 | Sumário e revisão | Victor Rodrigues |
 
-# Sumário
-
-1. Introdução<br>
-    1.1 Propósito
-2. Posicionamento<br>
-    2.1 Oportunidade de negócio<br>
-    2.2 Instrução do problema
-3. Visão geral do produto<br>
-    3.1 Escopo do produto<br>
-    3.2 Recursos do produto
-4. Visão geral do usuário<br>
-    4.1 Perfis das partes interessadas<br>
-    4.2 Perfis do usuário<br>
-    4.3 Alternativas e concorrência
-5. Referências
+## Sumário <!-- omit in toc -->
+- [1. Introdução](#1-introdu%c3%a7%c3%a3o)
+  - [1.1. Propósito](#11-prop%c3%b3sito)
+- [2. Posicionamento](#2-posicionamento)
+  - [2.1. Oportunidade de negócio](#21-oportunidade-de-neg%c3%b3cio)
+  - [2.2. Instrução do probelma](#22-instru%c3%a7%c3%a3o-do-probelma)
+- [3. Visão geral do produto](#3-vis%c3%a3o-geral-do-produto)
+  - [3.1. Escopo do produto](#31-escopo-do-produto)
+  - [3.2. Recursos do produto](#32-recursos-do-produto)
+- [4. Visão geral do usuário](#4-vis%c3%a3o-geral-do-usu%c3%a1rio)
+  - [4.1. Perfis das partes interessadas](#41-perfis-das-partes-interessadas)
+  - [4.2. Perfis do usuário](#42-perfis-do-usu%c3%a1rio)
+  - [4.3. Alternativas e concorrência](#43-alternativas-e-concorr%c3%aancia)
+- [5. Referências](#5-refer%c3%aancias)
 
 # 1. Introdução
 
 ## 1.1. Propósito
 
-Este artigo apresenta as justificativas para o desenvolvimento do sistema Cafofo, e visa auxiliar na compreensão do contexto que o sistema estará inserido.
+Este documento apresenta as justificativas para o desenvolvimento do sistema Cafofo, e visa auxiliar na compreensão do contexto que o sistema estará inserido.
 Serão também apresentadas as funcionalidades que devem ser atendidas pelo Cafofo e seu funcionamento, tendo em vista que o documento será atualizado durante o processo de desenvolvimento.
 
 
