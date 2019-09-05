@@ -38,3 +38,11 @@ As reuniões serão planejadas pelo membro Rafael Bragança, a fim de agilizar o
 * <p align = "justify">Development Team(DT): È a equipe de desenvolvimento. Deve ser auto-organizada e multidisciplinar. Decide como executar o seu trabalho.</p>
 
  <p align = "justify">Outros papéis poderão surgir para atividades específicas, como os demandam um pouco mais de atenção para a organização do projeto, sendo elas o deploy, planejamento das pautas de reuniões, planejamentos das apresentações e wiki. </p>
+
+## 5. Divisão das Frentes de Trabalho
+
+<p align = "justify">Ficou decidido em equipe que o projeto contará com uma divisão clara das atividades para o Frontend e Backend. O primeiro ficará responsável pelo desenvolvimento da camada de interação do usuário (WebAPP). O segundo grupo ficará responsável pela camada lógica do código que será composta pela API e DataBase.</p>
+
+<p align = "justify">A API será responsável pelas regras de negócio da aplicação e será alimentada pelos dados contidos no DataBase. Essa relação também vale para quando a API precisar manter dados no DataBase. A API também será responsável por alimentar o WebAPP com esses dados para a visualização dos usuários da aplicação.</p>
+
+<p align = "justify"> Os papéis serão fixos à um membros mas poderão ser atribuidos a outros membros de acordo com a necessidade da equipe.</p>
