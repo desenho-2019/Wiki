@@ -8,6 +8,8 @@
 |02/09/2019|   0.2    | Adicionada Introdução e Itens de Configuração  |  [Rafael](https://github.com/rafaelbrg) |
 |02/09/2019|   0.3    | Adicionada Politica de commits |  [Rafael](https://github.com/rafaelbrg) |
 |03/09/2019|   0.4    | Adicionada Politica de branchs |  [Rafael](https://github.com/rafaelbrg) |
+|05/09/2019|   0.4    | Adicionados os topicos 4,5 e 6 |  [Rafael](https://github.com/rafaelbrg) |
+
 
 ## 1. Introdução
 
@@ -63,3 +65,43 @@
    ``` TE-[Nome da Tarefa Extra] ```<br>
 
 * Para cada Feature uma nova branch deve ser criada com base no último commit da develop.
+
+#### 3.2.1 Conflitos
+
+* Se um pull request causar algum tipo de conflito, deve ser resolvido primeiro pela equipe que desenvolveu o que está causando conflito, prezando pela integridade e organização do histórico de commits, e então deve ser refeito o pedido para avaliação do merge.
+
+### 3.3 Política de Aprovação do Código
+
+* <p align = "justify"> Para a aprovação do código, este deve ser aprovado por ao menos dois desenvolvedores da equipe diferente daquele que o submeteu ou sua dupla, caso exista.</p>
+
+## 4. Uso de Issues
+
+* <p align = "justify">As issues serão criadas com o objetivo de mapear as histórias de usuário, histórias técnicas e bugs, tendo assim um maior controle sobre eles. Isso facilitará o controle já que o github possui uma plataforma integrada para o acompanhamento de issues.</p>
+
+* <p align = "justify">As issues serão divididas em labels com o intuito de facilitar a identificação da sua origem. As labels definidas para o projeto serão:</p>
+
+   * **Tarefa**: Utilizada para issues que representam features ou atividades do projeto.
+   * **Tarefa Extra**: Utilizada para issues que representam tarefas extras do projeto.
+   * **Refatoração**: Utilizada para issues que representam refatoração do código.  
+   * **Front**: Utilizada para issues que representam refatoração do layout.
+   * **Bug**: Utilizada para issues que representam correção de bugs.
+
+* <p align = "justify"> Caso o time sinta a necessidade de acrescentar uma nova label, este documento deverá ser atualizado.</p>
+
+* <p align = "justify"> O padrão do nome das issues terá o seguinte formato: </p>
+
+   ``` TF <ID da Tarefa no RoadMap> - <Nome definido  pela equipe para a tarefa> ``` <br>
+   ``` FIX - <Nome definido para a história pela equipe> ``` <br>
+   ``` TE - <Nome definido para a história pela equipe> ``` <br>
+
+* Exemplo : "TAREFA 1.1 - Tarefa". <br>
+
+## 5. Repositório de documentação
+
+O repositório de documentação é encontrado na [wiki](#https://desenho-2019.github.io/Wiki/) do projeto. O objetivo da Wiki é armazenar toda a documentação criada pela equipe durante o processo de desenvolvimento. Práticas e medidas adotadas serão armazenas no repositório.
+
+## 6. Referências
+
+* QueroCultura. Plano de Gerenciamento de Configuração. Disponível em <https://github.com/fga-eps-mds/2017.2-QueroCultura/wiki/Plano-de-Gerenciamento-de-Configura%C3%A7%C3%A3o>
+
+* Unigrade. Plano de Gestão e Configuração de Software. Disponível em <https://ads-unigrade-2019-1.github.io/Wiki/dinamica02/GCS/>
