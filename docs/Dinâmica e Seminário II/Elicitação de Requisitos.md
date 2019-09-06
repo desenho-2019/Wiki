@@ -3,7 +3,9 @@
 |   Data   |  Versão  |        Descrição       |          Autor(es)          |
 |:--------:|:--------:|:----------------------:|:---------------------------:|
 |02/09/2019|   0.1    | Iniciando o documento       |  João Gabriel  |
-|03/09/2019|   0.2    | Passando Introspecção Iniciativas extras      |  João Gabriel  |
+|03/09/2019|   0.2    | Passando Introspecção Iniciativas extras     |  João Gabriel  |
+|04/09/2019|   0.1    | Finalizando o documento       |  João Gabriel  |
+
 
 
 # Elicitação de requisitos funcionais
@@ -26,7 +28,12 @@ Contudo, uma outra tecnica será utilizada nesta fase do projeto (Dinâmica e Se
 ## 3. Modelo de Priorização
 
 A partir dos requisitos levantados pelas diversas técnicas utilizadas pelo time, serão priorizados de acordo com necessidade dos mesmos para o projeto seguindo o modelo de priorização MoSCoW. Tal modelo classifica os requisitos em uma escala pré definida, sendo ela:
-Must: Primeiro nível de prioridade. Requisitos essencias para o projeto
-Shuld: Segundo nível de prioridade. Requisitos importantes para o projeto.
-Could:Terceiro nível de prioridade. Requisitos interesantes para o projeto.
-Would: Quarto nível de prioridade. Requisitos desejáveis ao projeto
+* **Must**: Primeiro nível de prioridade. Requisitos essencias para o projeto
+* **Shuld**: Segundo nível de prioridade. Requisitos importantes para o projeto.
+* **Could**:Terceiro nível de prioridade. Requisitos interesantes para o projeto.
+* **Would**: Quarto nível de prioridade. Requisitos desejáveis ao projeto
+
+
+## 4. Conclusão
+
+Com base nas tecnicas citadas acima foi criado uma melhor noção e assim levantados os requisitos funcionais do projeto. Tendo em vista que o mesmo será uma aplicação web, com 'CRUD' dos quartos/repúblicas a serem alugados. E um cadastro de usuários sendo divididos em dois tipos: quem aluga e quem loca.
