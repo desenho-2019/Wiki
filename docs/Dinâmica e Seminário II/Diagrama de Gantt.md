@@ -21,6 +21,8 @@ Este diagrama é uma ferramenta visual no qual é usada para controlar o cronogr
 
 Versão inicial discutida e acordada entre o grupo.
 
+Autores: Victor Rodrigues e Weiller Fernandes
+
 [![](img/Diagrama_Gantt_V1.png)](img/Diagrama_Gantt_V1.png)
 
 * Artefatos a serem melhor detalhados em próximas versões.
@@ -28,4 +30,5 @@ Versão inicial discutida e acordada entre o grupo.
 ## 3. Referências
 
 [1]https://www.voitto.com.br/blog/artigo/diagrama-de-gantt
+
 [2]https://ads-unigrade-2019-1.github.io/Wiki/dinamica02/DiagramaGantt/
