@@ -6,6 +6,7 @@
 |03/09/2019|   0.2    | Passando Introspecção Iniciativas extras     |  João Gabriel  |
 |04/09/2019|   0.3    |  Continuando documento       |  João Gabriel  |
 |12/09/2019|   0.4    | Adicionando Épicos       |  João Gabriel e Caue  |
+|13/09/2019|   0.5    | Adicionando História de Usuário| João Gabriel e Lucas Gomes| 
 
 
 
@@ -53,8 +54,8 @@ Permitir que usuário-anunciante crie e altere dados referentes ao local.
 Criar funcinonalidade que permita que qualquer usuário cadastrado ou não, possa efetuar pesquisa de locais.
 
 ### EP04
-#### Filtos
-Criar filtros para que usuários possam filtrar os anuncios exibidos.
+#### Filto
+Criar filtros para que usuários possam filtrar os anúncios exibidos.
 
 ### EP05
 #### Autenticação
@@ -62,7 +63,52 @@ Criar funcionalidades de autenticar usuários.
 
 ### EP06
 #### Comunicação
-Criar meio de comunicação locador e locatário dentro da plataforma (chat).
+Criar meio de comunicação locador e locatário dentro da plataforma .
+
+
+## 5. História de usuário
+
+
+|US| Descrição|Priorização| Épico
+|:----:|:-------:|:-------:|:-----:|
+|UC01| - Cadastrar-se no Cafofo| Must  | Autenticação |
+|UC02| -Visualizar cafofos.| Must | Pesquisa |
+|UC03| - Visualizar o Menu de Configurações| Should |Perfis |
+|UC04| - Buscar cafofo por localidade| Must | pesquisa|
+|UC05| - Configurar outras notificações| Would |-- |
+|UC06| - Visualizar avaliações de cafofos| Should | anúncios|
+|UC07| - Visualizar anúncios de cafofos.| Must | anúncios |
+|UC08| - Visualizar perfil de anunciante| Could | Perfis|
+|UC09| - Visualizar avaliações de anunciante| Should | Perfis |
+|UC10| - Compartilhar anúncio de cafofo| Must | anúncios |
+|UC11| - Favoritar anúncio de cafofo| Could | anúncios |
+|UC12| - Avaliar cafofo | Should | anúncios |
+|UC13| - Alterar dados pessoais| Should | Perfis | 
+|UC14| - Acessar Perfil de Usuário| Must | Perfis |
+|UC15| - Filtrar cafofo por valor| Would | Filtro |
+|UC16| - Efetuar login no Cafofo| Must | Autenticação |
+|UC17| - Deslogar do site Cafofo| Must | Autenticação |
+|UC18| - Solicitar contato| Would | Comunicação | 
+|UC19| - Filtrar cafofo por genero  (Misto/Feminino/Masculino)| Should |Filtro |
+|UC20| - Filtrar cafofo por inclusões (incluso água, luz, internet...)| Could | Filtro |
+|UC21| - Filtrar cafofo por nome| Should | Filtro |
+|UC22| - Filtrar cafofo por recomendações| Could | Filtro |
+|UC23| - Limpar histórico de Busca| Would |-- |
+|UC24| - Clicar no link para conversa com anunciante/usuário| Should | Comunicação |
+|UC25| - Criar perfil do cafofo| Must | Perfis |
+|UC26| - Criar anúncio de vaga em cafofo| Must  | Anúncio |
+|UC27| - Alterar dados do cafofo| Must | Perfis |
+|UC28| - Alterar dados do anúncio do cafofo| Should | anúncio |
+|UC29| - Adicionar fotos ao anúncio| Must | anúncio |
+|UC30| - Adicionar localidade ao anúncio| Must |  Anúncio |
+|UC31|-  Adicionar descrição ao anúncio| Must | Anúncio |
+|UC32| - Adicionar valor do anúncio| Must | Anúncio |
+|UC33| - Avaliar perfil do usuário| Should | Perfis |
+|UC34| - Adicionar usuário ao perfil de membros do cafofo| Could | Anuncio/Perfis |
+|UC35| - Adicionar comentário sobre cafofo| Could | Comunicação |
+|UC36| - Avaliar Anunciante | Should | Perfis |
+
+
 
 
 ## 5. Conclusão
