@@ -4,7 +4,8 @@
 |:--------:|:--------:|:----------------------:|:---------------------------:|
 |02/09/2019|   0.1    | Iniciando o documento       |  João Gabriel  |
 |03/09/2019|   0.2    | Passando Introspecção Iniciativas extras     |  João Gabriel  |
-|04/09/2019|   0.1    | Finalizando o documento       |  João Gabriel  |
+|04/09/2019|   0.3    |  Continuando documento       |  João Gabriel  |
+|12/09/2019|   0.4    | Adicionando Épicos       |  João Gabriel e Caue  |
 
 
 
@@ -37,7 +38,33 @@ A partir dos requisitos levantados pelas diversas técnicas utilizadas pelo time
 
 * **Would**: Quarto nível de prioridade. Requisitos desejáveis ao projeto
 
+## 4. Épicos
 
-## 4. Conclusão
+### EP01
+#### Perfis
+Permitir que usuários criem e alterem dados de suas respectivas contas.
+
+### EP02
+#### Anúncios
+Permitir que usuário-anunciante crie e altere dados referentes ao local.
+
+### EP03
+#### Pesquisa
+Criar funcinonalidade que permita que qualquer usuário cadastrado ou não, possa efetuar pesquisa de locais.
+
+### EP04
+#### Filtos
+Criar filtros para que usuários possam filtrar os anuncios exibidos.
+
+### EP05
+#### Autenticação
+Criar funcionalidades de autenticar usuários.
+
+### EP06
+#### Comunicação
+Criar meio de comunicação locador e locatário dentro da plataforma (chat).
+
+
+## 5. Conclusão
 
 Com base nas tecnicas citadas acima foi criado uma melhor noção e assim levantados os requisitos funcionais do projeto. Tendo em vista que o mesmo será uma aplicação web, com 'CRUD' dos quartos/repúblicas a serem alugados. E um cadastro de usuários sendo divididos em dois tipos: quem aluga e quem loca.
