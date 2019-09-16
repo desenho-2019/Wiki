@@ -54,8 +54,8 @@ Permitir que usuário-anunciante crie e altere dados referentes ao local.
 Criar funcinonalidade que permita que qualquer usuário cadastrado ou não, possa efetuar pesquisa de locais.
 
 ### EP04
-#### Filto
-Criar filtros para que usuários possam filtrar os anúncios exibidos.
+#### Filtro
+Criar filtros para que usuários possam filtrar os Anúncios exibidos.
 
 ### EP05
 #### Autenticação
@@ -76,13 +76,13 @@ Criar meio de comunicação locador e locatário dentro da plataforma .
 |UC03| - Visualizar o Menu de Configurações| Should |Perfis |
 |UC04| - Buscar cafofo por localidade| Must | pesquisa|
 |UC05| - Configurar outras notificações| Would |-- |
-|UC06| - Visualizar avaliações de cafofos| Should | anúncios|
-|UC07| - Visualizar anúncios de cafofos.| Must | anúncios |
+|UC06| - Visualizar avaliações de cafofos| Should | Anúncios|
+|UC07| - Visualizar Anúncios de cafofos.| Must | Anúncios |
 |UC08| - Visualizar perfil de anunciante| Could | Perfis|
 |UC09| - Visualizar avaliações de anunciante| Should | Perfis |
-|UC10| - Compartilhar anúncio de cafofo| Must | anúncios |
-|UC11| - Favoritar anúncio de cafofo| Could | anúncios |
-|UC12| - Avaliar cafofo | Should | anúncios |
+|UC10| - Compartilhar anúncio de cafofo| Must | Anúncios |
+|UC11| - Favoritar anúncio de cafofo| Could | Anúncios |
+|UC12| - Avaliar cafofo | Should | Anúncios |
 |UC13| - Alterar dados pessoais| Should | Perfis | 
 |UC14| - Acessar Perfil de Usuário| Must | Perfis |
 |UC15| - Filtrar cafofo por valor| Would | Filtro |
