@@ -14,6 +14,8 @@ Demonstram as características comportamentais de um sistema, demonstra como o s
 
 ## 3. Diagrama de Colaboração
 
+Um diagrama dinâmico que mostra a interação entre objetos e/ou partes usando mensagens sequenciais. Ênfase na ordem das mensagens, normalmente, com foco em um cenário de uso.
+
 **Versão 1.0**
 
 ![Diagrama-Contribuição](img/diagrama_colaboracao.png)
@@ -24,4 +26,4 @@ Demonstram as características comportamentais de um sistema, demonstra como o s
 
 ## 6. Referências
 
-- [Diagrama de Colaboração]()
+- [Diagrama de Colaboração](https://www.uml-diagrams.org/communication-diagrams.html)
