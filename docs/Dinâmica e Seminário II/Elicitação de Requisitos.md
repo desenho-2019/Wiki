@@ -54,14 +54,10 @@ Permitir que usuário-anunciante crie e altere dados referentes ao local.
 Criar funcinonalidade que permita que qualquer usuário cadastrado ou não, possa efetuar pesquisa de locais.
 
 ### EP04
-#### Filtro
-Criar filtros para que usuários possam filtrar os Anúncios exibidos.
-
-### EP05
 #### Autenticação
 Criar funcionalidades de autenticar usuários.
 
-### EP06
+### EP05
 #### Comunicação
 Criar meio de comunicação locador e locatário dentro da plataforma .
 
@@ -85,14 +81,14 @@ Criar meio de comunicação locador e locatário dentro da plataforma .
 |UC12| - Avaliar cafofo | Should | Anúncios |
 |UC13| - Alterar dados pessoais| Should | Perfis | 
 |UC14| - Acessar Perfil de Usuário| Must | Perfis |
-|UC15| - Filtrar cafofo por valor| Would | Filtro |
+|UC15| - Filtrar cafofo por valor| Would | Pesquisa |
 |UC16| - Efetuar login no Cafofo| Must | Autenticação |
 |UC17| - Deslogar do site Cafofo| Must | Autenticação |
 |UC18| - Solicitar contato| Would | Comunicação | 
-|UC19| - Filtrar cafofo por genero  (Misto/Feminino/Masculino)| Should |Filtro |
-|UC20| - Filtrar cafofo por inclusões (incluso água, luz, internet...)| Could | Filtro |
-|UC21| - Filtrar cafofo por nome| Should | Filtro |
-|UC22| - Filtrar cafofo por recomendações| Could | Filtro |
+|UC19| - Filtrar cafofo por genero  (Misto/Feminino/Masculino)| Should |Pesquisa |
+|UC20| - Filtrar cafofo por inclusões (incluso água, luz, internet...)| Could | Pesquisa |
+|UC21| - Filtrar cafofo por nome| Should | Pesquisa |
+|UC22| - Filtrar cafofo por recomendações| Could | Pesquisa |
 |UC23| - Limpar histórico de Busca| Would |-- |
 |UC24| - Clicar no link para conversa com anunciante/usuário| Should | Comunicação |
 |UC25| - Criar perfil do cafofo| Must | Perfis |
