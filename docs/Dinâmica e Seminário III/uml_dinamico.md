@@ -25,13 +25,13 @@ Um diagrama dinâmico que mostra a interação entre objetos e/ou partes usando 
 
 Um diagrama dinâmico que procura apresentar os vários estados pelos quais um objeto pode passar dentro da aplicação e as transações responsáveis pelas suas mudanças de estado.
 
-### 4.1. Cafofo para alugar
+### 4.1. Cafofo
 
 **Versão 1.0**
 
 ![Diagrama-Estados-Cafofo](img/diagrama_estados_cafofo_V1.jpg)
 
-### 4.2. Hóspede buscando Cafofo
+### 4.2. Hóspede
 
 **Versão 1.0**
 
