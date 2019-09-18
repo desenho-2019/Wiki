@@ -8,6 +8,7 @@
 | 16/09/2019 |  0.3   | Iniciando o documento | João Gabriel |
 | 16/09/2019 |  0.3   | inserindo Diagrama de Atvidade Login | João Gabriel |
 | 16/09/2019 |  0.3   | inserindo Diagrama de Atvidade Cadastro | João Gabriel |
+| 16/09/2019 |  0.4   | Adicionando diagramas de estado 4.1-V1 e 4.2-V1 | Weiller Fernandes |
 
 ## 1. Introdução
 
@@ -24,6 +25,20 @@ Um diagrama dinâmico que mostra a interação entre objetos e/ou partes usando 
 ![Diagrama-Contribuição](img/diagrama_colaboracao.png)
 
 ## 4. Diagrama de Estados
+
+Um diagrama dinâmico que procura apresentar os vários estados pelos quais um objeto pode passar dentro da aplicação e as transações responsáveis pelas suas mudanças de estado.
+
+### 4.1. Cafofo
+
+**Versão 1.0**
+
+![Diagrama-Estados-Cafofo](img/diagrama_estados_cafofo_V1.png)
+
+### 4.2. Hóspede
+
+**Versão 1.0**
+
+![Diagrama-Estados-Hospede](img/diagrama_estados_hospede_V1.jpg)
 
 ## 5. Diagrama de Atividades
 O diagrama de atividades é um diagrama de comportamento UML que mostra o fluxo de controle ou o fluxo de objetos com ênfase na sequência e nas condições do fluxo. 
@@ -45,3 +60,5 @@ Diagrama de Atividade é um subdiagrama derivado do UML(Unified Modeling Languag
 
 
 - [UML- Diagrama de Atividade](https://www.uml-diagrams.org/activity-diagrams.html)
+
+- [Diagrama de Estado](http://www.dsc.ufcg.edu.br/~jacques/cursos/map/html/uml/diagramas/estado/diag_estados.htm)

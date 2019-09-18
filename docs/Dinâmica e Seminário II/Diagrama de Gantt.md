@@ -25,7 +25,7 @@ Autores: Victor Rodrigues e Weiller Fernandes
 
 [![](img/Diagrama_Gantt_V1.png)](img/Diagrama_Gantt_V1.png)
 
-* Artefatos a serem melhor detalhados em próximas versões.
+* Artefatos a serem mais bem detalhados em próximas versões.
 
 ## 3. Referências
 
