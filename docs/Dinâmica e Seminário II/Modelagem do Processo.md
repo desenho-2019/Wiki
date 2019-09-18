@@ -18,6 +18,8 @@ A notação foi adaptada ao escopo, à metodologia e à equipe de desenvolviment
 
 ### Modelagem Processo Metodologia
 [![Processo da Metodologia](img/MapaMetodologia.png)](https://ibb.co/PGHdsMK)
+Autor: Caio César Beleza
 
 ### Modelagem Processo Desenvolvimento
 [![Processo de Desenvolvimento](img/MapaDesenvolvimento.png)](https://ibb.co/1QDxXsv)
+Autor: Caio César Beleza
