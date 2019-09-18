@@ -38,10 +38,10 @@ Um diagrama dinâmico que procura apresentar os vários estados pelos quais um o
 
 **Versão 1.0**
 
-![Diagrama-Estados-Hospede](img/diagrama_estados_hospede_V1.jpg)
+![Diagrama-Estados-Hospede](img/diagrama_estados_hospede_V1.png)
 
 ## 5. Diagrama de Atividades
-O diagrama de atividades é um diagrama de comportamento UML que mostra o fluxo de controle ou o fluxo de objetos com ênfase na sequência e nas condições do fluxo. 
+O diagrama de atividades é um diagrama de comportamento UML que mostra o fluxo de controle ou o fluxo de objetos com ênfase na sequência e nas condições do fluxo.
 
 Diagrama de Atividade é um subdiagrama derivado do UML(Unified Modeling Language), onde é modelado o que deve acontecer dentro do sistema a ser desenvolvido. Ajudando assim os Stakeholders a entender de forma mais clara o sistema. Possuindo símbolos específicos indicando, por exemplo, onde começa e onde temina as atividades.
 
