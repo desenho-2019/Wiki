@@ -29,7 +29,7 @@ Um diagrama dinâmico que procura apresentar os vários estados pelos quais um o
 
 **Versão 1.0**
 
-![Diagrama-Estados-Cafofo](img/diagrama_estados_cafofo_V1.jpg)
+![Diagrama-Estados-Cafofo](img/diagrama_estados_cafofo_V1.png)
 
 ### 4.2. Hóspede
 
