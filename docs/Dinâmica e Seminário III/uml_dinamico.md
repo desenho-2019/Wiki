@@ -9,6 +9,7 @@
 | 16/09/2019 |  0.3   | inserindo Diagrama de Atvidade Login | João Gabriel |
 | 16/09/2019 |  0.3   | inserindo Diagrama de Atvidade Cadastro | João Gabriel |
 | 16/09/2019 |  0.4   | Adicionando diagramas de estado 4.1-V1 e 4.2-V1 | Weiller Fernandes |
+| 18/09/2019 |  0.5   | Adicionando diagramas de Caso de Uso | Lucas Gomes |
 
 ## 1. Introdução
 
@@ -53,8 +54,13 @@ Diagrama de Atividade é um subdiagrama derivado do UML(Unified Modeling Languag
 #### Login
 ![Diagrama de Atividade Login](img/diagrama_atividade_loggin.png)
 
+## 6. Diagrama de Casos de Uso
+O diagrama de caso de uso descreve a funcionalidade proposta para um novo sistema que será projetado, é uma excelente ferramenta para o levantamento dos requisitos funcionais do sistema.
 
-## 6. Referências
+**Versão 1.0**
+![Diagrama de Casos de Uso](img/diagrama_caso_de_uso.jpg)
+
+## 7. Referências
 
 - [Diagrama de Colaboração](https://www.uml-diagrams.org/communication-diagrams.html)
 
