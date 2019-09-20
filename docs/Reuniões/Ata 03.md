@@ -32,9 +32,9 @@ Ficou combinado que a reunião se iniciaria as 13:00 e terminasse as 13:30 e con
 
 ### **Artefatos**
 Ficou definido por todos os integrantes presentes na reunião quem fará quais artefatos e os próximos artefatos que devem ser feitos até o dia 05/09/2019 e até o dia 08/09/2019 são:<br>
-- Documentação em texto referente a metodologia: [André Lucas](https://github.com/andrelucasf) e [Rafael Bragança](https://github.com/rafaelbrg);
-- Processos mapeados : [Caio César](https://github.com/Caiocbeleza) e [Cauê Mateus](https://github.com/caue96)
-- Plano de Gestão e Configuração de Software: [Rafael Bragança](https://github.com/rafaelbrg);
-- Diagrama de Gant: [Victor Rodrigues](https://github.com/VictorRodriguesS0) e [Weiller Fernandes](https://github.com/WeillerFernandes);
-- Elicitação de Requisitos Funcionais: [João Saliba](https://github.com/joaosaliba) e quem mais quisesse ajudar;
-- Elicitação de Requisitos Não Funcionais: [Rafael Bragança](https://github.com/rafaelbrg) e quem mais quisesse ajudar.
+- Documentação em texto referente a metodologia: [André Lucas](https://github.com/andrelucasf) e [Rafael Bragança](https://github.com/rafaelbrg);<br>
+- Processos mapeados : [Caio César](https://github.com/Caiocbeleza) e [Cauê Mateus](https://github.com/caue96);<br>
+- Plano de Gestão e Configuração de Software: [Rafael Bragança](https://github.com/rafaelbrg);<br>
+- Diagrama de Gant: [Victor Rodrigues](https://github.com/VictorRodriguesS0) e [Weiller Fernandes](https://github.com/WeillerFernandes);<br>
+- Elicitação de Requisitos Funcionais: [João Saliba](https://github.com/joaosaliba) e quem mais quisesse ajudar;<br>
+- Elicitação de Requisitos Não Funcionais: [Rafael Bragança](https://github.com/rafaelbrg) e quem mais quisesse ajudar.<br>

@@ -39,10 +39,10 @@ Ficou combinado que a reunião se iniciaria as 10:00 e terminasse as 11:00, por�
 
 ### **Artefatos**
 Ficou definido por todos os integrantes presentes na reunião quem fará quais artefatos e os próximos artefatos que devem ser feitos até o dia 31/08/2019 são:<br>
-- 5w2h e Prototipação (IDV e Logo): [André Lucas](https://github.com/andrelucasf), [Weiller Fernandes](https://github.com/WeillerFernandes) e [Lucas Gomes](https://github.com/LGomees).
-- Ishikawa : [Rafael Bragança](https://github.com/rafaelbrg)
-- Rich Picture: [Lucas Gomes](https://github.com/LGomees) e [Caio César](https://github.com/Caiocbeleza)
-- Argumentação: GRUPO
-- Mapa Mental: [Victor Rodrigues](https://github.com/VictorRodriguesS0) e [Cauê Mateus](https://github.com/caue96)
-- Documento de Visão: [Victor Rodrigues](https://github.com/VictorRodriguesS0) e [Cauê Mateus](https://github.com/caue96)
-- Modelo de Custo Produtivo: [João Saliba](https://github.com/joaosaliba) e [Caio Araújo]()
+- 5w2h e Prototipação (IDV e Logo): [André Lucas](https://github.com/andrelucasf), [Weiller Fernandes](https://github.com/WeillerFernandes) e [Lucas Gomes](https://github.com/LGomees);<br>
+- Ishikawa : [Rafael Bragança](https://github.com/rafaelbrg);<br>
+- Rich Picture: [Lucas Gomes](https://github.com/LGomees) e [Caio César](https://github.com/Caiocbeleza);<br>
+- Argumentação: GRUPO;<br>
+- Mapa Mental: [Victor Rodrigues](https://github.com/VictorRodriguesS0) e [Cauê Mateus](https://github.com/caue96);<br>
+- Documento de Visão: [Victor Rodrigues](https://github.com/VictorRodriguesS0) e [Cauê Mateus](https://github.com/caue96);<br>
+- Modelo de Custo Produtivo: [João Saliba](https://github.com/joaosaliba) e [Caio Araújo]().<br>

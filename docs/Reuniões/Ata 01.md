@@ -44,6 +44,6 @@ Ficou definido por todos os integrantes presentes na reunião que faremos reuni�
 
 ### **Primeiros Artefatos**
 Ficou definido por todos os integrantes presentes na reunião que os três primeiros artefatos que devem ser feitos até o dia 19/08/2019 são:<br>
-1. Mapa mental;
-2. Rich picture;
+1. Mapa mental;<br>
+2. Rich picture;<br>
 3. 5W2H.

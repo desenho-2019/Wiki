@@ -34,11 +34,11 @@ Ficou definido por todos os integrantes presentes na reunião quem fará quais a
 - Definir requisitos funcionais e não funcionais: [João Saliba](https://github.com/joaosaliba), [Lucas Gomes](https://github.com/LGomees) e outros membros do grupo que quiserem ajudar;
 - Especificação de caso de uso [João Saliba](https://github.com/joaosaliba) e outros membros do grupo que quiserem ajudar;
 - Documento da explicação da paleta de cores da logo e da aplicação [Lucas Gomes](https://github.com/LGomees);
-- Diagrama de classe [Cauê Mateus](https://github.com/caue96);
-- Diagrama de caso de uso [Lucas Gomes](https://github.com/LGomees);
-- Diagrama de pacote [Caio César](https://github.com/Caiocbeleza);
-- Diagrama de componentes [Victor Rodrigues](https://github.com/VictorRodriguesS0);
-- Diagrama de sequência [Rafael Bragança](https://github.com/rafaelbrg);
-- Diagrama de comunicação [André Lucas](https://github.com/andrelucasf);
-- Diagrama de estado [Weiller Fernandes](https://github.com/WeillerFernandes);
-- Diagrama de atividade [João Saliba](https://github.com/joaosaliba).
+- Diagrama de classe [Cauê Mateus](https://github.com/caue96);<br>
+- Diagrama de caso de uso [Lucas Gomes](https://github.com/LGomees);<br>
+- Diagrama de pacote [Caio César](https://github.com/Caiocbeleza);<br>
+- Diagrama de componentes [Victor Rodrigues](https://github.com/VictorRodriguesS0);<br>
+- Diagrama de sequência [Rafael Bragança](https://github.com/rafaelbrg);<br>
+- Diagrama de comunicação [André Lucas](https://github.com/andrelucasf);<br>
+- Diagrama de estado [Weiller Fernandes](https://github.com/WeillerFernandes);<br>
+- Diagrama de atividade [João Saliba](https://github.com/joaosaliba).<br>
