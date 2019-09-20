@@ -15,9 +15,7 @@
 
 Demonstram as características comportamentais de um sistema, demonstra como o sistema se comporta. Modelos dinâmicos identificam os objetos necessários para construir o sistema e como eles se comunicam, através de seus métodos e mensagens.
 
-## 2. Diagrama de Sequência
-
-## 3. Diagrama de Colaboração
+## 2. Diagrama de Colaboração
 
 Um diagrama dinâmico que mostra a interação entre objetos e/ou partes usando mensagens sequenciais. Ênfase na ordem das mensagens, normalmente, com foco em um cenário de uso.
 
@@ -25,26 +23,24 @@ Um diagrama dinâmico que mostra a interação entre objetos e/ou partes usando 
 
 ![Diagrama-Contribuição](img/diagrama_colaboracao.png)
 
-## 4. Diagrama de Estados
+## 3. Diagrama de Estados
 
 Um diagrama dinâmico que procura apresentar os vários estados pelos quais um objeto pode passar dentro da aplicação e as transações responsáveis pelas suas mudanças de estado.
 
-### 4.1. Cafofo
+### 3.1. Cafofo
 
 **Versão 1.0**
 
 ![Diagrama-Estados-Cafofo](img/diagrama_estados_cafofo_V1.png)
 
-### 4.2. Hóspede
+### 3.2. Hóspede
 
 **Versão 1.0**
 
 ![Diagrama-Estados-Hospede](img/diagrama_estados_hospede_V1.png)
 
-## 5. Diagrama de Atividades
+## 4. Diagrama de Atividades
 O diagrama de atividades é um diagrama de comportamento UML que mostra o fluxo de controle ou o fluxo de objetos com ênfase na sequência e nas condições do fluxo.
-
-Diagrama de Atividade é um subdiagrama derivado do UML(Unified Modeling Language), onde é modelado o que deve acontecer dentro do sistema a ser desenvolvido. Ajudando assim os Stakeholders a entender de forma mais clara o sistema. Possuindo símbolos específicos indicando, por exemplo, onde começa e onde temina as atividades.
 
 #### Cadastro
 
@@ -54,13 +50,13 @@ Diagrama de Atividade é um subdiagrama derivado do UML(Unified Modeling Languag
 #### Login
 ![Diagrama de Atividade Login](img/diagrama_atividade_loggin.png)
 
-## 6. Diagrama de Casos de Uso
+## 5. Diagrama de Casos de Uso
 O diagrama de caso de uso descreve a funcionalidade proposta para um novo sistema que será projetado, é uma excelente ferramenta para o levantamento dos requisitos funcionais do sistema.
 
 **Versão 1.0**
 ![Diagrama de Casos de Uso](img/diagrama_caso_de_uso.jpg)
 
-## 7. Referências
+## 6. Referências
 
 - [Diagrama de Colaboração](https://www.uml-diagrams.org/communication-diagrams.html)
 
