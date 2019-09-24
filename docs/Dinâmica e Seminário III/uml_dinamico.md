@@ -6,10 +6,11 @@
 | 15/09/2019 |  0.1   | Iniciando o documento | André Lucas |
 | 16/09/2019 |  0.2   | Adicionando diagrama de colaboração | André Lucas |
 | 16/09/2019 |  0.3   | Iniciando o documento | João Gabriel |
-| 16/09/2019 |  0.3   | inserindo Diagrama de Atvidade Login | João Gabriel |
-| 16/09/2019 |  0.3   | inserindo Diagrama de Atvidade Cadastro | João Gabriel |
-| 16/09/2019 |  0.4   | Adicionando diagramas de estado 4.1-V1 e 4.2-V1 | Weiller Fernandes |
+| 16/09/2019 |  0.3   | inserindo Diagrama de Atividade Login | João Gabriel |
+| 16/09/2019 |  0.3   | inserindo Diagrama de Atividade Cadastro | João Gabriel |
+| 16/09/2019 |  0.4   | Adicionando diagramas de estado 3.1-V1 e 3.2-V1 | Weiller Fernandes |
 | 18/09/2019 |  0.5   | Adicionando diagramas de Caso de Uso | Lucas Gomes |
+| 24/09/2019 | 0.6    | Adicionando diagrama de estado 3.1-V2 | Weiller Fernandes |
 
 ## 1. Introdução
 
@@ -27,17 +28,29 @@ Um diagrama dinâmico que mostra a interação entre objetos e/ou partes usando 
 
 Um diagrama dinâmico que procura apresentar os vários estados pelos quais um objeto pode passar dentro da aplicação e as transações responsáveis pelas suas mudanças de estado.
 
-### 3.1. Cafofo
+### 3.1. Anúncio de Cafofo
 
 **Versão 1.0**
 
 ![Diagrama-Estados-Cafofo](img/diagrama_estados_cafofo_V1.png)
+
+Autor: Weiller Fernandes
+
+**Versão 2.0**
+
+Conforme estabelecido e acordado na reunião do dia 23/09/2019, o app Cafofo não apresentará mais um perfil exclusivo para cada Cafofo, mas sim anúncios diretos dos mesmos. Essa versão 2.0 procura atualizar o diagrama de estados para essa situação.
+
+![Diagrama-Estados-Cafofo](img/diagrama_estados_cafofo_V2.png)
+
+Autor: Weiller Fernandes
 
 ### 3.2. Hóspede
 
 **Versão 1.0**
 
 ![Diagrama-Estados-Hospede](img/diagrama_estados_hospede_V1.png)
+
+Autor: Weiller Fernandes
 
 ## 4. Diagrama de Atividades
 O diagrama de atividades é um diagrama de comportamento UML que mostra o fluxo de controle ou o fluxo de objetos com ênfase na sequência e nas condições do fluxo.
