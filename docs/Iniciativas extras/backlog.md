@@ -5,6 +5,7 @@
 |:--------:|:--------:|:----------------------:|:---------------------------:|
 |25/09/2019|0.1| Iniciando o documento e adicionando histórias de usuário|André Lucas|
 | 25/09/2019 | 0.2 | Adicionando histórias de usuário do EP02 | Weiller Fernandes |
+| 25/09/2019 | 0.3 | Adicionando histórias de usuário do EP03 | Caio César Beleza |
 
 ## 1. Introdução
 
@@ -34,6 +35,12 @@ Construimos um backlog completo para o produto com base nos requisitos elicitado
 
 | ID | Eu, como | Gostaria de | Para poder | Priorização |
 | :---: | :---: | :---: | :---: | :---: |
+| US0 | Usuário | Pesquisar Cafofos por localização | achar um cafofo mais perto da universidade | Must |
+| US0 | Usuário | Filtrar Cafofos por preço | achar um cafofo compatível com o meu orçamento | Must |
+| US0 | Usuário | Filtrar Cafofos por gênero de colegas de Cafofo | Saber se o cafofo oferece vagas apenas para homens, mulheres, ou se é misto  | Should |
+| US0 | Usuário | Filtrar Cafofos por avaliação | Saber se é um cafofo bem avaliado pelos antigos residentes | Should |
+| US0 | Usuário | Filtrar Cafofos por contas inclusas | saber o valor total das contas extras do cafofo | Could |
+
 
 ### 2.4 EP04 Autenticação
 
