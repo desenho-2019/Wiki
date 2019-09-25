@@ -71,3 +71,6 @@ Construimos um backlog completo para o produto com base nos requisitos elicitado
 | US31 | Usuário | Me cadastrar na aplicação | Ter acesso às funcionalidades do Cafofo | Must |
 | US32 | Usuário | Me cadastrar através do Facebook | Ter acesso às funcionalidades do Cafofo de forma prática | Should |
 | US33 | Usuário | Me cadastrar através do Google | Ter acesso às funcionalidades do Cafofo de forma prática | Should |
+| US34 | Usuário | Realizar o login na aplicação | Acessar os recursos da aplicação | Must |
+| US35 | Usuário | Realizar o login na aplicação pelo Facebook | Acessar os recursos da aplicação com integração à conta do facebook | Should |
+| US36 | Usuário | Realizar o login na aplicação pelo Google | Acessar os recursos da aplicação com integração à conta do Google | Should |
