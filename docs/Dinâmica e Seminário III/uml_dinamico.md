@@ -4,13 +4,14 @@
 |    Data    | Versão |       Descrição       |    Autor(es)     |
 | :--------: | :----: | :-------------------: | :--------------: |
 | 15/09/2019 |  0.1   | Iniciando o documento | André Lucas |
-| 16/09/2019 |  0.2   | Adicionando diagrama de colaboração | André Lucas |
+| 16/09/2019 |  0.2   | Adicionando Diagrama de colaboração | André Lucas |
 | 16/09/2019 |  0.3   | Iniciando o documento | João Gabriel |
 | 16/09/2019 |  0.3   | inserindo Diagrama de Atividade Login | João Gabriel |
 | 16/09/2019 |  0.3   | inserindo Diagrama de Atividade Cadastro | João Gabriel |
-| 16/09/2019 |  0.4   | Adicionando diagramas de estado 3.1-V1 e 3.2-V1 | Weiller Fernandes |
-| 18/09/2019 |  0.5   | Adicionando diagramas de Caso de Uso | Lucas Gomes |
-| 24/09/2019 | 0.6    | Adicionando diagrama de estado 3.1-V2 | Weiller Fernandes |
+| 16/09/2019 |  0.4   | Adicionando Diagramas de estado 3.1-V1 e 3.2-V1 | Weiller Fernandes |
+| 18/09/2019 |  0.5   | Adicionando Diagrama de Caso de Uso V1 | Lucas Gomes |
+| 24/09/2019 | 0.6    | Adicionando Diagrama de estado 3.1-V2 | Weiller Fernandes |
+| 25/09/2019 | 0.7    | Adicionando Diagrama de Casos de Uso V2 | Weiller Fernandes |
 
 ## 1. Introdução
 
@@ -67,6 +68,9 @@ O diagrama de caso de uso descreve a funcionalidade proposta para um novo sistem
 
 **Versão 1.0**
 ![Diagrama de Casos de Uso](img/diagrama_caso_de_uso.jpg)
+
+**Versão 2.0**
+![Diagrama de Casos de Uso](img/diagrama_casos_de_uso_v2.jpg)
 
 ## 6. Referências
 
