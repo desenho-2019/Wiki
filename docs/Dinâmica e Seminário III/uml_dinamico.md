@@ -55,10 +55,9 @@ Autor: Weiller Fernandes
 ## 4. Diagrama de Atividades
 O diagrama de atividades é um diagrama de comportamento UML que mostra o fluxo de controle ou o fluxo de objetos com ênfase na sequência e nas condições do fluxo.
 
-#### Cadastro
+#### Pesquisa/Login/Cadatro
 
-![Diagrama de Atividade Cadastro](img/Diagrama_atividade_Cadastro.png)
-
+![Diagrama de Atividade V2](img/Diagrama_Atividade_V2.png)
 
 #### Login
 ![Diagrama de Atividade Login](img/diagrama_atividade_loggin.png)
