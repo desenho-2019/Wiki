@@ -7,6 +7,7 @@
 | 25/09/2019 | 0.2 | Adicionando histórias de usuário do EP02 | Weiller Fernandes |
 | 25/09/2019 | 0.3 | Adicionando histórias de usuário do EP03 | Caio César Beleza |
 | 25/09/2019 | 0.3 | Adicionando histórias de usuário do EP03 | João Gabriel |
+| 25/09/2019 | 0.3 | Adicionando histórias de usuário do EP02 | Victor Rodrigues |
 
 ## 1. Introdução
 
@@ -23,15 +24,20 @@ Construimos um backlog completo para o produto com base nos requisitos elicitado
 
 | ID | Eu, como | Gostaria de | Para poder | Priorização |
 | :---: | :---: | :---: | :---: | :---: |
+| US0 | Usuário | Visualizar os detalhes sobre um cafofo | Verificar as informações interessantes para mim | Must |
 | US0 | Usuário | Anunciar uma vaga de Cafofo | Achar pessoa interessada em alugá-lo | Must |
 | US0 | Usuário | Adicionar dados ao anúncio do Cafofo (Descrição, preço, localidade, itens inclusos, despesas, etc) | Fornecer mais detalhes sobre o Cafofo | Must |
 | US0 | Usuário | Adicionar regras ao anúncio do Cafofo (se é permitido animais, se é permitido fumar etc) | Fornecer mais detalhes sobre o Cafofo | Must |
-| US0 | Usuário | Alterar os dados do Cafofo | Editar alguma informação que esteja errada ou desatualizada | Must |
+| US0 | Usuário | Adicionar sexo alvo para o anuncio (masculino ou feminino) | facilitar a procura do cafofo por interessados | Must |
+| US0 | Usuário | Alterar os dados do anuncio | Editar alguma informação que esteja errada ou desatualizada | Must |
 | US0 | Usuário | Adicionar fotos ao anúncio do Cafofo | Mostrar como é o ambiente do meu Cafofo | Should |
 | US0 | Usuário | Excluir fotos do anúncio do Cafofo | Deixar de exibir uma determinada imagem do meu Cafofo | Should |
 | US0 | Usuário | Compartilhar um anúncio de Cafofo | Mostrar um determinado anúncio para outras pessoas | Could |
 | US0 | Usuário | Favoritar um anúncio de Cafofo | Ter uma lista de Cafofos que gostei e poder vê-los depois sem precisar buscar novamente | Could |
 | US0 | Usuário | Desfavoritar um anúncio de Cafofo | Deixar de visualizar aquele Cafofo na minha lista de favoritos | Could |
+| US0 | Usuário | Denunciar um anuncio de cafofo | Possívelmente retirar anuncios enganosos | Should |
+| US0 | Usuário | Excluir anuncios de cafofos feitos por mim | Evitar interesse em cafofos não disponíveis | Must |
+
 
 ### 2.3 EP03 - Pesquisa
 
@@ -44,7 +50,7 @@ Construimos um backlog completo para o produto com base nos requisitos elicitado
 | US0 | Usuário | Filtrar Cafofos por contas inclusas | saber o valor total das contas extras do cafofo | Could |
 | US0 | Usuário | Filtrar  por itens que acompanham o Cafofo | saber se possuí WiFi, cama, ar-condicionado ,armário e escrivaninha disponível| Could |
 | US0 | Usuário | Filtar Cafofos por número de pessoas que compartilham o local|  saber por quantas pessoas despesas serão divididas |Could |
-| US0 | Usuáro | Filtrar Cafofos por presença de animais de estimação | se existe cachorro, gato ou outro animal morando no Cafofo | Would |
+| US0 | Usuário | Filtrar Cafofos por presença de animais de estimação | se existe cachorro, gato ou outro animal morando no Cafofo | Would |
 | US0 | Usuário | Filtrar Cafofos por possibilidade de fumar no local | Saber se pode fumar ou não no Cafofo| Would|
 
 
