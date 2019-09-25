@@ -4,6 +4,7 @@
 |   Data   |  Versão  |        Descrição       |          Autor(es)          |
 |:--------:|:--------:|:----------------------:|:---------------------------:|
 |25/09/2019|0.1| Iniciando o documento e adicionando histórias de usuário|André Lucas|
+| 25/09/2019 | 0.2 | Adicionando histórias de usuário do EP02 | Weiller Fernandes |
 
 ## 1. Introdução
 
@@ -20,6 +21,14 @@ Construimos um backlog completo para o produto com base nos requisitos elicitado
 
 | ID | Eu, como | Gostaria de | Para poder | Priorização |
 | :---: | :---: | :---: | :---: | :---: |
+| US0 | Usuário | Anunciar uma vaga de Cafofo | Achar pessoa interessada em alugá-lo | Must |
+| US0 | Usuário | Adicionar dados ao anúncio do Cafofo (Descrição, preço, localidade, etc) | Fornecer mais detalhes sobre o Cafofo | Must |
+| US0 | Usuário | Alterar os dados do Cafofo | Editar alguma informação que esteja errada ou desatualizada | Must |
+| US0 | Usuário | Adicionar fotos ao anúncio do Cafofo | Mostrar como é o ambiente do meu Cafofo | Should |
+| US0 | Usuário | Excluir fotos do anúncio do Cafofo | Deixar de exibir uma determinada imagem do meu Cafofo | Should |
+| US0 | Usuário | Compartilhar um anúncio de Cafofo | Mostrar um determinado anúncio para outras pessoas | Could |
+| US0 | Usuário | Favoritar um anúncio de Cafofo | Ter uma lista de Cafofos que gostei e poder vê-los depois sem precisar buscar novamente | Could |
+| US0 | Usuário | Desfavoritar um anúncio de Cafofo | Deixar de visualizar aquele Cafofo na minha lista de favoritos | Could |
 
 ### 2.3 EP03 - Pesquisa
 
