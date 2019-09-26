@@ -55,17 +55,23 @@
     - Possibilidade de comnetário;
   - Status;
   - Contato (Só para usuário);
-  - Planning Poker:
-    - 1 - Muito fácil;
-    - 2 - Fácil;
-    - 3 - Razoável;
-    - 5 - Difícil;
-    - 8 - Muito difícil.
+- Planning Poker:
+  - 1 - Muito fácil;
+  - 2 - Fácil;
+  - 3 - Razoável;
+  - 5 - Difícil;
+  - 8 - Muito difícil.
+- Utilizar Docker Compose ([André Lucas](https://github.com/andrelucasf) e [Rafael Bragança](https://github.com/rafaelbrg));
+- Estudar ReactJS e Flask (Todos);
 
 
 ### **Dia e Horário de Reunião**
 
 Ficou combinando que a próxima reunião será presencial na FGA dia 30/09/2019 com início as 12h.
+
+Proxima reunião:
+- Pontuar US;
+- Quando de conhecimentos respondidos;
 
 ### **Artefatos**
 Ficou definido por todos os integrantes presentes na reunião informações relacionadas a usuários e anûncios.
