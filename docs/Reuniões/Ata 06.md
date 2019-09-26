@@ -55,6 +55,12 @@
     - Possibilidade de comnetário;
   - Status;
   - Contato (Só para usuário);
+  - Planning Poker:
+    - 1 - Muito fácil;
+    - 2 - Fácil;
+    - 3 - Razoável;
+    - 5 - Difícil;
+    - 8 - Muito difícil.
 
 
 ### **Dia e Horário de Reunião**
