@@ -6,6 +6,7 @@
 | 15/09/2019 |  0.1   | Iniciando o documento | André Lucas |
 | 16/09/2019 |  0.2   | Adicionando Diagrama de componetes 1.0 | [Victor Rodrigues](https://github.com/VictorRodriguesS0) |
 |18/09/2019|0.3|Adicionando diagrama de pacotes Versão 1.0|[Caio César Beleza](https://github.com/Caiocbeleza)|
+|27/09/2019|0.4|Adicionando versão 1 do diagrama de classe|[Cauê](https://github.com/caue96)
 
 ## 1. Introdução
 
@@ -13,6 +14,10 @@ O diagrama de pacotes mostra o arranjo e a organização dos elementos do modelo
 Já o diagrama de componentes mostra o arranjo e organização de elementos da aplicação separados em subsistemas e funcionalidades da aplicação com relação a interface das funcionalidades.
 
 ## 2. Diagrama de Classes
+
+**Versão 1.0**
+
+[![Diagrama de Classe](img/diagrama_de_classe_v1.png)](https://ibb.co/JkgBSSd)
 
 ## 3. Diagrama de Pacotes
 
