@@ -12,6 +12,7 @@
 | 18/09/2019 |  0.5   | Adicionando Diagrama de Caso de Uso V1 | Lucas Gomes |
 | 24/09/2019 | 0.6    | Adicionando Diagrama de estado 3.1-V2 | Weiller Fernandes |
 | 25/09/2019 | 0.7    | Adicionando Diagrama de Casos de Uso V2 | Weiller Fernandes |
+| 25/09/2019 | 0.7    | Adicionando Diagrama de colaboração v2 | André Lucas |
 
 ## 1. Introdução
 
@@ -24,6 +25,10 @@ Um diagrama dinâmico que mostra a interação entre objetos e/ou partes usando 
 **Versão 1.0**
 
 ![Diagrama-Contribuição](img/diagrama_colaboracao.png)
+
+**Versão 2.0**
+
+![Diagrama-Contribuição](img/diagrama_colaboracao_v2.png)
 
 ## 3. Diagrama de Estados
 
