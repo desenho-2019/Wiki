@@ -31,7 +31,9 @@ Scrum Master: Lucas Gomes
 
 #### Observações da Sprint:
 Em relação a outras atividades concluídas que não estavam planejadas:
-    - Foi definido o modelo de definição de pontuação das histórias de usuário, sendo baseado na prioridade da história definida no backlog.
-    - Foram definidas as informações necessárias pela aplicação para usuário e cafofo.
+
+##### Foi definido o modelo de definição de pontuação das histórias de usuário, sendo baseado na prioridade da história definida no backlog.
+
+##### Foram definidas as informações necessárias pela aplicação para usuário e cafofo.
 
 
