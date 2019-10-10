@@ -5,11 +5,13 @@
 | :--------: | :----: | :-------------------: | :--------------: |
 | 04/09/2019 |  0.1   | Iniciando o documento | Victor Rodrigues e Weiller Fernandes |
 | 04/09/2019 |  0.2  | Adicionando versão 1.0 | Victor Rodrigues e Weiller Fernandes |
+| 09/10/2019 | 0.3   | Adicionando versão 2.0 | Weiller Fernandes |
 
 ## Sumário <!-- omit in toc -->
   - [1. Introdução](#1-introdu%c3%a7%c3%a3o)
   - [2. Diagrama](#2-diagrama)
     - [Versão 1.0](#vers%c3%a3o-10)
+    - [Versão 2.0](#vers%c3%a3o-20)
 
 ## 1. Introdução
 
@@ -24,6 +26,14 @@ Versão inicial discutida e acordada entre o grupo.
 Autores: Victor Rodrigues e Weiller Fernandes
 
 [![](img/Diagrama_Gantt_V1.png)](img/Diagrama_Gantt_V1.png)
+
+### Versão 2.0
+
+Versão atualizada com as tarefas realizadas no front-end e back-end nas sprints iniciais do projeto.
+
+Autor: Weiller Fernandes
+
+[![](img/Diagrama_Gantt_V2.png)](img/Diagrama_Gantt_V2.png)
 
 * Artefatos a serem mais bem detalhados em próximas versões.
 
