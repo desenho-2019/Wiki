@@ -1,10 +1,11 @@
 # GOFs
 
 #### Histórico de revisões
-|    Data    | Versão |       Descrição       |    Autor(es)     |
-| :--------: | :----: | :-------------------: | :--------------: |
-| 15/10/2019 |  0.1   | Iniciando o documento e adicionando padrões | André Lucas |
-| 18/10/2019 |  0.2   | Adicionando padrão Factory | André Lucas e Victor Rodrigues  |
+|    Data    | Versão |                  Descrição                  |           Autor(es)            |
+| :--------: | :----: | :-----------------------------------------: | :----------------------------: |
+| 15/10/2019 |  0.1   | Iniciando o documento e adicionando padrões |          André Lucas           |
+| 18/10/2019 |  0.2   |         Adicionando padrão Factory          | André Lucas e Victor Rodrigues |
+| 24/10/2019 |  0.3   |         Adicionando informações no padrão factory          | Victor Rodrigues e André Lucas |
 
 ## 1. GOFs Criacionais 
 
@@ -18,62 +19,91 @@ Implementamos o Factory Method para criar uma fábrica de botões. A estrutura d
 
 Vamos criar um botão de forma abstrata, porque o mesmo será sobrescrito no final: 
 
-    const button = ({ color, onPress, icon, textColor }) => (
-        <button >
-        {icon ? <img src={icon} /> : null}
-        </button>
-    )
+```javascript
+const button = ({ onClick, icon, type, text, backColor }) => (
+    <button style={content, { backgroundColor: backColor }} type={type} onClick={onClick}>
+        {icon ? <img style={image} src={icon} /> : null}
+        <text style={textStyle}>{text}</text>
+    </button>
+)
 
-    var Button = React.createFactory((button));
+var Button = React.createFactory((button));
 
-    export default button;
+export default button;
+```
 
 Depois iremos criar a nossa fábrica de botões, instanciando cada tipo de botão:
+```javascript
+class ButtonFactory {
+    static factoryMethod(data, props) {
+        switch (data) {
+            case 'facebook':
+                return <Button
+                    icon={fb}
+                    text={"Entrar com Facebook"}
+                    backColor={'#3b5998'}
+                    type={"submit"}
+                />
+            case 'email':
+                return <Button
+                    icon={email}
+                    text={"Entrar"}
+                    backColor={'#fa6900'}
+                    type={"submit"}
+                />
+            case 'google':
+                return <Button
+                    icon={google}
+                    text={"Entrar com Google"}
+                    backColor={'red'}
+                    type={"submit"}
 
-    class ButtonFactory {
-        static factoryMethod(data, props) {
-            switch (data) {
-                case 'facebook':
-                    return <Button 
-                        color={'#fff'}
-                        icon={fb}
-
-                    />
-            }
+                />
         }
     }
+}
 
-    export default (ButtonFactory);
+export default (ButtonFactory);
+```
 
 Agora cada botão possui cores, ações e textos diferentes. Por fim o componente ficará estruturado assim:
 
-    import ButtonFactory from '../../factory/button/index';
+```javascript
+import ButtonFactory from '../../factory/button/index';
 
-        render() {
-            return (
-                <Container>
-                    <Form onSubmit={this.handleSubmit}>
-                    <h1>Acesse a sua conta</h1>
-                    <input
-                        type="email"
-                        placeholder="Endereço de e-mail"
-                        onChange={e => this.setState({ email: e.target.value })}
-                    />
-                    <input
-                        type="password"
-                        placeholder="Senha"
-                        onChange={e => this.setState({ password: e.target.value })}
-                    />
-                    {ButtonFactory.factoryMethod('facebook')}
-                    <Link to="/esqueci-a-senha">Esqueceu sua senha?</Link>
-                    <button type="submit">Entrar</button>
-                    <hr />
-                    <Link to="/cadastro">Cadastre-se</Link>
-                    </Form>
-                </Container>
-            );
-        }
-    }
+render() {
+    return (
+        <Container>
+            <Form onSubmit={this.handleSubmit}>
+                <h1>Acesse a sua conta</h1>
+                <input
+                    type="email"
+                    placeholder="Endereço de e-mail"
+                    onChange={e => this.setState({ email: e.target.value})}
+                />
+                <input
+                    type="password"
+                    placeholder="Senha"
+                    onChange={e => this.setState({ password:e.target.value })}
+                />
+                <Link to="/esqueci-a-senha">Esqueceu sua senha?</Link>
+
+                //Botão de login com email
+                {ButtonFactory.factoryMethod('email')}
+
+                //Botão de login com facebook
+                {ButtonFactory.factoryMethod('facebook')}
+
+                //Botão de login com google
+                {ButtonFactory.factoryMethod('google')}
+
+                <hr />
+                <Link to="/cadastro">Cadastre-se</Link>
+            </Form>
+        </Container>
+    );
+}
+```
 
 Este é o diagrama que representa a fábrica de botões:
 
