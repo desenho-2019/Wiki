@@ -129,7 +129,7 @@ O Padrão Decorator tem como característica o seguinte:
 ### 2.2 Exemplo
 
 ## 3. GOFs Comportamentais
-## 3.1 Observer
+### 3.1 Observer
 
 O padrão observer permite definir um mecanismo de aviso, que notifica múltiplos objetos sobre eventos que ocorrem com os objetos que eles estão observando.
 Este padrão é utilizado quando o acoplamento das classes está crescendo, ou quando se tem ações a serem executadas apoós um determinado processo.
