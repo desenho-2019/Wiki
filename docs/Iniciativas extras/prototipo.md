@@ -4,6 +4,7 @@
 |   Data   |  Versão  |        Descrição       |          Autor(es)          |
 |:--------:|:--------:|:----------------------:|:---------------------------:|
 |29/08/2019|1.0| Iniciando o documento e adicionando protótipos |André Lucas|
+|25/10/2019|1.1| Adicionando protótipo de criação de anúncio | Weiller Fernandes|
 
 ## 1. Introdução
 
@@ -11,7 +12,7 @@ Um protótipo de alta fidelidade deve se aproximar ao máximo dos aspectos visua
 
 ## 2. Protótipo de alta fidelidade
 
-O protótipo de alta fidelidade foi desenvolvido com a ferramenta **Figma**. Acesse este link para utilizar o protótipo interativo: [Protótipo Cafofo](https://www.figma.com/proto/p599fBEGMX0tGUa1Exveev/Cafofo?node-id=22%3A35&scaling=scale-down).
+O protótipo de alta fidelidade foi desenvolvido com a ferramenta **Figma**. Acesse este link para utilizar o protótipo interativo: [Protótipo Cafofo](https://www.figma.com/proto/SsUPDvbFgXWbtPS6fDBbqx/Cafofo?node-id=3%3A2&scaling=scale-down).
 
 ### 2.1 Tela inicial
 
@@ -26,6 +27,12 @@ O protótipo de alta fidelidade foi desenvolvido com a ferramenta **Figma**. Ace
 ![Resultados 1.0](img/prototipo_pesquisa.png)
 
 Autor: André Lucas
+
+### 2.4 Criar anúncio
+
+![Criar Anuncio 1.0](img/prototipo_criar_anuncio.png)
+
+Autor: Weiller Fernandes
 
 ## 3. Referências
 
