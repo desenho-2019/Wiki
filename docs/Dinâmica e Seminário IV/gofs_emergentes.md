@@ -76,3 +76,36 @@ urlpatterns = [
     path('settings/<int:pk>/',UserUpdateDeleteSet.as_view()),
    ] + static(settings.MEDIA_URL, document_root= settings.MEDIA_ROOT)
 ```
+
+
+## 2. Template Method
+Defina o esqueleto de um algoritmo em uma operação, adiando algumas etapas para as subclasses do cliente. Template Method permite que as subclasses redefinam certas etapas de um algoritmo sem alterar a estrutura do algoritmo.
+
+### 2.1 Estrutura Genérica
+![Estrutura-TemplateMethod](img/Template_Method.png)
+
+### Utilização no Projeto Cafofo
+Essa estrutura comumente é utilizada nos forms dos apps em django, onde se define os campos que estarão presentes em determinados formulários. Contudo, por se tratar de uma api, os campos delimitados a estarem presentes em determinados "formulário" foi definidos no serializer.py de cada app.
+
+```
+from rest_framework import serializers
+from users.models import CustomUser
+
+class UserSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = CustomUser
+        fields = [ 'id','email','password','name','phone','date_of_birth','gender','nationality','facebook','google','photo']
+
+
+class UserCreateUpdateSerializer(serializers.ModelSerializer):
+    password = serializers.CharField(
+        style ={'input_type':'password'}
+    )
+    class Meta:
+        model = CustomUser
+        fields = ['email','password','name','phone','date_of_birth','gender','nationality','facebook','google','photo',]
+```
+
+## Referências
+
+https://refactoring.guru/design-patterns/facade
