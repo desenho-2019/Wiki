@@ -6,18 +6,19 @@
 | 15/10/2019 |  0.1   | Iniciando o documento e adicionando padrões |          André Lucas           |
 | 18/10/2019 |  0.2   |         Adicionando padrão Factory          | André Lucas e Victor Rodrigues |
 | 24/10/2019 |  0.3   |         Adicionando informações no padrão factory          | Victor Rodrigues e André Lucas |
+| 24/10/2019 |  0.4   |         Adicionando Padrão Observer          | Caio César Beleza |
 
-## 1. GOFs Criacionais 
+## 1. GOFs Criacionais
 
 ### 1.1 Factory
 
 É um padrão criacional que define uma interface ou classe abstrata para a criação de um objeto, mas deixe as subclasses decidirem qual classe instanciar. Em outras palavras, as subclasses são responsáveis ​​por criar a instância da classe.
 
-### Factory no Cafofo 
+### Factory no Cafofo
 
 Implementamos o Factory Method para criar uma fábrica de botões. A estrutura do botão permanece a mesma, diferenciando apenas as cores, texto e ações de cada um.
 
-Vamos criar um botão de forma abstrata, porque o mesmo será sobrescrito no final: 
+Vamos criar um botão de forma abstrata, porque o mesmo será sobrescrito no final:
 
 ```javascript
 const button = ({ onClick, icon, type, text, backColor }) => (
@@ -125,6 +126,14 @@ O Padrão Decorator tem como característica o seguinte:
 - O decorador adiciona seu próprio comportamento antes e/ou depois de delegar o objeto que ele decora o resto do trabalho;
 - Os objetos podem ser decorados a qualquer momento, então podemos decorar os objetos de maneira dinâmica no tempo de execução com quantos decoradores desejarmos.
 
-### 2.2 Exemplo 
+### 2.2 Exemplo
 
+## 3. GOFs Comportamentais
+## 3.1 Observer
 
+O padrão observer permite definir um mecanismo de aviso, que notifica múltiplos objetos sobre eventos que ocorrem com os objetos que eles estão observando.
+Este padrão é utilizado quando o acoplamento das classes está crescendo, ou quando se tem ações a serem executadas apoós um determinado processo.
+
+![Observer](img/ObserverGOF.jpg)</p>
+Neste exemplo é mostrado "@permission_classes" que funciona para autenticar quem pode acessar a página LoginView, que no caso, seriam apenas usuários que possuem cadastro na aplicação.</p>
+O observer pode ser utilizado neste caso por que a aplicação espera a notificação de que o usuário está logado, para "avisar" aos outros objetos que agora poderão ser acessados por este usuário.
