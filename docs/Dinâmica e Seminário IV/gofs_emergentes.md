@@ -20,7 +20,7 @@ Prover uma interface simplificada para a utilização de várias interfaces de u
 Seguindo boas práticas de implementação do Django, é possível identificar tal padrão de projeto dentro do arquivo urls.py. Onde na aplicação existem vários apps, e cada um possui seu arquivo url, sendo o ulrs.py do projeto uma fachada para chamar as outras urls.py de cada app.
 
 ##### Implementação
-```
+```python
 # cafofo_api urls.py 
 
 """cafofo_api URL Configuration
@@ -64,10 +64,6 @@ from django.urls import path,include
 from users.views import  ExampleView,  ListUser, CreateUser,UserUpdateDeleteSet
 from rest_framework_simplejwt.views import TokenObtainPairView,TokenRefreshView
 
-
-
-
-
 urlpatterns = [
     path('api/token/', TokenObtainPairView.as_view(), name='token_obtain_pair'),
     path('api/refresh/', TokenRefreshView.as_view(), name='token_refresh'),
@@ -88,7 +84,7 @@ Defina o esqueleto de um algoritmo em uma operação, adiando algumas etapas par
 ### Utilização no Projeto Cafofo
 Essa estrutura comumente é utilizada nos forms dos apps em django, onde se define os campos que estarão presentes em determinados formulários. Contudo, por se tratar de uma api, os campos delimitados a estarem presentes em determinados "formulário" foi definidos no serializer.py de cada app.
 
-```
+```python
 from rest_framework import serializers
 from users.models import CustomUser
 
