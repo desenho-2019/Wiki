@@ -7,6 +7,7 @@
 | 18/10/2019 |  0.2   |         Adicionando padrão Factory          | André Lucas e Victor Rodrigues |
 | 24/10/2019 |  0.3   |         Adicionando informações no padrão factory          | Victor Rodrigues e André Lucas |
 | 24/10/2019 |  0.4   |         Adicionando Padrão Observer          | Caio César Beleza |
+| 24/10/2019 |  0.5   | Adicionando Facade e Template Method | João Saliba |
 
 ## 1. GOFs Criacionais
 
@@ -110,26 +111,12 @@ Este é o diagrama que representa a fábrica de botões:
 
 ![Diagrama-Factory](img/diagrama_factory.png)
 
+#### Implementação 
+Demonstração de como ficaram os elementos após a implementação do padrão Factory.
+![Login-Print](img/login.png)
 
-## 2. GOFs Estruturais
-
-### 2.1 Decorator
-
-O padrão Decorator é utilizado quando precisa-se anexar responsabilidades dinamicamente sem precisar de uma grande hierarquia de subclasses.
-A descrição original do Padrão Decorator é: "O Padrão Decorator anexa responsabilidades adicionais a um objeto dinamicamente. Os decoradores fornecem uma alternativa flexível de subclasse para estender a funcionalidade".
-
-O Padrão Decorator tem como característica o seguinte:
-
-- Os decoradores têm o mesmo supertipo que os objetos que eles decoram;
-- Você pode usar um ou mais decoradores para englobar um objeto;
-- Uma vez que o decorador tem o mesmo supertipo que o objeto decorado, podemos passar um objeto decorado no lugar do objeto original (englobado);
-- O decorador adiciona seu próprio comportamento antes e/ou depois de delegar o objeto que ele decora o resto do trabalho;
-- Os objetos podem ser decorados a qualquer momento, então podemos decorar os objetos de maneira dinâmica no tempo de execução com quantos decoradores desejarmos.
-
-### 2.2 Exemplo
-
-## 3. GOFs Comportamentais
-### 3.1 Observer
+## 2. GOFs Comportamentais
+### 2.1 Observer
 
 O padrão observer permite definir um mecanismo de aviso, que notifica múltiplos objetos sobre eventos que ocorrem com os objetos que eles estão observando.
 Este padrão é utilizado quando o acoplamento das classes está crescendo, ou quando se tem ações a serem executadas apoós um determinado processo.
@@ -177,3 +164,109 @@ class CreateUser(generics.CreateAPIView):
 
 Neste exemplo é mostrado "@permission_classes" que funciona para autenticar quem pode acessar as páginas, que no caso, seriam apenas usuários que possuem cadastro na aplicação.</p>
 O observer pode ser utilizado neste caso por que a aplicação espera a notificação de que o usuário está logado, para "avisar" aos outros objetos que agora poderão ser acessados por este usuário.
+
+### 2.2 Facade
+
+Prover uma interface simplificada para a utilização de várias interfaces de um subsistema.
+
+
+#### 2.2.1 Estrutura Genérica
+
+![Estrutura-Facade](img/Facade.png)
+
+#### 2.2.2 Utilização no projeto Cafofo
+
+Seguindo boas práticas de implementação do Django, é possível identificar tal padrão de projeto dentro do arquivo urls.py. Onde na aplicação existem vários apps, e cada um possui seu arquivo url, sendo o ulrs.py do projeto uma fachada para chamar as outras urls.py de cada app.
+
+##### Implementação
+```
+# cafofo_api urls.py 
+
+"""cafofo_api URL Configuration
+
+The `urlpatterns` list routes URLs to views. For more information please see:
+    https://docs.djangoproject.com/en/2.2/topics/http/urls/
+Examples:
+Function views
+    1. Add an import:  from my_app import views
+    2. Add a URL to urlpatterns:  path('', views.home, name='home')
+Class-based views
+    1. Add an import:  from other_app.views import Home
+    2. Add a URL to urlpatterns:  path('', Home.as_view(), name='home')
+Including another URLconf
+    1. Import the include() function: from django.urls import include, path
+    2. Add a URL to urlpatterns:  path('blog/', include('blog.urls'))
+"""
+from django.contrib import admin
+from django.urls import path,include
+from rest_framework import routers
+from django.conf.urls.static import static
+from django.conf import settings
+
+router = routers.DefaultRouter()
+
+
+urlpatterns = [
+    path('admin/', admin.site.urls),
+    path('', include(router.urls)),
+    path('api-auth/', include('rest_framework.urls', namespace='rest_framework')),
+    path('user/',include('users.urls')),
+   ] + static(settings.MEDIA_URL, document_root= settings.MEDIA_ROOT)
+
+
+   # users urls.py
+
+   from django.conf import settings
+from django.conf.urls.static import static
+from django.urls import path,include
+
+from users.views import  ExampleView,  ListUser, CreateUser,UserUpdateDeleteSet
+from rest_framework_simplejwt.views import TokenObtainPairView,TokenRefreshView
+
+
+
+
+
+urlpatterns = [
+    path('api/token/', TokenObtainPairView.as_view(), name='token_obtain_pair'),
+    path('api/refresh/', TokenRefreshView.as_view(), name='token_refresh'),
+    path('exemple/', ExampleView.as_view()),
+    path('list/',ListUser.as_view()),
+    path('create/',CreateUser.as_view()),
+    path('settings/<int:pk>/',UserUpdateDeleteSet.as_view()),
+   ] + static(settings.MEDIA_URL, document_root= settings.MEDIA_ROOT)
+```
+
+
+### 2.3 Template Method
+Defina o esqueleto de um algoritmo em uma operação, adiando algumas etapas para as subclasses do cliente. Template Method permite que as subclasses redefinam certas etapas de um algoritmo sem alterar a estrutura do algoritmo.
+
+#### 2.3.1 Estrutura Genérica
+![Estrutura-TemplateMethod](img/Template_Method.png)
+
+#### Utilização no Projeto Cafofo
+Essa estrutura comumente é utilizada nos forms dos apps em django, onde se define os campos que estarão presentes em determinados formulários. Contudo, por se tratar de uma api, os campos delimitados a estarem presentes em determinados "formulário" foi definidos no serializer.py de cada app.
+
+```
+from rest_framework import serializers
+from users.models import CustomUser
+
+class UserSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = CustomUser
+        fields = [ 'id','email','password','name','phone','date_of_birth','gender','nationality','facebook','google','photo']
+
+
+class UserCreateUpdateSerializer(serializers.ModelSerializer):
+    password = serializers.CharField(
+        style ={'input_type':'password'}
+    )
+    class Meta:
+        model = CustomUser
+        fields = ['email','password','name','phone','date_of_birth','gender','nationality','facebook','google','photo',]
+```
+
+
+## Referências
+
+[Referência](https://refactoring.guru/design-patterns/)
