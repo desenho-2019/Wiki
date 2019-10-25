@@ -134,6 +134,46 @@ O Padrão Decorator tem como característica o seguinte:
 O padrão observer permite definir um mecanismo de aviso, que notifica múltiplos objetos sobre eventos que ocorrem com os objetos que eles estão observando.
 Este padrão é utilizado quando o acoplamento das classes está crescendo, ou quando se tem ações a serem executadas apoós um determinado processo.
 
-![Observer](img/ObsGOF.jpg)</p>
+```
+from rest_framework.permissions import IsAuthenticated ,AllowAny ,IsAdminUser
+from rest_framework.response import Response
+from rest_framework.views import APIView
+from rest_framework.decorators import permission_classes
+from rest_framework import viewsets, generics
+from users.models import CustomUser
+from users.serializers import UserSerializer,UserCreateUpdateSerializer
+
+
+
+@permission_classes([IsAuthenticated])
+class ExampleView(APIView):
+    #permission_classes = [IsAuthenticated]
+
+    def get(self, request, format=None):
+        content = {
+            'status': 'request was permitted'
+        }
+        return Response(content)
+
+
+
+
+class UserUpdateDeleteSet(generics.RetrieveUpdateDestroyAPIView):
+    queryset = CustomUser.objects.all()
+    serializer_class = UserSerializer
+    permission_classes = (AllowAny,)
+
+
+class ListUser(generics.ListAPIView):
+    #permission_classes = [IsAdminUser]
+    queryset = CustomUser.objects.all()
+    serializer_class = UserSerializer
+
+class CreateUser(generics.CreateAPIView):
+    permission_classes = [AllowAny]
+    queryset = CustomUser.objects.all()
+    serializer_class = UserCreateUpdateSerializer
+```
+
 Neste exemplo é mostrado "@permission_classes" que funciona para autenticar quem pode acessar as páginas, que no caso, seriam apenas usuários que possuem cadastro na aplicação.</p>
 O observer pode ser utilizado neste caso por que a aplicação espera a notificação de que o usuário está logado, para "avisar" aos outros objetos que agora poderão ser acessados por este usuário.
