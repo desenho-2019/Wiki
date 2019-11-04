@@ -33,6 +33,8 @@
 
 ### 1.4 Referências
 
+- [DAS Template](http://sce.uhcl.edu/helm/RationalUnifiedProcess/webtmpl/templates/a_and_d/rup_sad.htm)
+
 ### 1.5 Visão Geral
 
 ## 2. Representação Arquitetural
