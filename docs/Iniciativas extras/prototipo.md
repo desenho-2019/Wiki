@@ -5,6 +5,7 @@
 |:--------:|:--------:|:----------------------:|:---------------------------:|
 |29/08/2019|1.0| Iniciando o documento e adicionando protótipos |André Lucas|
 |25/10/2019|1.1| Adicionando protótipo de criação de anúncio | Weiller Fernandes|
+|03/11/2019|1.2| Adicionando protótipos de página de anúncio disponível e indisponível | Lucas Gomes|
 
 ## 1. Introdução
 
@@ -33,6 +34,18 @@ Autor: André Lucas
 ![Criar Anuncio 1.0](img/prototipo_criar_anuncio.png)
 
 Autor: Weiller Fernandes
+
+### 2.5 Página do Anúncio
+
+#### Anúncio Disponível
+
+![Anúncio Disponível 1.0](img/pagina_anuncio-disponivel.png)
+
+#### Anúncio Indisponível
+
+![Anúncio Disponível 1.1](img/pagina_anuncio-indisponivel.png)
+
+Autor: Lucas Gomes
 
 ## 3. Referências
 
