@@ -3,7 +3,8 @@
 #### Histórico de revisões
 |    Data    | Versão |       Descrição       |    Autor(es)     |
 | :--------: | :----: | :-------------------: | :--------------: |
-| 04/11/2019 |  0.1   | Iniciando o documento e adicionando o Sumário | Weiller Fernandes |
+| 04/11/2019 | 0.1 | Iniciando o documento e adicionando o Sumário | Weiller Fernandes |
+| 04/11/2019 | 0.2 | Adicionando Objetivo e Escopo | Weiller Fernandes |
 
 ## Sumário
   - [1. Introdução](#1-introducao)
@@ -25,9 +26,19 @@
 
 ## 1. Introdução
 
-### 1.1 objetivo
+### 1.1 Objetivo
+
+Este documento apresenta a arquitetura proposta para o projeto Cafofo, realizado na disciplina de Desenho de Software no segundo semestre de 2019. Com o objetivo de capturar e formalizar as principais decisões tomadas com relação à arquitetura do sistema e fornecer uma visão arquitetural abrangente deste, fazendo uso de diversas visões para representar diferentes aspectos das aplicação.
 
 ### 1.2 Escopo
+
+O projeto Cafofo tem como principal objetivo auxiliar alunos de uma Universidade, sejam eles calouros ou veteranos, a encontrarem um local para alugar, república ou casa, visto que é bastante comum as Universidades receberem alunos vindos de outros estados e países e esses tem dificuldade para encontrar um lugar para ficar que seja próximo a faculdade e atenda seus objetivos. Portanto, as principais funcionalidades do Cafofo são:
+
+- Buscar moradias que tenham o foco em receber estudantes universitários.
+- Anunciar casas/repúblicas para aluguel.
+- Editar ou excluir anúncios existentes.
+- Filtrar os anúncios de acordo com suas preferências.
+- Entrar em contato com o anunciante, através de link para o whatsapp, para concretizar o aluguel.
 
 ### 1.3 Definições, Acrônimos e Abreviações
 
