@@ -8,6 +8,7 @@
 | 24/10/2019 |  0.3   |         Adicionando informações no padrão factory          | Victor Rodrigues e André Lucas |
 | 24/10/2019 |  0.4   |         Adicionando Padrão Observer          | Caio César Beleza |
 | 24/10/2019 |  0.5   | Adicionando Facade e Template Method | João Saliba |
+| 03/11/2019 |  0.6   | Adicionando Facade React | Lucas Gomes |
 
 ## 1. GOFs Criacionais
 
@@ -167,7 +168,14 @@ O observer pode ser utilizado neste caso por que a aplicação espera a notifica
 
 ### 2.2 Facade
 
-Prover uma interface simplificada para a utilização de várias interfaces de um subsistema.
+Como o nome sugere Facade, é realmente uma fachada,podemos fazer a seguinte analogia, quando caminhamos em frente a um prédio com uma bela fachada, vemos as belas janelas as paredes bem decoradas, ou seja um ambiente bem amigável, e ignoramos toda a complexidade por trás da obra, a quantidade de salas, todas as empresas que estão neste prédio, deste modo o Facade também age nos projetos de software, dentre seus benefícios, alguns são:
+
+- Reduz a complexidade de uma api, liberando acesso a métodos de alto nível encapsulando os demais.
+- Produz uma interface comum e simplificada.
+- Pode encapsular uma ou mais interfaces mal projetadas em uma mais concisa.
+- Reduz drasticamente o acoplamento entre as camadas do projeto.
+
+Resumindo: Serve para prover uma interface simplificada para a utilização de várias interfaces de um subsistema.
 
 
 #### 2.2.1 Estrutura Genérica
@@ -176,9 +184,12 @@ Prover uma interface simplificada para a utilização de várias interfaces de u
 
 #### 2.2.2 Utilização no projeto Cafofo
 
+O Facade foi utilizado tanto no back end (Django) como no front end (React).
+
 Seguindo boas práticas de implementação do Django, é possível identificar tal padrão de projeto dentro do arquivo urls.py. Onde na aplicação existem vários apps, e cada um possui seu arquivo url, sendo o ulrs.py do projeto uma fachada para chamar as outras urls.py de cada app.
 
-##### Implementação
+No React, segue o mesmo padrão da tecnologia, sendo possível identificar tal padrão de projeto dentro do arquivo App.js, onde na aplicação existem vários *Components*, sendo todos colocados juntos neste arquivo App.js que serve como uma fachada para chamar esses outros *Components* da aplicação.
+##### Implementação Django
 ```
 # cafofo_api urls.py 
 
@@ -236,8 +247,16 @@ urlpatterns = [
     path('settings/<int:pk>/',UserUpdateDeleteSet.as_view()),
    ] + static(settings.MEDIA_URL, document_root= settings.MEDIA_ROOT)
 ```
-
-
+##### Implementação React 
+```
+import Header from './components/header';
+import Login from './pages/login';
+import Main from './pages/main';
+import Adslist from './pages/adslist';
+import Adsinfo from './pages/adsinfo';
+import UserRegister from './pages/userRegister'
+import ForgotPassword from './pages/forgotPassword'
+```
 ### 2.3 Template Method
 Defina o esqueleto de um algoritmo em uma operação, adiando algumas etapas para as subclasses do cliente. Template Method permite que as subclasses redefinam certas etapas de um algoritmo sem alterar a estrutura do algoritmo.
 
