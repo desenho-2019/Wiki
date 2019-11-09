@@ -6,6 +6,7 @@
 | 04/11/2019 | 0.1 | Iniciando o documento e adicionando o Sumário | Weiller Fernandes |
 | 04/11/2019 | 0.2 | Adicionando Objetivo e Escopo | Weiller Fernandes |
 | 09/11/2019 | 0.3 | Adicionando Metas e Restrições | Caio César Beleza |
+| 09/11/2019 | 0.4 | Adicionando Visão de Casos de Uso | Caio César Beleza |
 
 ## Sumário
   - [1. Introdução](#1-introducao)
@@ -67,6 +68,26 @@ As restrições para o projeto Cafofo são as seguintes:
 - A aplicação deve estar pronta para ser apresentada ao final da disciplina;
 
 ## 4. Visão de Casos de Uso
+### 4.1 Atores
+
+|    Atores    |       Descrição       |
+| :--------:   |:-------------------:  |
+| Usuário      |  Quem irá utilizar a plataforma, pessoas que desejam encontrar e/ou anunciar vagas em moradias.                  |
+| Cafofo       | Responsável por conectar os usuários às vagas ofertadas.                      |
+
+### 4.2 Diagrama de Casos de uso
+![Diagrama de Casos de Uso](img/diagrama_casos_de_uso_v2.jpg)
+
+### 4.3 Descrição dos casos de Uso
+
+| Caso de Uso | Descrição |
+| :-------:   | :-------: |
+| UC01 - Cadastro    | O usuário se cadastra na aplicação        |
+| UC02 - Criar anuncio de Cafofo| O usuário anuncia uma vaga em algum Cafofo |
+| UC03 - Buscar Cafofo | O usuário busca uma vaga em um Cafofo|
+| UC04 - Avaliar Cafofo| O usuário faz uma avaliação sobre um cafofo onde tenha se hospedado|
+| UC05 - Conversar com anunciante| O usuário pode tirar dúvidas sobre o cafofo com o anunciante|
+
 
 ## 5. Visão Lógica
 
