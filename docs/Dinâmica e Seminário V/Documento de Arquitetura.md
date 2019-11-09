@@ -8,6 +8,7 @@
 | 09/11/2019 | 0.3 | Adicionando Metas e Restrições | Caio César Beleza |
 | 09/11/2019 | 0.4 | Adicionando Visão de Casos de Uso | Caio César Beleza |
 | 09/11/2019 | 0.5 | Adicionando Visão Lógica geral | Caio César Beleza |
+| 09/11/2019 | 0.6 | Adicionando Definições, Acrônimos e Abreviações e Visão Geral | João Gabriel |
 
 
 ## Sumário
@@ -45,14 +46,35 @@ O projeto Cafofo tem como principal objetivo auxiliar alunos de uma Universidade
 - Entrar em contato com o anunciante, através de link para o whatsapp, para concretizar o aluguel.
 
 ### 1.3 Definições, Acrônimos e Abreviações
+* UnB: Universidade de Brasília
+* FGA: Faculdade do Gama - Campus da Universidade de Brasília
+* API: Application Programming Interface (Interface de Programação de Aplicativos)
+* REST: Representational State Transfer (Transferência de Estado Representacional)
+* HTTP: Hypertext Transfer Protocol (Protocolo de Transferência de Hipertexto)
+* App: Application (Aplicativo)
+* MVC: Model-View-Controller
+* MVT: Model-View-Template
+* UC: Use Case (Caso de Uso)
 
 ### 1.4 Referências
 
 - [DAS Template](http://sce.uhcl.edu/helm/RationalUnifiedProcess/webtmpl/templates/a_and_d/rup_sad.htm)
 
 ### 1.5 Visão Geral
+Neste documentos iremos detalhar as soluções de arquiteturar aplicadas neste projeto. Seguindo os seguitnes tópicos:
+
+* Representação Arquitetural
+* Restrições e Metas Arquiteturais
+* Visão de Casos de Uso
+* Visão Lógica
+* Visão de Processos
+* Visualização da Implementação
+* Visão de Dados
+* Tamanho e Desempenho
+* Qualidade
 
 ## 2. Representação Arquitetural
+
 
 ## 3. Restrições e Metas Arquiteturais
 ### 3.1 Restrições
@@ -60,7 +82,7 @@ As restrições para o projeto Cafofo são as seguintes:
 - Para utilizar a aplicação é preciso ter conexão com a internet;</p>
 - A aplicação será suportada apenas por Web browsers, tais como Google Chrome e Mozilla Firefox;</p>
 - Para a API, será utilizado o framework Django versão 2.1, baseado na linguagem de programação Python, que será utilizada na versão 3.6.</p>
-- Para o Front end, será utilizado React, na versão X.X.X, que é uma biblioteca JavaScript;
+- Para o Front end, será utilizado React, na versão 16.10.1, que é uma biblioteca JavaScript;
 - A versão do Docker utilizada é 18.09.7 e Docker-compose 1.21.2;</p>
 - A equipe possui 8 integrantes;</p>
 - Tempo limitado à aproximadamente 4 meses, que é o tempo de duração da disciplina.</p>
