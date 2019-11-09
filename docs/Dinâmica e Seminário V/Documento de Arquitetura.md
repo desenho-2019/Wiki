@@ -72,7 +72,8 @@ As restrições para o projeto Cafofo são as seguintes:
 
 |    Atores    |       Descrição       |
 | :--------:   |:-------------------:  |
-| Usuário      |  Quem irá utilizar a plataforma, pessoas que desejam encontrar e/ou anunciar vagas em moradias.                  |
+| Usuário   |  Quem irá utilizar a plataforma, pessoas que desejam encontrar e/ou anunciar vagas em Cafofos.                  |
+| Visitante | Pessoas que não são cadastradas, só podem fazer a pesquisa de Cafofos|
 | Cafofo       | Responsável por conectar os usuários às vagas ofertadas.                      |
 
 ### 4.2 Diagrama de Casos de uso
