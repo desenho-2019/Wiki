@@ -62,6 +62,7 @@ O projeto Cafofo tem como principal objetivo auxiliar alunos de uma Universidade
 - [React](https://pt.wikipedia.org/wiki/React_(JavaScript))
 - [DRF](https://www.django-rest-framework.org/)
 - [Postgres](https://www.educacaoetecnologia.org/artigo/2011/06/09/quais-as-vantagens-de-utilizar-postgresql/)
+
 ### 1.5 Visão Geral
 Neste documentos iremos detalhar as soluções de arquiteturar aplicadas neste projeto. Seguindo os seguitnes tópicos:
 
@@ -85,18 +86,14 @@ Para desenvolver este projeto será utilizado o React no front-end e no back-end
 
 ## 2.2. WebApp
 
-
-
 Essa é a camada de interação do usuário. Através dela o usuário será capaz de buscar e adicionar dados à aplicação. Conforme o escopo do projeto e decisão da equipe, a única forma de interação do usuário será essa. Não serão desenvolvidas outras plataformas de interação para o usuário no decorrer da disciplina. Sua funcionalidade principal é requisitar/exportar informações através da  API e apresentar os dados ao usuário.
 
-### 2.3 Tecnologias
+### 2.2.1 Tecnologias
 
 [![WebApp](img/react.png)](img/react.png)
 "O React é uma biblioteca JavaScript de código aberto com foco em criar interfaces de usuário em páginas web. É mantido pelo Facebook, Instagram, outras empresas e uma comunidade de desenvolvedores individuais. É utilizado nos sites da Netflix, Imgur, Feedly, Airbnb, SeatGeek, HelloSign, Walmart e outros." [2]
 
-
-
-## 2.4. API
+## 2.3. API
 
 [![API](img/pythonrest.png)](img/pythonrest.png)
 
@@ -104,34 +101,26 @@ Representational State Transfer (REST) é um estilo de projeto de arquitetura de
 
 "A estrutura REST do Django é um kit de ferramentas poderoso e flexível para criar APIs da Web."[5]
 
-
-
-### 3.1 Tecnologias
+### 2.4. DRF
 
 [![API](img/DRF.png)](img/DRF.png)
 
+Para desenvolver a API, utilizaremos REST com Python e Django Rest Framework. O Django Rest Framework é proveniente do Django que é um Python Web Framework de alto nível possibilitando um desenvolvimento mais rápido e limpo. Trabalhando de forma singular seguindo o modelo MVT(Model - Views - Template), onde considera-se que a própria plataforma exerce o papel de Controler.
 
-Para desenvolver a API, utilizaremos REST com Python e Django Rest Framework.O Django Rest Framework é proveniente do Django que é um Python Web Framework de alto nível possibilitando um desenvolvimento mais rápido e limpo. Trabalhando de forma singular seguindo o modelo MVT(Model - Views - Template), onde considera-se que a própria plataforma exerce o papel de Controler.
+Sendo assim utilizado o Django Rest Framework para facilmente integrar Rest API às funcinalidades do Django
 
-Sendo assim utilizado o Django Rest Framework para facilmente integrar Rest API às funcinalidades do Django 
-
-## 4. Banco de Dados
+## 2.5. Banco de Dados
 
 [![BancoDeDados](img/postgresql.png)](img/postgresql.png)
 
-Por enquanto, o banco de dados escolhido para o projeto é o PostgreSQL. é um sistema gerenciador de banco de dados objeto relacional (SGBD), desenvolvido como projeto de código aberto.
-
-### 4.1 Tecnologias
-
 O PostgreSQL é um sistema gerenciador de banco de dados objeto relacional (SGBD), desenvolvido como projeto de código aberto. As principais vantagens do PostgreSQL são:
-    - o Imunidade ao fato de não ter que pagar por uma licença, muito menos para várias.
-    - o Performance bastante admirável.
-    - o Multi-plataforma.
-    - o Altamente escalável.
-
-
+  - Imunidade ao fato de não ter que pagar por uma licença, muito menos para várias.
+  - Performance bastante admirável.
+  - Multi-plataforma.
+  - Altamente escalável.
 
 ## 3. Restrições e Metas Arquiteturais
+
 ### 3.1 Restrições
 As restrições para o projeto Cafofo são as seguintes:
 - Para utilizar a aplicação é preciso ter conexão com a internet;</p>
