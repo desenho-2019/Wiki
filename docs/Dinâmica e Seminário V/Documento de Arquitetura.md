@@ -5,6 +5,7 @@
 | :--------: | :----: | :-------------------: | :--------------: |
 | 04/11/2019 | 0.1 | Iniciando o documento e adicionando o Sumário | Weiller Fernandes |
 | 04/11/2019 | 0.2 | Adicionando Objetivo e Escopo | Weiller Fernandes |
+| 09/11/2019 | 0.3 | Adicionando Metas e Restrições | Caio César Beleza |
 
 ## Sumário
   - [1. Introdução](#1-introducao)
@@ -51,6 +52,19 @@ O projeto Cafofo tem como principal objetivo auxiliar alunos de uma Universidade
 ## 2. Representação Arquitetural
 
 ## 3. Restrições e Metas Arquiteturais
+### 3.1 Restrições
+As restrições para o projeto Cafofo são as seguintes:
+- Para utilizar a aplicação é preciso ter conexão com a internet;</p>
+- A aplicação será suportada apenas por Web browsers, tais como Google Chrome e Mozilla Firefox;</p>
+- Para a API, será utilizado o framework Django versão 2.1, baseado na linguagem de programação Python, que será utilizada na versão 3.6.</p>
+- Para o Front end, será utilizado React, na versão X.X.X, que é uma biblioteca JavaScript;
+- A versão do Docker utilizada é 18.09.7 e Docker-compose 1.21.2;</p>
+- A equipe possui 8 integrantes;</p>
+- Tempo limitado à aproximadamente 4 meses, que é o tempo de duração da disciplina.</p>
+
+### 3.2 Metas
+- A aplicação deve ser desenvolvida de tal maneira que seja de fácil manutenibilidade;</p>
+- A aplicação deve estar pronta para ser apresentada ao final da disciplina;
 
 ## 4. Visão de Casos de Uso
 
