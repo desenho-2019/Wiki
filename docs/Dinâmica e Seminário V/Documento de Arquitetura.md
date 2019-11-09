@@ -7,6 +7,8 @@
 | 04/11/2019 | 0.2 | Adicionando Objetivo e Escopo | Weiller Fernandes |
 | 09/11/2019 | 0.3 | Adicionando Metas e Restrições | Caio César Beleza |
 | 09/11/2019 | 0.4 | Adicionando Visão de Casos de Uso | Caio César Beleza |
+| 09/11/2019 | 0.5 | Adicionando Visão Lógica geral | Caio César Beleza |
+
 
 ## Sumário
   - [1. Introdução](#1-introducao)
@@ -91,6 +93,21 @@ As restrições para o projeto Cafofo são as seguintes:
 
 
 ## 5. Visão Lógica
+### 5.1 Visão geral
+
+O framework Django utiliza a arquitetura MVT(Model, View, Template), que é uma variação de padrão MVC, onde a camada Controller é substituída pela camada View e é acionada a camada de Template, que é a camada de apresentação que será visualizada pelo usuário.
+
+- **Models** </p>
+  As models são as classes que representam os dados, e são responsáveis pela manutenção dos dados. </p>
+- **Views** </p>
+  A view é Responsável por formatar os dados das Models. Ela se comunica com o banco de dados e transfere os dados para o template, para ser visualizado.</p>  
+
+- **Templates** </p>  
+  Templates consistem na camada estática que o usuário irá interagir.</p>
+  No caso deste projeto, esta camada será representada com a biblioteca de JavaScript, React.</p>
+
+- **Banco de Dados** </p>  
+  Além da arquitetura tradicional do django, o projeto Cafofo terá um banco de dados em PostgreSQL, para o armazenamento dos dados de usuários e dos anuncios de Cafofos.
 
 ## 6. Visão de Processo
 
