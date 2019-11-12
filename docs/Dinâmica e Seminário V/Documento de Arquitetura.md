@@ -178,6 +178,7 @@ O framework Django utiliza a arquitetura MVT(Model, View, Template), que é uma 
   Além da arquitetura tradicional do django, o projeto Cafofo terá um banco de dados em PostgreSQL, para o armazenamento dos dados de usuários e dos anuncios de Cafofos.
 
 ### 5.2 Pacotes Significativos para a Visão de Arquitetural
+#### 5.2.1 Diagrama de Pacotes
   **Versão 1.0**
   ![Diagrama de Pacotes](img/Pacotes2.png)
 
