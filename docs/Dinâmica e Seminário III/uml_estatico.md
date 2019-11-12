@@ -8,6 +8,7 @@
 |18/09/2019|0.3|Adicionando diagrama de pacotes Versão 1.0|[Caio César Beleza](https://github.com/Caiocbeleza)|
 |27/09/2019|0.4|Adicionando versão 1 do diagrama de classe|[Cauê](https://github.com/caue96)
 |06/10/2019|0.5|Adicionando diagrama de pacotes Versão 2.0|[Caio César Beleza](https://github.com/Caiocbeleza)|
+|12/11/2019|0.6|Adicionando diagrama de pacotes Versão 3.0|[Caio César Beleza](https://github.com/Caiocbeleza)|
 
 ## 1. Introdução
 
@@ -31,6 +32,12 @@ Autor: Caio César Beleza
 **Versão 2.0**
 
 [![](img/Pacotes2.0.png)](img/Pacotes2.0.png)
+
+Autor: Caio César Beleza
+
+**Versão 3.0**
+
+[![](img/Pacotes3.png)](img/Pacotes3.png)
 
 Autor: Caio César Beleza
 
