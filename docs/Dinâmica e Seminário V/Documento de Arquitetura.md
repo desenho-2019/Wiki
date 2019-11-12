@@ -9,6 +9,8 @@
 | 09/11/2019 | 0.4 | Adicionando Visão de Casos de Uso | Caio César Beleza |
 | 09/11/2019 | 0.5 | Adicionando Visão Lógica geral | Caio César Beleza |
 | 09/11/2019 | 0.6 | Adicionando Definições, Acrônimos e Abreviações e Visão Geral | João Gabriel |
+| 09/11/2019 | 0.7 | Adicionando Diagrama de Pacotes versão 1.0 | Caio César Beleza |
+| 09/11/2019 | 0.8 | Adicionando Diagrama de Pacotes versão 2.0 | Caio César Beleza |
 
 
 ## Sumário
@@ -174,6 +176,13 @@ O framework Django utiliza a arquitetura MVT(Model, View, Template), que é uma 
 
 - **Banco de Dados** </p>  
   Além da arquitetura tradicional do django, o projeto Cafofo terá um banco de dados em PostgreSQL, para o armazenamento dos dados de usuários e dos anuncios de Cafofos.
+
+### 5.2 Pacotes Significativos para a Visão de Arquitetural
+  **Versão 1.0**
+  ![Diagrama de Pacotes](img/Pacotes2.png)
+
+  **Versão 2.0**
+  ![Diagrama de Pacotes](img/Pacotes3.png)
 
 ## 6. Visão de Processo
 
