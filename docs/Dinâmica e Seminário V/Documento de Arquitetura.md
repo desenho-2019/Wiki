@@ -228,9 +228,17 @@ Com esse diagrama podemos ver as funcionalidades dos principais elementos do sof
 
 
 ## 8. Visão de Implantação
-O diagrama a seguir mostra como os nós físicos do sistema se comunicam.
+O diagrama a seguir mostra como os nós físicos do sistema se comunicam.<br>
   **Versão 1.0**
   ![Diagrama de Implementação](img/DiagramaImplementação.png)
+
+### 8.1 Servidor PostgreSQL
+  Onde está armazenado o banco de dados contendo as informações do projeto Cafofo.
+### 8.2 Servidor da API
+  A API faz o envio das informações, conectando o banco com o template, de acordo com o padrão REST.
+### 8.3 Navegador
+  O Web browser vai receber o WebApp Cafofo e mostrar as informações para o usuário.
+
 
 ## 9. Visão de dados
 
