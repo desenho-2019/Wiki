@@ -75,6 +75,7 @@ O projeto Cafofo tem como principal objetivo auxiliar alunos de uma Universidade
 - [DRF](https://www.django-rest-framework.org/)
 - [Postgres](https://www.educacaoetecnologia.org/artigo/2011/06/09/quais-as-vantagens-de-utilizar-postgresql/)
 - [Diagrama de Pacotes](https://micreiros.com/diagrama-de-pacotes/)
+- [Psycopg](http://initd.org/psycopg/)
 
 ### 1.5 Visão Geral
 Neste documentos iremos detalhar as soluções de arquiteturar aplicadas neste projeto. Seguindo os seguitnes tópicos:
