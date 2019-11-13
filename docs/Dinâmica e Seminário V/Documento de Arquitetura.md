@@ -16,6 +16,7 @@
 | 13/11/2019 | 1.1 | Iniciando Visão de Implementação | Caio César Beleza |
 | 13/11/2019 | 1.2 | Correção do tópico Definições, Acrônimos e Abreviações | Weiller Fernandes |
 | 13/11/2019 | 1.3 | Correção da descrição do Diagrama de Colaboração | Weiller Fernandes |
+| 13/11/2019 | 1.4 | Adicionando tópico Qualidade | Weiller Fernandes |
 
 
 ## Sumário
@@ -232,3 +233,5 @@ Com esse diagrama podemos ver as funcionalidades dos principais elementos do sof
 ## 10. Tamanho e Desempenho
 
 ## 11. Qualidade
+
+Os padrões arquiteturais utilizados no projeto Cafofo contribuem fortemente para a escalabilidade e para a manutenabilidade da aplicação, como o facade por exemplo, presente tanto no back end quanto no front end, que ao ser aplicado reduz a complexidade ao mesmo tempo em que produz uma interface simplificada e reduz o acoplamento entre as camadas do projeto.
