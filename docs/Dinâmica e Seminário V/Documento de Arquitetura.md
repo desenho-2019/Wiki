@@ -233,13 +233,13 @@ O diagrama a seguir mostra como os nós físicos do sistema se comunicam.<br>
   ![Diagrama de Implementação](img/DiagramaImplementação2.png)
 
 ### 8.1 Servidor PostgreSQL
-  Onde está armazenado o banco de dados contendo as informações do projeto Cafofo.
+  Onde está armazenado o banco de dados contendo as informações dos usuários e anuncios do projeto Cafofo.
 ### 8.2 Servidor da API
-  A API faz o envio das informações, conectando o banco com o template, de acordo com o padrão REST.
+  A API faz o envio das informações, buscando e interpretanto os dados do banco e os mandando para o template, seguindo o padrão REST.
 ### 8.3 Psycopg
   Psycopg é um adaptador do PostgreSQL para a linguagem de programação Python. Ele implementa as especificações do "Python DB API 2.0".  
 ### 8.4 Navegador
-  O Web browser vai receber o WebApp Cafofo e mostrar as informações para o usuário.
+  O Web browser(navegador) recebe o WebApp Cafofo, que é a camada de interação do usuário com o sistema.
 
 
 ## 9. Visão de dados
