@@ -13,6 +13,7 @@
 | 12/11/2019 | 0.8 | Adicionando Diagrama de Pacotes versão 2.0 | Caio César Beleza |
 | 12/11/2019 | 0.9 | Adicionando Diagrama de Colaboração | Weiller Fernandes |
 | 12/11/2019 | 1.0 | Adicionando Descrição de Diagrama de Pacotes | Caio César Beleza |
+| 13/11/2019 | 1.1 | Iniciando Visão de Implementação | Caio César Beleza |
 
 
 ## Sumário
@@ -169,17 +170,17 @@ As restrições para o projeto Cafofo são as seguintes:
 
 O framework Django utiliza a arquitetura MVT(Model, View, Template), que é uma variação de padrão MVC, onde a camada Controller é substituída pela camada View e é acionada a camada de Template, que é a camada de apresentação que será visualizada pelo usuário.
 
-- **Models** </p>
+- **Models**<br>
   As models são as classes que representam os dados, e são responsáveis pela manutenção desses dados. </p>
 
-- **Views** </p>
+- **Views**<br>
   A view é responsável por formatar os dados das Models. Ela se comunica com o banco de dados e transfere os dados para o template, onde serão visualizados.</p>  
 
-- **Templates** </p>  
+- **Templates**   
   Templates consistem na camada estática que o usuário irá interagir.</p>
   No caso deste projeto, esta camada será representada com a biblioteca de JavaScript, React.</p>
 
-- **Banco de Dados** </p>  
+- **Banco de Dados**   
   Além da arquitetura tradicional do django, o projeto Cafofo terá um banco de dados em PostgreSQL, para o armazenamento dos dados de usuários e dos anuncios de Cafofos.
 
 #### 5.1.1 Diagrama de Colaboração
@@ -201,6 +202,23 @@ Com esse diagrama podemos ver as funcionalidades dos principais elementos do sof
 ## 6. Visão de Processo
 
 ## 7. Visão de Implementação
+### 7.1 Visão geral
+  O padrão arquitetural utilizado no projeto Cafofo é o padrão MVT com Rest framework, que foi dividido em duas camadas.</p>
+  A API, feita em Django, e utilizando o Rest Framework, é composto em três camadas: Model, View e Serializer.</p>
+  O Front end, foi feito com o React e representa o Template do projeto, que é a camada com a qual o usuário interage.</p>
+#### 7.1.1 API
+- **Model**<br>
+  O Cafofo apresenta na camada Model, os dados de usuários, anuncios e vagas que são persistidos.
+
+- **View**<br>
+  A view controla o fluxo de informações entre a model e o template da aplicação. É a camada que contém a lógica por trás das informações que serão extraídas e exibidas ao usuário.
+
+- **Serializer**<br>
+  Os serializers permitem a conversão de dados em dados nativos do python, o que facilita a renderização de arquivos. São utilizados no projeto para facilitar a comunicação da API com o Front end.
+
+#### 7.1.2 WebApp
+
+
 
 ## 8. Visão de Implantação
 
