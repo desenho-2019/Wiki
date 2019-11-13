@@ -11,6 +11,7 @@
 | 09/11/2019 | 0.6 | Adicionando Definições, Acrônimos e Abreviações e Visão Geral | João Gabriel |
 | 09/11/2019 | 0.7 | Adicionando Diagrama de Pacotes versão 1.0 | Caio César Beleza |
 | 09/11/2019 | 0.8 | Adicionando Diagrama de Pacotes versão 2.0 | Caio César Beleza |
+| 12/11/2019 | 0.9 | Adicionando Diagrama de Colaboração | Weiller Fernandes |
 
 
 ## Sumário
@@ -167,6 +168,7 @@ O framework Django utiliza a arquitetura MVT(Model, View, Template), que é uma 
 
 - **Models** </p>
   As models são as classes que representam os dados, e são responsáveis pela manutenção desses dados. </p>
+
 - **Views** </p>
   A view é responsável por formatar os dados das Models. Ela se comunica com o banco de dados e transfere os dados para o template, onde serão visualizados.</p>  
 
@@ -176,6 +178,12 @@ O framework Django utiliza a arquitetura MVT(Model, View, Template), que é uma 
 
 - **Banco de Dados** </p>  
   Além da arquitetura tradicional do django, o projeto Cafofo terá um banco de dados em PostgreSQL, para o armazenamento dos dados de usuários e dos anuncios de Cafofos.
+
+#### 5.1.1 Diagrama de Colaboração
+
+Com esse diagrama podemos ver as funcionalidades dos principais elementos do software.
+
+![Diagrama de Colaboração](../Dinâmica e Seminário III/img/diagrama_colaboracao_v2.png)
 
 ### 5.2 Pacotes Significativos para a Visão de Arquitetural
 #### 5.2.1 Diagrama de Pacotes
