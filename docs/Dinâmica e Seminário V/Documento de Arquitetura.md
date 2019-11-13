@@ -14,6 +14,8 @@
 | 12/11/2019 | 0.9 | Adicionando Diagrama de Colaboração | Weiller Fernandes |
 | 12/11/2019 | 1.0 | Adicionando Descrição de Diagrama de Pacotes | Caio César Beleza |
 | 13/11/2019 | 1.1 | Iniciando Visão de Implementação | Caio César Beleza |
+| 13/11/2019 | 1.2 | Correção do tópico Definições, Acrônimos e Abreviações | Weiller Fernandes |
+| 13/11/2019 | 1.3 | Correção da descrição do Diagrama de Colaboração | Weiller Fernandes |
 
 
 ## Sumário
@@ -51,8 +53,8 @@ O projeto Cafofo tem como principal objetivo auxiliar alunos de uma Universidade
 - Entrar em contato com o anunciante, através de link para o whatsapp, para concretizar o aluguel.
 
 ### 1.3 Definições, Acrônimos e Abreviações
-* UnB: Universidade de Brasília
-* FGA: Faculdade do Gama - Campus da Universidade de Brasília
+* DAS: Documento de Arquitetura de Software
+* DRF: Django Rest Framework
 * API: Application Programming Interface (Interface de Programação de Aplicativos)
 * REST: Representational State Transfer (Transferência de Estado Representacional)
 * HTTP: Hypertext Transfer Protocol (Protocolo de Transferência de Hipertexto)
@@ -61,6 +63,8 @@ O projeto Cafofo tem como principal objetivo auxiliar alunos de uma Universidade
 * MVT: Model-View-Template
 * UC: Use Case (Caso de Uso)
 * UML: Unified Modeling Language
+* URL: Uniform Resource Locator (Localizador Uniforme de Recursos)
+* SGBD: Sistema de Gestão de Base de Dados
 
 ### 1.4 Referências
 
@@ -98,6 +102,7 @@ Essa é a camada de interação do usuário. Através dela o usuário será capa
 ### 2.2.1 Tecnologias
 
 [![WebApp](img/react.png)](img/react.png)
+
 "O React é uma biblioteca JavaScript de código aberto com foco em criar interfaces de usuário em páginas web. É mantido pelo Facebook, Instagram, outras empresas e uma comunidade de desenvolvedores individuais. É utilizado nos sites da Netflix, Imgur, Feedly, Airbnb, SeatGeek, HelloSign, Walmart e outros." [2]
 
 ## 2.3. API
@@ -185,7 +190,7 @@ O framework Django utiliza a arquitetura MVT(Model, View, Template), que é uma 
 
 #### 5.1.1 Diagrama de Colaboração
 
-Com esse diagrama podemos ver as funcionalidades dos principais elementos do software.
+Com esse diagrama podemos ver as funcionalidades dos principais elementos do software, mostrando a Colaboração dinâmica entre os objetos com ênfase no contexto do sistema.
 
 ![Diagrama de Colaboração](../Dinâmica e Seminário III/img/diagrama_colaboracao_v2.png)
 
