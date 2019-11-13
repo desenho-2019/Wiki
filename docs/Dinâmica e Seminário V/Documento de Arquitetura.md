@@ -58,6 +58,7 @@ O projeto Cafofo tem como principal objetivo auxiliar alunos de uma Universidade
 * MVC: Model-View-Controller
 * MVT: Model-View-Template
 * UC: Use Case (Caso de Uso)
+* UML: Unified Modeling Language
 
 ### 1.4 Referências
 
@@ -65,6 +66,7 @@ O projeto Cafofo tem como principal objetivo auxiliar alunos de uma Universidade
 - [React](https://pt.wikipedia.org/wiki/React_(JavaScript))
 - [DRF](https://www.django-rest-framework.org/)
 - [Postgres](https://www.educacaoetecnologia.org/artigo/2011/06/09/quais-as-vantagens-de-utilizar-postgresql/)
+- [Diagrama de Pacotes](https://micreiros.com/diagrama-de-pacotes/)
 
 ### 1.5 Visão Geral
 Neste documentos iremos detalhar as soluções de arquiteturar aplicadas neste projeto. Seguindo os seguitnes tópicos:
@@ -187,6 +189,8 @@ Com esse diagrama podemos ver as funcionalidades dos principais elementos do sof
 
 ### 5.2 Pacotes Significativos para a Visão de Arquitetural
 #### 5.2.1 Diagrama de Pacotes
+  O diagrama de pacotes é um conceito definido pela UML como um mecanismo de agrupamento genérico, utilizado para dividir um software grande e complexo em partes menores, para que seja mais fácil o entendimento de quem irá contribuir com ele, além de tornar mais prática a manutenção do mesmo. Essas partes menores interagem entre si.</p>
+
   **Versão 1.0**
   ![Diagrama de Pacotes](img/Pacotes2.png)
 
