@@ -9,9 +9,10 @@
 | 09/11/2019 | 0.4 | Adicionando Visão de Casos de Uso | Caio César Beleza |
 | 09/11/2019 | 0.5 | Adicionando Visão Lógica geral | Caio César Beleza |
 | 09/11/2019 | 0.6 | Adicionando Definições, Acrônimos e Abreviações e Visão Geral | João Gabriel |
-| 09/11/2019 | 0.7 | Adicionando Diagrama de Pacotes versão 1.0 | Caio César Beleza |
-| 09/11/2019 | 0.8 | Adicionando Diagrama de Pacotes versão 2.0 | Caio César Beleza |
+| 12/11/2019 | 0.7 | Adicionando Diagrama de Pacotes versão 1.0 | Caio César Beleza |
+| 12/11/2019 | 0.8 | Adicionando Diagrama de Pacotes versão 2.0 | Caio César Beleza |
 | 12/11/2019 | 0.9 | Adicionando Diagrama de Colaboração | Weiller Fernandes |
+| 12/11/2019 | 1.0 | Adicionando Descrição de Diagrama de Pacotes | Caio César Beleza |
 
 
 ## Sumário
