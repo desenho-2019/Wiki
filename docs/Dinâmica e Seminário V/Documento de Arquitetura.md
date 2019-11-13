@@ -230,7 +230,7 @@ Com esse diagrama podemos ver as funcionalidades dos principais elementos do sof
 ## 8. Visão de Implantação
 O diagrama a seguir mostra como os nós físicos do sistema se comunicam.<br>
   **Versão 1.0**
-  ![Diagrama de Implementação](img/DiagramaImplementação.png)
+  ![Diagrama de Implementação](img/DiagramaImplementação2.png)
 
 ### 8.1 Servidor PostgreSQL
   Onde está armazenado o banco de dados contendo as informações do projeto Cafofo.
