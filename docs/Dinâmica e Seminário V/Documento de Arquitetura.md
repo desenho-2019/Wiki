@@ -17,6 +17,7 @@
 | 13/11/2019 | 1.2 | Correção do tópico Definições, Acrônimos e Abreviações | Weiller Fernandes |
 | 13/11/2019 | 1.3 | Correção da descrição do Diagrama de Colaboração | Weiller Fernandes |
 | 13/11/2019 | 1.4 | Adicionando tópico Qualidade | Weiller Fernandes |
+| 13/11/2019 | 1.5 | Iniciando Visão de Implantação e adicionando diagrama | Caio César Beleza |
 
 
 ## Sumário
@@ -227,6 +228,9 @@ Com esse diagrama podemos ver as funcionalidades dos principais elementos do sof
 
 
 ## 8. Visão de Implantação
+O diagrama a seguir mostra como os nós físicos do sistema se comunicam.
+  **Versão 1.0**
+  ![Diagrama de Implementação](img/DiagramaImplementação.png)
 
 ## 9. Visão de dados
 
