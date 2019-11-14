@@ -251,7 +251,7 @@ O diagrama a seguir mostra como os nós físicos do sistema se comunicam.<br>
 
 No primeiro acesso do usuário ao aplicativo, na página principal, o tamanho de todos os recursos totalizam juntos cerca de 473,21KB com um tempo total de 62,63 segundos de carregamento, esses valores diminuem nos acessos subseqüentes, onde cerca de 64KB são armazenados no computador do usuário, melhorando assim o desempenho e diminuindo o tempo de carregamento do aplicativo. [7]
 
-![Desempenho](img/desempenho.png)
+[![](img/desempenho.png)](img/desempenho.png)
 
 ## 11. Qualidade
 
