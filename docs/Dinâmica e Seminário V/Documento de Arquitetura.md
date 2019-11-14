@@ -18,6 +18,7 @@
 | 13/11/2019 | 1.3 | Correção da descrição do Diagrama de Colaboração | Weiller Fernandes |
 | 13/11/2019 | 1.4 | Adicionando tópico Qualidade | Weiller Fernandes |
 | 13/11/2019 | 1.5 | Iniciando Visão de Implantação e adicionando diagrama | Caio César Beleza |
+| 14/11/2019 | 1.6 | Adicionando Tamanho e Desempenho | Weiller Fernandes |
 
 
 ## Sumário
@@ -76,6 +77,7 @@ O projeto Cafofo tem como principal objetivo auxiliar alunos de uma Universidade
 - [Postgres](https://www.educacaoetecnologia.org/artigo/2011/06/09/quais-as-vantagens-de-utilizar-postgresql/)
 - [Diagrama de Pacotes](https://micreiros.com/diagrama-de-pacotes/)
 - [Psycopg](http://initd.org/psycopg/)
+- [Análise de Performance](https://developer.mozilla.org/pt-BR/docs/Tools/Network_Monitor/Performance_analysis)
 
 ### 1.5 Visão Geral
 Neste documentos iremos detalhar as soluções de arquiteturar aplicadas neste projeto. Seguindo os seguitnes tópicos:
@@ -246,6 +248,10 @@ O diagrama a seguir mostra como os nós físicos do sistema se comunicam.<br>
 ## 9. Visão de dados
 
 ## 10. Tamanho e Desempenho
+
+No primeiro acesso do usuário ao aplicativo, na página principal, o tamanho de todos os recursos totalizam juntos cerca de 473,21KB com um tempo total de 62,63 segundos de carregamento, esses valores diminuem nos acessos subseqüentes, onde cerca de 64KB são armazenados no computador do usuário, melhorando assim o desempenho e diminuindo o tempo de carregamento do aplicativo. [7]
+
+![Desempenho](img/desempenho.png)
 
 ## 11. Qualidade
 
