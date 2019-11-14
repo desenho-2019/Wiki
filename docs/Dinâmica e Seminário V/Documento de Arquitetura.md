@@ -169,16 +169,18 @@ As restrições para o projeto Cafofo são as seguintes:
 | Caso de Uso | Descrição |
 | :-------:   | :-------: |
 | UC01 - Cadastro    | O usuário se cadastra na aplicação        |
-| UC02 - Criar anuncio de Cafofo| O usuário anuncia uma vaga em algum Cafofo |
-| UC03 - Buscar Cafofo | O usuário busca uma vaga em um Cafofo|
-| UC04 - Avaliar Cafofo| O usuário faz uma avaliação sobre um cafofo onde tenha se hospedado|
+| UC02 - Login| O usuário cadastrado faz login na aplicação|
+| UC03 - Criar anuncio de Cafofo| O usuário anuncia uma vaga em algum Cafofo |
+| UC04 - Buscar Cafofo | O usuário busca uma vaga em um Cafofo|
 | UC05 - Conversar com anunciante| O usuário pode tirar dúvidas sobre o cafofo com o anunciante|
-
+| UC06 - Reservar Cafofo| O usuário reserva a vaga em um Cafofo que gostou|
+| UC07 - Filtrar anuncios| O usuário filtra os anuncios para saber quais se adequam às suas preferências|
+| UC08 - Avaliar Cafofo| O usuário faz uma avaliação sobre um cafofo onde tenha se hospedado|
 
 ## 5. Visão Lógica
 ### 5.1 Visão geral
 
-O framework Django utiliza a arquitetura MVT(Model, View, Template), que é uma variação de padrão MVC, onde a camada Controller é substituída pela camada View e é acionada a camada de Template, que é a camada de apresentação que será visualizada pelo usuário.
+O framework Django utiliza a arquitetura MVT(Model, View, Template), que é uma variação de padrão MVC, onde a camada Controller é substituída pela camada View e é adicionada a camada de Template, que é a camada de apresentação que será visualizada pelo usuário.
 
 - **Models**<br>
   As models são as classes que representam os dados, e são responsáveis pela manutenção desses dados. </p>
