@@ -19,7 +19,7 @@
 | 13/11/2019 | 1.4 | Adicionando tópico Qualidade | Weiller Fernandes |
 | 13/11/2019 | 1.5 | Iniciando Visão de Implantação e adicionando diagrama | Caio César Beleza |
 | 14/11/2019 | 1.6 | Adicionando Tamanho e Desempenho | Weiller Fernandes |
-
+| 14/11/2019 | 1.7 | Adicionando diagrama de Realização dos Casos de Uso | Caio César Beleza |
 
 ## Sumário
   - [1. Introdução](#1-introducao)
@@ -176,6 +176,13 @@ As restrições para o projeto Cafofo são as seguintes:
 | UC06 - Reservar Cafofo| O usuário reserva a vaga em um Cafofo que gostou|
 | UC07 - Filtrar anuncios| O usuário filtra os anuncios para saber quais se adequam às suas preferências|
 | UC08 - Avaliar Cafofo| O usuário faz uma avaliação sobre um cafofo onde tenha se hospedado|
+
+### 4.4 Realização dos Casos de Uso
+
+É uma visão do funcionamento do sistema escolhendo alguns casos de uso e os cenários nos quais podem ser aplicados.
+
+**Versão 1.0**
+![Realização dos Casos de Uso](img/UCRealizations.png)
 
 ## 5. Visão Lógica
 ### 5.1 Visão geral
