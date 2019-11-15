@@ -20,6 +20,7 @@
 | 13/11/2019 | 1.5 | Iniciando Visão de Implantação e adicionando diagrama | Caio César Beleza |
 | 14/11/2019 | 1.6 | Adicionando Tamanho e Desempenho | Weiller Fernandes |
 | 14/11/2019 | 1.7 | Adicionando diagrama de Realização dos Casos de Uso | Caio César Beleza |
+| 14/11/2019 | 1.8 | Adicionando diagrama de Casos de Uso versão 2.0| Caio César Beleza |
 
 ## Sumário
   - [1. Introdução](#1-introducao)
@@ -162,7 +163,11 @@ As restrições para o projeto Cafofo são as seguintes:
 | Cafofo       | Responsável por conectar os usuários às vagas ofertadas.                      |
 
 ### 4.2 Diagrama de Casos de uso
+**Versão 1.0**
 ![Diagrama de Casos de Uso](img/diagrama_casos_de_uso_v2.jpg)
+
+**Versão 2.0**
+![Diagrama de Casos de Uso](img/UserCase.png)
 
 ### 4.3 Descrição dos casos de Uso
 
@@ -174,8 +179,8 @@ As restrições para o projeto Cafofo são as seguintes:
 | UC04 - Buscar Cafofo | O usuário busca uma vaga em um Cafofo|
 | UC05 - Conversar com anunciante| O usuário pode tirar dúvidas sobre o cafofo com o anunciante|
 | UC06 - Reservar Cafofo| O usuário reserva a vaga em um Cafofo que gostou|
-| UC07 - Filtrar anuncios| O usuário filtra os anuncios para saber quais se adequam às suas preferências|
-| UC08 - Avaliar Cafofo| O usuário faz uma avaliação sobre um cafofo onde tenha se hospedado|
+| UC07 - Avaliar Cafofo| O usuário faz uma avaliação sobre um cafofo onde tenha se hospedado|
+| UC08 - Adicionar Cafofo aos favoritos| O usuário adiciona um cafofo que goste aos seus favoritos|
 
 ### 4.4 Realização dos Casos de Uso
 
