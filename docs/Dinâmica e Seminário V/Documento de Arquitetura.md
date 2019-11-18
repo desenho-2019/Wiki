@@ -9,18 +9,17 @@
 | 09/11/2019 | 0.4 | Adicionando Visão de Casos de Uso | Caio César Beleza |
 | 09/11/2019 | 0.5 | Adicionando Visão Lógica geral | Caio César Beleza |
 | 09/11/2019 | 0.6 | Adicionando Definições, Acrônimos e Abreviações e Visão Geral | João Gabriel |
-| 12/11/2019 | 0.7 | Adicionando Diagrama de Pacotes versão 1.0 | Caio César Beleza |
-| 12/11/2019 | 0.8 | Adicionando Diagrama de Pacotes versão 2.0 | Caio César Beleza |
-| 12/11/2019 | 0.9 | Adicionando Diagrama de Colaboração | Weiller Fernandes |
-| 12/11/2019 | 1.0 | Adicionando Descrição de Diagrama de Pacotes | Caio César Beleza |
-| 13/11/2019 | 1.1 | Iniciando Visão de Implementação | Caio César Beleza |
-| 13/11/2019 | 1.2 | Correção do tópico Definições, Acrônimos e Abreviações | Weiller Fernandes |
-| 13/11/2019 | 1.3 | Correção da descrição do Diagrama de Colaboração | Weiller Fernandes |
-| 13/11/2019 | 1.4 | Adicionando tópico Qualidade | Weiller Fernandes |
-| 13/11/2019 | 1.5 | Iniciando Visão de Implantação e adicionando diagrama | Caio César Beleza |
-| 14/11/2019 | 1.6 | Adicionando Tamanho e Desempenho | Weiller Fernandes |
-| 14/11/2019 | 1.7 | Adicionando diagrama de Realização dos Casos de Uso | Caio César Beleza |
-| 14/11/2019 | 1.8 | Adicionando diagrama de Casos de Uso versão 2.0| Caio César Beleza |
+| 12/11/2019 | 0.7 | Adicionando Diagrama de Pacotes | Caio César Beleza|
+| 12/11/2019 | 0.8 | Adicionando Diagrama de Colaboração | Weiller Fernandes |
+| 13/11/2019 | 0.9 | Iniciando Visão de Implementação | Caio César Beleza |
+| 13/11/2019 | 1.0 | Correção do tópico Definições, Acrônimos e Abreviações | Weiller Fernandes |
+| 13/11/2019 | 1.1 | Correção da descrição do Diagrama de Colaboração | Weiller Fernandes |
+| 13/11/2019 | 1.2 | Adicionando tópico Qualidade | Weiller Fernandes |
+| 13/11/2019 | 1.3 | Iniciando Visão de Implantação e adicionando diagrama | Caio César Beleza |
+| 14/11/2019 | 1.4 | Adicionando Tamanho e Desempenho | Weiller Fernandes |
+| 14/11/2019 | 1.5 | Adicionando diagrama de Realização dos Casos de Uso | Caio César Beleza |
+| 14/11/2019 | 1.6 | Adicionando diagrama de Casos de Uso versão 2.0| Caio César Beleza |
+| 18/11/2019 | 1.7 | Adicionando diagrama de Sequência| Caio César Beleza |
 
 ## Sumário
   - [1. Introdução](#1-introducao)
@@ -79,6 +78,7 @@ O projeto Cafofo tem como principal objetivo auxiliar alunos de uma Universidade
 - [Diagrama de Pacotes](https://micreiros.com/diagrama-de-pacotes/)
 - [Psycopg](http://initd.org/psycopg/)
 - [Análise de Performance](https://developer.mozilla.org/pt-BR/docs/Tools/Network_Monitor/Performance_analysis)
+- [Diagrama de Sequência](https://www.ateomomento.com.br/diagrama-de-sequencia-uml/)
 
 ### 1.5 Visão Geral
 Neste documentos iremos detalhar as soluções de arquiteturar aplicadas neste projeto. Seguindo os seguitnes tópicos:
@@ -153,7 +153,7 @@ As restrições para o projeto Cafofo são as seguintes:<br>
 - Para utilizar a aplicação é preciso ter conexão com a internet;</p>
 - A aplicação será suportada apenas por Web browsers, tais como Google Chrome e Mozilla Firefox;</p>
 - Para a API, será utilizado o framework Django versão 2.1, baseado na linguagem de programação Python, que será utilizada na versão 3.6.</p>
-- Para o Front end, será utilizado React, na versão 16.10.1, que é uma biblioteca JavaScript;
+- Para o Front end, será utilizado React, na versão 16.10.1, que é uma biblioteca JavaScript;</p>
 - A versão do Docker utilizada é 18.09.7 e Docker-compose 1.21.2;</p>
 - A equipe possui 8 integrantes;</p>
 - Tempo limitado à aproximadamente 4 meses, que é o tempo de duração da disciplina.</p>
@@ -210,7 +210,7 @@ O framework Django utiliza a arquitetura MVT(Model, View, Template), que é uma 
   A view é responsável por formatar os dados das Models. Ela se comunica com o banco de dados e transfere os dados para o template, onde serão visualizados.</p>  
 
 - **Templates**   
-  Templates consistem na camada estática que o usuário irá interagir.</p>
+  Templates consistem na camada estática que o usuário irá interagir.<br>
   No caso deste projeto, esta camada será representada com a biblioteca de JavaScript, React.</p>
 
 - **Banco de Dados**   
@@ -233,6 +233,11 @@ Com esse diagrama podemos ver as funcionalidades dos principais elementos do sof
   ![Diagrama de Pacotes](img/Pacotes3.png)
 
 ## 6. Visão de Processo
+### 6.1 Diagrama de Sequência
+  O diagrama de sequência tem como objetivo representar o comportamento de uma funcionalidade, retratando a interação entre os componentes que são utilizados no cenário em que essa funcionalidade é ativada.</p>
+
+  **Diagrama de sequência do fluxo principal da aplicação**
+  ![Diagrama de Sequência](img/Sequencia.png)
 
 ## 7. Visão de Implementação
 ### 7.1 Visão geral
@@ -241,7 +246,7 @@ Com esse diagrama podemos ver as funcionalidades dos principais elementos do sof
   O Front end, foi feito com o React e representa o Template do projeto, que é a camada com a qual o usuário interage.</p>
 #### 7.1.1 API
 - **Model**<br>
-  O Cafofo apresenta na camada Model, os dados de usuários, anuncios e vagas que são persistidos.
+  O Cafofo apresenta, na camada Model, os dados de usuários, anuncios e vagas que são persistidos.
 
 - **View**<br>
   A view controla o fluxo de informações entre a model e o template da aplicação. É a camada que contém a lógica por trás das informações que serão extraídas e exibidas ao usuário.
