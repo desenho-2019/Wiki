@@ -9,6 +9,7 @@
 |02/09/2019|   0.3    | Adicionada Politica de commits |  [Rafael](https://github.com/rafaelbrg) |
 |03/09/2019|   0.4    | Adicionada Politica de branchs |  [Rafael](https://github.com/rafaelbrg) |
 |05/09/2019|   0.5    | Adicionados os topicos 4,5 e 6 |  [Rafael](https://github.com/rafaelbrg) |
+|18/11/2019|   0.6    | Adicionados os topicos 4,5 e 6 |  [Rafael](https://github.com/rafaelbrg) |
 
 
 ## 1. Introdução
@@ -45,9 +46,11 @@
 
 ### 3.2 Política de Branches
 
+<p align = "justify"> A política de branches tem o propósito de definir a forma interna de trabalho quanto a organização/implementação de código e ficou definida conforme a imagem a seguir.</p>
+
 <br>
 
-[![img](img/imgg)](img/img)
+[![](img/branchesModelo.png)](img/branchesModelo.png)
 
 <br>
 
