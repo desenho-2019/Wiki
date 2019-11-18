@@ -140,7 +140,7 @@ O PostgreSQL é um sistema gerenciador de banco de dados objeto relacional (SGBD
 ## 3. Restrições e Metas Arquiteturais
 
 ### 3.1 Restrições
-As restrições para o projeto Cafofo são as seguintes:
+As restrições para o projeto Cafofo são as seguintes:<br>
 - Para utilizar a aplicação é preciso ter conexão com a internet;</p>
 - A aplicação será suportada apenas por Web browsers, tais como Google Chrome e Mozilla Firefox;</p>
 - Para a API, será utilizado o framework Django versão 2.1, baseado na linguagem de programação Python, que será utilizada na versão 3.6.</p>
@@ -211,7 +211,7 @@ O framework Django utiliza a arquitetura MVT(Model, View, Template), que é uma 
 
 Com esse diagrama podemos ver as funcionalidades dos principais elementos do software, mostrando a Colaboração dinâmica entre os objetos com ênfase no contexto do sistema.
 
-![Diagrama de Colaboração](../Dinâmica e Seminário III/img/diagrama_colaboracao_v2.png)
+![Diagrama de Colaboração](img/diagrama_colaboracao_v2.png)
 
 ### 5.2 Pacotes Significativos para a Visão de Arquitetural
 #### 5.2.1 Diagrama de Pacotes
