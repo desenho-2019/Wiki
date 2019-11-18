@@ -117,17 +117,16 @@ A ferramenta foi escolhida devido a sua facilidade de implementação, visto o c
 
 ## 2.3. Back-end
 
+Essa é a camada de integração entre o Front-end e o Banco de Dados. A API é um conjunto de comandos, funções, protocolos e objetos usados para interagir com sistemas externos. Sua função é armazenar e disponibilizar os dados da aplicação para a visualização por parte do usuário.
 
-text
-
-### 2.2.1 Tecnologias
+### 2.3.1 Tecnologias
 [![API](img/pythonrest.png)](img/pythonrest.png)
 
 Representational State Transfer (REST) é um estilo de projeto de arquitetura de desenvolvimento web que se refere à separação lógica dos recursos da API, habilitando fácil acesso, manipulação e dimensionamento. Componentes reusáveis são escritos para serem facilmente adminitrados através de requisições HTTP simples e intuitivas, como GET, POST, PUT, PATCH e DELETE (pode ter mais, mas essas são as mais usadas).
 
 "A estrutura REST do Django é um kit de ferramentas poderoso e flexível para criar APIs da Web."[5]
 
-### 2.4. DRF
+## DRF
 
 [![API](img/DRF.png)](img/DRF.png)
 
@@ -135,7 +134,7 @@ Para desenvolver a API, utilizaremos REST com Python e Django Rest Framework. O 
 
 Sendo assim utilizado o Django Rest Framework para facilmente integrar Rest API às funcinalidades do Django
 
-## 2.5. Banco de Dados
+## 2.4. Banco de Dados
 
 [![BancoDeDados](img/postgresql.png)](img/postgresql.png)
 
@@ -144,6 +143,8 @@ O PostgreSQL é um sistema gerenciador de banco de dados objeto relacional (SGBD
   - Performance bastante admirável.
   - Multi-plataforma.
   - Altamente escalável.
+
+O PostgreSQL foi escolhido por atender a necessidade da equipe e pela facilidade na sua implantação e utilização por parte da equipe de desenvolvimento. Além disso, é um banco de dados consolidado na comunidade e possui uma documentação e suporte vastos.
 
 ## 3. Restrições e Metas Arquiteturais
 
