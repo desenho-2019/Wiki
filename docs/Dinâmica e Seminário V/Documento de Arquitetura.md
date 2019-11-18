@@ -44,11 +44,11 @@
 
 ### 1.1 Objetivo
 
-Este documento apresenta a arquitetura proposta para o projeto Cafofo, realizado na disciplina de Desenho de Software no segundo semestre de 2019. Com o objetivo de capturar e formalizar as principais decisões tomadas com relação à arquitetura do sistema e fornecer uma visão arquitetural abrangente deste, fazendo uso de diversas visões para representar diferentes aspectos das aplicação.
+Este documento apresenta a arquitetura proposta para o projeto Cafofo, realizado na disciplina de Desenho de Software no segundo semestre de 2019. Com o objetivo de capturar e formalizar as principais decisões tomadas com relação à arquitetura do sistema e fornecer uma visão arquitetural abrangente deste, fazendo uso de diversas visões para representar diferentes aspectos da aplicação.
 
 ### 1.2 Escopo
 
-O projeto Cafofo tem como principal objetivo auxiliar alunos de uma Universidade, sejam eles calouros ou veteranos, a encontrarem um local para alugar, república ou casa, visto que é bastante comum as Universidades receberem alunos vindos de outros estados e países e esses tem dificuldade para encontrar um lugar para ficar que seja próximo a faculdade e atenda seus objetivos. Portanto, as principais funcionalidades do Cafofo são:
+O projeto Cafofo tem como principal objetivo auxiliar alunos de uma Universidade, sejam eles calouros ou veteranos, a encontrarem um local para morar. É bastante comum as Universidades receberem alunos vindos de outros estados e países e muitas vezes esses tem dificuldade para encontrar uma moradia que seja próxima a faculdade, ou ambientes habitacionais universítarios. A proposta é que a plataforma seja capaz de centralizar oferta e demanda de apartamentos e quartos universitários. Portanto, as principais funcionalidades do Cafofo são:
 
 - Buscar moradias que tenham o foco em receber estudantes universitários.
 - Anunciar casas/repúblicas para aluguel.
@@ -98,12 +98,14 @@ Neste documentos iremos detalhar as soluções de arquiteturar aplicadas neste p
 ## 2.1. Visão Geral
 [![VisaoGeral](img/arquiteturaDRF_REACT.png)](img/arquiteturaDRF_REACT.png)
 
-Para desenvolver este projeto será utilizado o React no front-end e no back-end será utilizado Django em conjunto ao Django Rest Framework. O Django trabalha com a arquitetura MVT contudo a camanda Template será substituida pelo React. Sendo esta ligação entre DRF(Django Rest Framework)com React através do método de protocolo HTTP através da URL.
+A Figura acima ilustra de forma simples como os componentes do projeto estão organizados. Existem 3 partes principais distintas, são elas: O Back-end, Front-end e o Banco de Dados.
 
 
-## 2.2. WebApp
+## 2.2. Front-end
 
-Essa é a camada de interação do usuário. Através dela o usuário será capaz de buscar e adicionar dados à aplicação. Conforme o escopo do projeto e decisão da equipe, a única forma de interação do usuário será essa. Não serão desenvolvidas outras plataformas de interação para o usuário no decorrer da disciplina. Sua funcionalidade principal é requisitar/exportar informações através da  API e apresentar os dados ao usuário.
+Essa é a camada de interação do usuário. Através dela o usuário é capaz interagir com a aplicação. O acesso se dá pela utilização de um web browser, através de um endereço http específico. Conforme o escopo do projeto e decisão da equipe, essa é a única plataforma disponível ao usuário, não havendo um aplicativo para smartphones ou semelhante.
+
+A nível técnico, sua principal funcionalidade é a comunicação com a API.
 
 ### 2.2.1 Tecnologias
 
@@ -111,8 +113,14 @@ Essa é a camada de interação do usuário. Através dela o usuário será capa
 
 "O React é uma biblioteca JavaScript de código aberto com foco em criar interfaces de usuário em páginas web. É mantido pelo Facebook, Instagram, outras empresas e uma comunidade de desenvolvedores individuais. É utilizado nos sites da Netflix, Imgur, Feedly, Airbnb, SeatGeek, HelloSign, Walmart e outros." [2]
 
-## 2.3. API
+A ferramenta foi escolhida devido a sua facilidade de implementação, visto o conhecimento da equipe, grande suporte da comunidade e documentação abrangente. A sua capacidade de reaproveitamento de código torna a ferramenta desejável no desenvolvimento de produtos de software.
 
+## 2.3. Back-end
+
+
+text
+
+### 2.2.1 Tecnologias
 [![API](img/pythonrest.png)](img/pythonrest.png)
 
 Representational State Transfer (REST) é um estilo de projeto de arquitetura de desenvolvimento web que se refere à separação lógica dos recursos da API, habilitando fácil acesso, manipulação e dimensionamento. Componentes reusáveis são escritos para serem facilmente adminitrados através de requisições HTTP simples e intuitivas, como GET, POST, PUT, PATCH e DELETE (pode ter mais, mas essas são as mais usadas).
