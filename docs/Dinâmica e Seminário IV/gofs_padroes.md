@@ -108,83 +108,25 @@ render() {
 }
 ```
 
+
+
 Este é o diagrama que representa a fábrica de botões:
 
 ![Diagrama-Factory](img/diagrama_factory.png)
+
+
 
 #### Implementação
 Demonstração de como ficaram os elementos após a implementação do padrão Factory.
 ![Login-Print](img/login.png)
 
-## 1.2 Composite
-Composite um padrão de projeto de software utilizado para representar um objeto formado pela composição de objetos similares. Este conjunto de objetos pressupõe uma mesma hierarquia de classes a que ele pertence. Tal padrão é, normalmente, utilizado para representar listas recorrentes - ou recursivas - de elementos. Além disso, este modo de representação hierárquica de classes permite que os elementos contidos em um objeto composto sejam tratados como se fossem um objeto único. Desta forma, os métodos comuns às classes podem ser aplicados, também, ao conjunto agrupado no objeto composto.
-
-### Composite no Cafofo
-
-Implementamos o composite na estrutura de Vacancy. Vacancy é referente a um cômodo que pertence a um cartão criado pelo usuário. Leaf é uma classe herdeira de Vacancy e é o objeto que é criado quando chamado. Composite é um conjunto de Leafs e pode ser tratado com um objeto.
-
-A seguir, segue o código implementado na aplicação.
-
-#### Vacancy Model
-
-```
-from django.db import models
-from cards.models import Card
-from person.models import Person
-
-class Vacancy(models.Model):
-    pictures = []
-    state = models.BooleanField(default=True)
-    card = models.ForeignKey(
-        Card,
-        related_name = 'vacancies',
-        on_delete = models.CASCADE,
-        verbose_name = 'card',
-        blank=True, null=True
-    )
-
-    # class Meta:
-    #     abstract = True
-
-    def get_price(self):
-        if hasattr(self, 'composite'):
-            return self.composite.get_price()
-        if hasattr(self, 'leaf'):
-            return self.leaf.get_price()
-
-    def get_area(self):
-        if hasattr(self, 'composite'):
-            return self.composite.get_area()
-        if hasattr(self, 'leaf'):
-            return self.leaf.get_area()
-
-    def updateState(self):
-        self.state = not self.state
-```
-
-#### Composite Model
-```
-class Composite(Vacancy):
-
-    def get_price(self):
-        price = 0
-        for vacancy in self.vacancies.all():
-            price+= vacancy.get_price()
-        return price
-
-    def get_area(self):
-        area = 0
-        for vacancy in self.vacancies.all():
-            area+= vacancy.get_area()
-        return area
-```
 
 
 ## 2. GOFs Comportamentais
 ### 2.1 Observer
 
-O padrão observer permite definir um mecanismo de aviso, que notifica múltiplos objetos sobre eventos que ocorrem com os objetos que eles estão observando.
-Este padrão é utilizado quando o acoplamento das classes está crescendo, ou quando se tem ações a serem executadas apoós um determinado processo.
+<p align = "justify">O padrão observer permite definir um mecanismo de aviso, que notifica múltiplos objetos sobre eventos que ocorrem com os objetos que eles estão observando.
+Este padrão é utilizado quando o acoplamento das classes está crescendo, ou quando se tem ações a serem executadas apoós um determinado processo.</p>
 
 ```
 from rest_framework.permissions import IsAuthenticated ,AllowAny ,IsAdminUser
@@ -348,6 +290,115 @@ class UserCreateUpdateSerializer(serializers.ModelSerializer):
         model = CustomUser
         fields = ['email','password','name','phone','date_of_birth','gender','nationality','facebook','google','photo',]
 ```
+
+## 3. GOFs Estruturais
+
+## 3.1 Composite
+<p align = "justify">Composite um padrão de projeto de software utilizado para representar um objeto formado pela composição de objetos similares. Este conjunto de objetos pressupõe uma mesma hierarquia de classes a que ele pertence. Tal padrão é, normalmente, utilizado para representar listas recorrentes - ou recursivas - de elementos. Além disso, este modo de representação hierárquica de classes permite que os elementos contidos em um objeto composto sejam tratados como se fossem um objeto único. Desta forma, os métodos comuns às classes podem ser aplicados, também, ao conjunto agrupado no objeto composto.</p>
+
+### Composite no Cafofo
+
+<p align = "justify">Implementamos o composite na estrutura de Vacancy. Vacancy é referente a um cômodo que pertence a um cartão criado pelo usuário. Leaf é uma classe herdeira de Vacancy e é o objeto que é criado quando chamado. Composite é um conjunto de Leafs e pode ser tratado com um objeto.</p>
+
+A implementção é uma adaptação da abstração concebida no projeto.
+
+Segue o código implementado na aplicação.
+
+#### Vacancy Model
+
+```
+from django.db import models
+from cards.models import Card
+from person.models import Person
+
+class Vacancy(models.Model):
+    pictures = []
+    state = models.BooleanField(default=True)
+    card = models.ForeignKey(
+        Card,
+        related_name = 'vacancies',
+        on_delete = models.CASCADE,
+        verbose_name = 'card',
+        blank=True, null=True
+    )
+
+    # class Meta:
+    #     abstract = True
+
+    def get_price(self):
+        if hasattr(self, 'composite'):
+            return self.composite.get_price()
+        if hasattr(self, 'leaf'):
+            return self.leaf.get_price()
+
+    def get_area(self):
+        if hasattr(self, 'composite'):
+            return self.composite.get_area()
+        if hasattr(self, 'leaf'):
+            return self.leaf.get_area()
+
+    def updateState(self):
+        self.state = not self.state
+```
+
+#### Composite Model
+```
+class Composite(Vacancy):
+
+    def get_price(self):
+        price = 0
+        for vacancy in self.vacancies.all():
+            price+= vacancy.get_price()
+        return price
+
+    def get_area(self):
+        area = 0
+        for vacancy in self.vacancies.all():
+            area+= vacancy.get_area()
+        return area
+```
+
+#### Leaf Model
+```
+class Leaf(Vacancy):
+    price = models.FloatField()
+    area = models.FloatField()
+
+    def get_price(self):
+        return self.price
+
+    def get_area(self):
+        return self.area
+```
+
+#### Middleware Model
+```
+class Middleware(models.Model):
+    vacancy = models.OneToOneField(
+        Vacancy,
+        related_name = 'vacancy',
+        on_delete=models.CASCADE,
+        primary_key=True,
+        verbose_name="middleware"
+    )
+    composite = models.ForeignKey(
+        Composite,
+        related_name = 'vacancies',
+        on_delete = models.CASCADE,
+        verbose_name = 'composite',
+        blank=True, null=True
+    )
+
+    def get_area(self):
+        return self.vacancy.get_area()
+
+    def get_price(self):
+        return self.vacancy.get_price()
+
+```
+
+
+
 
 
 ## Referências
