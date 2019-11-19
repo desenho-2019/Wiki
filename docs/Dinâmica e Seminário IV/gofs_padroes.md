@@ -291,6 +291,23 @@ class UserCreateUpdateSerializer(serializers.ModelSerializer):
         fields = ['email','password','name','phone','date_of_birth','gender','nationality','facebook','google','photo',]
 ```
 
+### 2.4 State
+
+State é um padrão de projeto de software usado quando o comportamento de um objeto muda, dependendo do seu estado.
+
+Permite que um objeto altere seu comportamento de acordo com o estado interno que se encontra em um momento dado.
+
+### State no Cafofo
+<p align = "justify">No projeto, nossa implementação foi planejada com uma adaptação. O State esta na forma como as ações do anuncio variam de acordo com o estado dele, ativo ou inativo. Dessa forma, as opções dosponíveis ao usuário variam.</p>
+
+
+##### Versão 1.0
+[![](img/backk.png)](img/backk.png)
+
+#### Versão 2.0
+[![](img/backendDiagram.png)](img/backendDiagram.png)
+
+
 ## 3. GOFs Estruturais
 
 ## 3.1 Composite
