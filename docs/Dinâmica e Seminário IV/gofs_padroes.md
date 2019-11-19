@@ -112,9 +112,19 @@ Este é o diagrama que representa a fábrica de botões:
 
 ![Diagrama-Factory](img/diagrama_factory.png)
 
-#### Implementação 
+#### Implementação
 Demonstração de como ficaram os elementos após a implementação do padrão Factory.
 ![Login-Print](img/login.png)
+
+## 1.2 Composite
+Composite um padrão de projeto de software utilizado para representar um objeto formado pela composição de objetos similares. Este conjunto de objetos pressupõe uma mesma hierarquia de classes a que ele pertence. Tal padrão é, normalmente, utilizado para representar listas recorrentes - ou recursivas - de elementos. Além disso, este modo de representação hierárquica de classes permite que os elementos contidos em um objeto composto sejam tratados como se fossem um objeto único. Desta forma, os métodos comuns às classes podem ser aplicados, também, ao conjunto agrupado no objeto composto.
+
+### Composite no Cafofo
+
+Implementamos o composite na estrutura de Vacancy. Vacancy é referente a um cômodo que pertence a um cartão criado pelo usuário. Leaf é uma classe herdeira de Vacancy e é o objeto que é criado quando chamado. Composite é um conjunto de Leafs e pode ser tratado com um objeto.
+
+A seguir, segue o código implementado na aplicação.
+
 
 ## 2. GOFs Comportamentais
 ### 2.1 Observer
@@ -191,7 +201,7 @@ Seguindo boas práticas de implementação do Django, é possível identificar t
 No React, segue o mesmo padrão da tecnologia, sendo possível identificar tal padrão de projeto dentro do arquivo App.js, onde na aplicação existem vários *Components*, sendo todos colocados juntos neste arquivo App.js que serve como uma fachada para chamar esses outros *Components* da aplicação.
 ##### Implementação Django
 ```
-# cafofo_api urls.py 
+# cafofo_api urls.py
 
 """cafofo_api URL Configuration
 
@@ -247,7 +257,7 @@ urlpatterns = [
     path('settings/<int:pk>/',UserUpdateDeleteSet.as_view()),
    ] + static(settings.MEDIA_URL, document_root= settings.MEDIA_ROOT)
 ```
-##### Implementação React 
+##### Implementação React
 ```
 import Header from './components/header';
 import Login from './pages/login';
