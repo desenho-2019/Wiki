@@ -1,0 +1,2205 @@
+
+
+
+
+<!doctype html>
+<html lang="pt" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      <meta http-equiv="x-ua-compatible" content="ie=edge">
+      
+      
+      
+      
+        <meta name="lang:clipboard.copy" content="Copiar para área de transferência">
+      
+        <meta name="lang:clipboard.copied" content="Copiado para área de transferência">
+      
+        <meta name="lang:search.language" content="pt">
+      
+        <meta name="lang:search.pipeline.stopwords" content="True">
+      
+        <meta name="lang:search.pipeline.trimmer" content="True">
+      
+        <meta name="lang:search.result.none" content="Nenhum resultado encontrado">
+      
+        <meta name="lang:search.result.one" content="1 resultado encontrado">
+      
+        <meta name="lang:search.result.other" content="# resultados encontrados">
+      
+        <meta name="lang:search.tokenizer" content="[\s\-]+">
+      
+      <link rel="shortcut icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.0.4, mkdocs-material-4.5.0">
+    
+    
+      
+        <title>Documento de Arquitetura de Software - Cafofo</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/application.1b62728e.css">
+      
+        <link rel="stylesheet" href="../../assets/stylesheets/application-palette.a8b3c06d.css">
+      
+      
+        
+        
+        <meta name="theme-color" content="#00bcd4">
+      
+    
+    
+      <script src="../../assets/javascripts/modernizr.268332fc.js"></script>
+    
+    
+      
+        <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700|Roboto+Mono&display=fallback">
+        <style>body,input{font-family:"Roboto","Helvetica Neue",Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Roboto Mono","Courier New",Courier,monospace}</style>
+      
+    
+    <link rel="stylesheet" href="../../assets/fonts/material-icons.css">
+    
+    
+    
+      
+    
+    
+  </head>
+  
+    
+    
+    <body dir="ltr" data-md-color-primary="cyan" data-md-color-accent="orange">
+  
+    <svg class="md-svg">
+      <defs>
+        
+        
+          <svg xmlns="http://www.w3.org/2000/svg" width="416" height="448" viewBox="0 0 416 448" id="__github"><path fill="currentColor" d="M160 304q0 10-3.125 20.5t-10.75 19T128 352t-18.125-8.5-10.75-19T96 304t3.125-20.5 10.75-19T128 256t18.125 8.5 10.75 19T160 304zm160 0q0 10-3.125 20.5t-10.75 19T288 352t-18.125-8.5-10.75-19T256 304t3.125-20.5 10.75-19T288 256t18.125 8.5 10.75 19T320 304zm40 0q0-30-17.25-51T296 232q-10.25 0-48.75 5.25Q229.5 240 208 240t-39.25-2.75Q130.75 232 120 232q-29.5 0-46.75 21T56 304q0 22 8 38.375t20.25 25.75 30.5 15 35 7.375 37.25 1.75h42q20.5 0 37.25-1.75t35-7.375 30.5-15 20.25-25.75T360 304zm56-44q0 51.75-15.25 82.75-9.5 19.25-26.375 33.25t-35.25 21.5-42.5 11.875-42.875 5.5T212 416q-19.5 0-35.5-.75t-36.875-3.125-38.125-7.5-34.25-12.875T37 371.5t-21.5-28.75Q0 312 0 260q0-59.25 34-99-6.75-20.5-6.75-42.5 0-29 12.75-54.5 27 0 47.5 9.875t47.25 30.875Q171.5 96 212 96q37 0 70 8 26.25-20.5 46.75-30.25T376 64q12.75 25.5 12.75 54.5 0 21.75-6.75 42 34 40 34 99.5z"/></svg>
+        
+      </defs>
+    </svg>
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" data-md-component="overlay" for="__drawer"></label>
+    
+      <a href="#documento-de-arquitetura-de-software" tabindex="1" class="md-skip">
+        Ir para o conteúdo
+      </a>
+    
+    
+      <header class="md-header" data-md-component="header">
+  <nav class="md-header-nav md-grid">
+    <div class="md-flex">
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <a href="../.." title="Cafofo" class="md-header-nav__button md-logo">
+          
+            <img src="../../favicon.png" width="24" height="24">
+          
+        </a>
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <label class="md-icon md-icon--menu md-header-nav__button" for="__drawer"></label>
+      </div>
+      <div class="md-flex__cell md-flex__cell--stretch">
+        <div class="md-flex__ellipsis md-header-nav__title" data-md-component="title">
+          
+            <span class="md-header-nav__topic">
+              Cafofo
+            </span>
+            <span class="md-header-nav__topic">
+              
+                Documento de Arquitetura de Software
+              
+            </span>
+          
+        </div>
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        
+          <label class="md-icon md-icon--search md-header-nav__button" for="__search"></label>
+          
+<div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" placeholder="Buscar" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="query" data-md-state="active">
+      <label class="md-icon md-search__icon" for="__search"></label>
+      <button type="reset" class="md-icon md-search__icon" data-md-component="reset" tabindex="-1">
+        &#xE5CD;
+      </button>
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="result">
+          <div class="md-search-result__meta">
+            Digite para iniciar a busca
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+        
+      </div>
+      
+        <div class="md-flex__cell md-flex__cell--shrink">
+          <div class="md-header-nav__source">
+            
+
+
+  
+
+<a href="https://github.com/desenho-2019/" title="Ir ao repositório" class="md-source" data-md-source="github">
+  
+    <div class="md-source__icon">
+      <svg viewBox="0 0 24 24" width="24" height="24">
+        <use xlink:href="#__github" width="24" height="24"></use>
+      </svg>
+    </div>
+  
+  <div class="md-source__repository">
+    Cafofo
+  </div>
+</a>
+          </div>
+        </div>
+      
+    </div>
+  </nav>
+</header>
+    
+    <div class="md-container">
+      
+        
+      
+      
+      <main class="md-main" role="main">
+        <div class="md-main__inner md-grid" data-md-component="container">
+          
+            
+              <div class="md-sidebar md-sidebar--primary" data-md-component="navigation">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    <nav class="md-nav md-nav--primary" data-md-level="0">
+  <label class="md-nav__title md-nav__title--site" for="__drawer">
+    <a href="../.." title="Cafofo" class="md-nav__button md-logo">
+      
+        <img src="../../favicon.png" width="48" height="48">
+      
+    </a>
+    Cafofo
+  </label>
+  
+    <div class="md-nav__source">
+      
+
+
+  
+
+<a href="https://github.com/desenho-2019/" title="Ir ao repositório" class="md-source" data-md-source="github">
+  
+    <div class="md-source__icon">
+      <svg viewBox="0 0 24 24" width="24" height="24">
+        <use xlink:href="#__github" width="24" height="24"></use>
+      </svg>
+    </div>
+  
+  <div class="md-source__repository">
+    Cafofo
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../.." title="Arquitetura e Desenho de Software" class="md-nav__link">
+      Arquitetura e Desenho de Software
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-2" type="checkbox" id="nav-2">
+    
+    <label class="md-nav__link" for="nav-2">
+      Definições do Projeto
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-2">
+        Definições do Projeto
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Definições do Projeto/arquitetura/" title="Arquitetura" class="md-nav__link">
+      Arquitetura
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Definições do Projeto/tema/" title="Tema" class="md-nav__link">
+      Tema
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Definições do Projeto/tema_desc/" title="Tema descontinuado" class="md-nav__link">
+      Tema descontinuado
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-3" type="checkbox" id="nav-3">
+    
+    <label class="md-nav__link" for="nav-3">
+      Dinâmica e Seminário I
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-3">
+        Dinâmica e Seminário I
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Dinâmica e Seminário I/5w2h/" title="5W2H" class="md-nav__link">
+      5W2H
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Dinâmica e Seminário I/MapaMental/" title="Mapa Mental" class="md-nav__link">
+      Mapa Mental
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Dinâmica e Seminário I/ModeloCustoProdutivo/" title="Modelo de Custo Produtivo" class="md-nav__link">
+      Modelo de Custo Produtivo
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Dinâmica e Seminário I/argumentacao/" title="Argumentação" class="md-nav__link">
+      Argumentação
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Dinâmica e Seminário I/fishBone/" title="Diagrama Causa-Efeito" class="md-nav__link">
+      Diagrama Causa-Efeito
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Dinâmica e Seminário I/richPicture/" title="Rich Picture" class="md-nav__link">
+      Rich Picture
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Dinâmica e Seminário I/visao/" title="Documento de Visão" class="md-nav__link">
+      Documento de Visão <!-- omit in toc -->
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-4" type="checkbox" id="nav-4">
+    
+    <label class="md-nav__link" for="nav-4">
+      Dinâmica e Seminário II
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-4">
+        Dinâmica e Seminário II
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Dinâmica e Seminário II/Diagrama de Gantt/" title="Diagrama de Gantt" class="md-nav__link">
+      Diagrama de Gantt <!-- omit in toc -->
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Dinâmica e Seminário II/Elicitação de Requisitos/" title="Elicitação de Requisitos" class="md-nav__link">
+      Elicitação de Requisitos
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Dinâmica e Seminário II/Modelagem do Processo/" title="Modelagem do Processo" class="md-nav__link">
+      Modelagem do Processo
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Dinâmica e Seminário II/metodologia/" title="Metodologia" class="md-nav__link">
+      Metodologia
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Dinâmica e Seminário II/metodologia_montada/" title="Fundamentos da metodologia" class="md-nav__link">
+      Fundamentos da metodologia
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Dinâmica e Seminário II/planoDeGCS/" title="Plano de Gestão e Configuração de Software" class="md-nav__link">
+      Plano de Gestão e Configuração de Software
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-5" type="checkbox" id="nav-5">
+    
+    <label class="md-nav__link" for="nav-5">
+      Dinâmica e Seminário III
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-5">
+        Dinâmica e Seminário III
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Dinâmica e Seminário III/uml_dinamico/" title="Modelos UML Dinâmicos" class="md-nav__link">
+      Modelos UML Dinâmicos
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Dinâmica e Seminário III/uml_estatico/" title="Modelos UML Estáticos" class="md-nav__link">
+      Modelos UML Estáticos
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-6" type="checkbox" id="nav-6">
+    
+    <label class="md-nav__link" for="nav-6">
+      Dinâmica e Seminário IV
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-6">
+        Dinâmica e Seminário IV
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Dinâmica e Seminário IV/gofs_emergentes/" title="GOFs Emergentes" class="md-nav__link">
+      GOFs Emergentes
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Dinâmica e Seminário IV/gofs_padroes/" title="GOFs" class="md-nav__link">
+      GOFs
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-7" type="checkbox" id="nav-7" checked>
+    
+    <label class="md-nav__link" for="nav-7">
+      Dinâmica e Seminário V
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-7">
+        Dinâmica e Seminário V
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+    
+      
+    
+    
+      <label class="md-nav__link md-nav__link--active" for="__toc">
+        Documento de Arquitetura de Software
+      </label>
+    
+    <a href="./" title="Documento de Arquitetura de Software" class="md-nav__link md-nav__link--active">
+      Documento de Arquitetura de Software
+    </a>
+    
+      
+<nav class="md-nav md-nav--secondary">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">Índice</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#historico-de-revisoes" class="md-nav__link">
+    Histórico de revisões
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#sumario" class="md-nav__link">
+    Sumário
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#1-introducao" class="md-nav__link">
+    1. Introdução
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#11-objetivo" class="md-nav__link">
+    1.1 Objetivo
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#12-escopo" class="md-nav__link">
+    1.2 Escopo
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#13-definicoes-acronimos-e-abreviacoes" class="md-nav__link">
+    1.3 Definições, Acrônimos e Abreviações
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#14-referencias" class="md-nav__link">
+    1.4 Referências
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#15-visao-geral" class="md-nav__link">
+    1.5 Visão Geral
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-representacao-arquitetural" class="md-nav__link">
+    2. Representação Arquitetural
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#21-visao-geral" class="md-nav__link">
+    2.1. Visão Geral
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#22-front-end" class="md-nav__link">
+    2.2. Front-end
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#221-tecnologias" class="md-nav__link">
+    2.2.1 Tecnologias
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#23-back-end" class="md-nav__link">
+    2.3. Back-end
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#231-tecnologias" class="md-nav__link">
+    2.3.1 Tecnologias
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#drf" class="md-nav__link">
+    DRF
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#24-banco-de-dados" class="md-nav__link">
+    2.4. Banco de Dados
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-restricoes-e-metas-arquiteturais" class="md-nav__link">
+    3. Restrições e Metas Arquiteturais
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#31-restricoes" class="md-nav__link">
+    3.1 Restrições
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#32-metas" class="md-nav__link">
+    3.2 Metas
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-visao-de-casos-de-uso" class="md-nav__link">
+    4. Visão de Casos de Uso
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#41-atores" class="md-nav__link">
+    4.1 Atores
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#42-diagrama-de-casos-de-uso" class="md-nav__link">
+    4.2 Diagrama de Casos de uso
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#43-descricao-dos-casos-de-uso" class="md-nav__link">
+    4.3 Descrição dos casos de Uso
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#44-realizacao-dos-casos-de-uso" class="md-nav__link">
+    4.4 Realização dos Casos de Uso
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5-visao-logica" class="md-nav__link">
+    5. Visão Lógica
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#51-visao-geral" class="md-nav__link">
+    5.1 Visão geral
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#511-diagrama-de-colaboracao" class="md-nav__link">
+    5.1.1 Diagrama de Colaboração
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#52-pacotes-significativos-para-a-visao-de-arquitetural" class="md-nav__link">
+    5.2 Pacotes Significativos para a Visão de Arquitetural
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#521-diagrama-de-pacotes" class="md-nav__link">
+    5.2.1 Diagrama de Pacotes
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#6-visao-de-processo" class="md-nav__link">
+    6. Visão de Processo
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#61-diagrama-de-sequencia" class="md-nav__link">
+    6.1 Diagrama de Sequência
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#7-visao-de-implementacao" class="md-nav__link">
+    7. Visão de Implementação
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#71-visao-geral" class="md-nav__link">
+    7.1 Visão geral
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#711-api" class="md-nav__link">
+    7.1.1 API
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#712-front-end" class="md-nav__link">
+    7.1.2 Front-end
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#8-visao-de-implantacao" class="md-nav__link">
+    8. Visão de Implantação
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#81-servidor-postgresql" class="md-nav__link">
+    8.1 Servidor PostgreSQL
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#82-servidor-da-api" class="md-nav__link">
+    8.2 Servidor da API
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#83-psycopg" class="md-nav__link">
+    8.3 Psycopg
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#84-navegador" class="md-nav__link">
+    8.4 Navegador
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#9-tamanho-e-desempenho" class="md-nav__link">
+    9. Tamanho e Desempenho
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#10-qualidade" class="md-nav__link">
+    10. Qualidade
+  </a>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
+</nav>
+    
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-8" type="checkbox" id="nav-8">
+    
+    <label class="md-nav__link" for="nav-8">
+      Iniciativas extras
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-8">
+        Iniciativas extras
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Iniciativas extras/Introspecção/" title="Introspecção" class="md-nav__link">
+      Introspecção
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Iniciativas extras/backlog/" title="Backlog do produto" class="md-nav__link">
+      Backlog do produto
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Iniciativas extras/identidadevisual/" title="Identidade Visual" class="md-nav__link">
+      Identidade Visual
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Iniciativas extras/prototipo/" title="Protótipo" class="md-nav__link">
+      Protótipo
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-8-5" type="checkbox" id="nav-8-5">
+    
+    <label class="md-nav__link" for="nav-8-5">
+      Sprints
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+      <label class="md-nav__title" for="nav-8-5">
+        Sprints
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Iniciativas extras/Sprints/Sprint 0/" title="Sprint 0" class="md-nav__link">
+      Sprint 0
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Iniciativas extras/Sprints/Sprint 1/" title="Sprint 1" class="md-nav__link">
+      Sprint 1
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Iniciativas extras/Sprints/Sprint 2/" title="Sprint 2" class="md-nav__link">
+      Sprint 2
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-9" type="checkbox" id="nav-9">
+    
+    <label class="md-nav__link" for="nav-9">
+      Reuniões
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-9">
+        Reuniões
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Reuniões/Ata 01/" title="Ata 01" class="md-nav__link">
+      Ata 01
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Reuniões/Ata 02/" title="Ata 02" class="md-nav__link">
+      Ata 02
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Reuniões/Ata 03/" title="Ata 03" class="md-nav__link">
+      Ata 03
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Reuniões/Ata 04/" title="Ata 04" class="md-nav__link">
+      Ata 04
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Reuniões/Ata 05/" title="Ata 05" class="md-nav__link">
+      Ata 05
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Reuniões/Ata 06/" title="Ata 06" class="md-nav__link">
+      Ata 06
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Reuniões/Ata 07/" title="Ata 07" class="md-nav__link">
+      Ata 07
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Reuniões/Ata 08/" title="Ata 08" class="md-nav__link">
+      Ata 08
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Reuniões/Ata 09/" title="Ata 09" class="md-nav__link">
+      Ata 09
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Reuniões/Ata 10/" title="Ata 10" class="md-nav__link">
+      Ata 10
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Reuniões/Ata 11/" title="Ata 11" class="md-nav__link">
+      Ata 11
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="toc">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">Índice</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#historico-de-revisoes" class="md-nav__link">
+    Histórico de revisões
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#sumario" class="md-nav__link">
+    Sumário
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#1-introducao" class="md-nav__link">
+    1. Introdução
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#11-objetivo" class="md-nav__link">
+    1.1 Objetivo
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#12-escopo" class="md-nav__link">
+    1.2 Escopo
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#13-definicoes-acronimos-e-abreviacoes" class="md-nav__link">
+    1.3 Definições, Acrônimos e Abreviações
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#14-referencias" class="md-nav__link">
+    1.4 Referências
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#15-visao-geral" class="md-nav__link">
+    1.5 Visão Geral
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-representacao-arquitetural" class="md-nav__link">
+    2. Representação Arquitetural
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#21-visao-geral" class="md-nav__link">
+    2.1. Visão Geral
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#22-front-end" class="md-nav__link">
+    2.2. Front-end
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#221-tecnologias" class="md-nav__link">
+    2.2.1 Tecnologias
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#23-back-end" class="md-nav__link">
+    2.3. Back-end
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#231-tecnologias" class="md-nav__link">
+    2.3.1 Tecnologias
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#drf" class="md-nav__link">
+    DRF
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#24-banco-de-dados" class="md-nav__link">
+    2.4. Banco de Dados
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-restricoes-e-metas-arquiteturais" class="md-nav__link">
+    3. Restrições e Metas Arquiteturais
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#31-restricoes" class="md-nav__link">
+    3.1 Restrições
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#32-metas" class="md-nav__link">
+    3.2 Metas
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-visao-de-casos-de-uso" class="md-nav__link">
+    4. Visão de Casos de Uso
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#41-atores" class="md-nav__link">
+    4.1 Atores
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#42-diagrama-de-casos-de-uso" class="md-nav__link">
+    4.2 Diagrama de Casos de uso
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#43-descricao-dos-casos-de-uso" class="md-nav__link">
+    4.3 Descrição dos casos de Uso
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#44-realizacao-dos-casos-de-uso" class="md-nav__link">
+    4.4 Realização dos Casos de Uso
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5-visao-logica" class="md-nav__link">
+    5. Visão Lógica
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#51-visao-geral" class="md-nav__link">
+    5.1 Visão geral
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#511-diagrama-de-colaboracao" class="md-nav__link">
+    5.1.1 Diagrama de Colaboração
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#52-pacotes-significativos-para-a-visao-de-arquitetural" class="md-nav__link">
+    5.2 Pacotes Significativos para a Visão de Arquitetural
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#521-diagrama-de-pacotes" class="md-nav__link">
+    5.2.1 Diagrama de Pacotes
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#6-visao-de-processo" class="md-nav__link">
+    6. Visão de Processo
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#61-diagrama-de-sequencia" class="md-nav__link">
+    6.1 Diagrama de Sequência
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#7-visao-de-implementacao" class="md-nav__link">
+    7. Visão de Implementação
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#71-visao-geral" class="md-nav__link">
+    7.1 Visão geral
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#711-api" class="md-nav__link">
+    7.1.1 API
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#712-front-end" class="md-nav__link">
+    7.1.2 Front-end
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#8-visao-de-implantacao" class="md-nav__link">
+    8. Visão de Implantação
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#81-servidor-postgresql" class="md-nav__link">
+    8.1 Servidor PostgreSQL
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#82-servidor-da-api" class="md-nav__link">
+    8.2 Servidor da API
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#83-psycopg" class="md-nav__link">
+    8.3 Psycopg
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#84-navegador" class="md-nav__link">
+    8.4 Navegador
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#9-tamanho-e-desempenho" class="md-nav__link">
+    9. Tamanho e Desempenho
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#10-qualidade" class="md-nav__link">
+    10. Qualidade
+  </a>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content">
+            <article class="md-content__inner md-typeset">
+              
+                
+                  <a href="https://github.com/desenho-2019/edit/master/docs/Dinâmica e Seminário V/Documento de Arquitetura.md" title="Editar esta página" class="md-icon md-content__icon">&#xE3C9;</a>
+                
+                
+                <h1 id="documento-de-arquitetura-de-software">Documento de Arquitetura de Software</h1>
+<h4 id="historico-de-revisoes">Histórico de revisões</h4>
+<table>
+<thead>
+<tr>
+<th align="center">Data</th>
+<th align="center">Versão</th>
+<th align="center">Descrição</th>
+<th align="center">Autor(es)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center">04/11/2019</td>
+<td align="center">0.1</td>
+<td align="center">Iniciando o documento e adicionando o Sumário</td>
+<td align="center">Weiller Fernandes</td>
+</tr>
+<tr>
+<td align="center">04/11/2019</td>
+<td align="center">0.2</td>
+<td align="center">Adicionando Objetivo e Escopo</td>
+<td align="center">Weiller Fernandes</td>
+</tr>
+<tr>
+<td align="center">09/11/2019</td>
+<td align="center">0.3</td>
+<td align="center">Adicionando Metas e Restrições</td>
+<td align="center">Caio César Beleza</td>
+</tr>
+<tr>
+<td align="center">09/11/2019</td>
+<td align="center">0.4</td>
+<td align="center">Adicionando Visão de Casos de Uso</td>
+<td align="center">Caio César Beleza</td>
+</tr>
+<tr>
+<td align="center">09/11/2019</td>
+<td align="center">0.5</td>
+<td align="center">Adicionando Visão Lógica geral</td>
+<td align="center">Caio César Beleza</td>
+</tr>
+<tr>
+<td align="center">09/11/2019</td>
+<td align="center">0.6</td>
+<td align="center">Adicionando Definições, Acrônimos e Abreviações e Visão Geral</td>
+<td align="center">João Gabriel</td>
+</tr>
+<tr>
+<td align="center">12/11/2019</td>
+<td align="center">0.7</td>
+<td align="center">Adicionando Diagrama de Pacotes</td>
+<td align="center">Caio César Beleza</td>
+</tr>
+<tr>
+<td align="center">12/11/2019</td>
+<td align="center">0.8</td>
+<td align="center">Adicionando Diagrama de Colaboração</td>
+<td align="center">Weiller Fernandes</td>
+</tr>
+<tr>
+<td align="center">13/11/2019</td>
+<td align="center">0.9</td>
+<td align="center">Iniciando Visão de Implementação</td>
+<td align="center">Caio César Beleza</td>
+</tr>
+<tr>
+<td align="center">13/11/2019</td>
+<td align="center">1.0</td>
+<td align="center">Correção do tópico Definições, Acrônimos e Abreviações</td>
+<td align="center">Weiller Fernandes</td>
+</tr>
+<tr>
+<td align="center">13/11/2019</td>
+<td align="center">1.1</td>
+<td align="center">Correção da descrição do Diagrama de Colaboração</td>
+<td align="center">Weiller Fernandes</td>
+</tr>
+<tr>
+<td align="center">13/11/2019</td>
+<td align="center">1.2</td>
+<td align="center">Adicionando tópico Qualidade</td>
+<td align="center">Weiller Fernandes</td>
+</tr>
+<tr>
+<td align="center">13/11/2019</td>
+<td align="center">1.3</td>
+<td align="center">Iniciando Visão de Implantação e adicionando diagrama</td>
+<td align="center">Caio César Beleza</td>
+</tr>
+<tr>
+<td align="center">14/11/2019</td>
+<td align="center">1.4</td>
+<td align="center">Adicionando Tamanho e Desempenho</td>
+<td align="center">Weiller Fernandes</td>
+</tr>
+<tr>
+<td align="center">14/11/2019</td>
+<td align="center">1.5</td>
+<td align="center">Adicionando diagrama de Realização dos Casos de Uso</td>
+<td align="center">Caio César Beleza</td>
+</tr>
+<tr>
+<td align="center">14/11/2019</td>
+<td align="center">1.6</td>
+<td align="center">Adicionando diagrama de Casos de Uso versão 2.0</td>
+<td align="center">Caio César Beleza</td>
+</tr>
+<tr>
+<td align="center">18/11/2019</td>
+<td align="center">1.7</td>
+<td align="center">Adicionando diagrama de Sequência</td>
+<td align="center">Caio César Beleza</td>
+</tr>
+</tbody>
+</table>
+<h2 id="sumario">Sumário</h2>
+<ul>
+<li><a href="#1-introducao">1. Introdução</a><ul>
+<li><a href="#11-objetivo">1.1 Objetivo</a></li>
+<li><a href="#12-escopo">1.2 Escopo</a></li>
+<li><a href="#13-definicoes-acronimos-e-abreviacoes">1.3 Definições, Acrônimos e Abreviações</a></li>
+<li><a href="#14-referencias">1.4 Referências</a></li>
+<li><a href="#15-visao-geral">1.5 Visão Geral</a></li>
+</ul>
+</li>
+<li><a href="#2-representacao-arquitetural">2. Representação Arquitetural</a></li>
+<li><a href="#3-restricoes-e-metas-arquiteturais">3. Restrições e Metas Arquiteturais</a></li>
+<li><a href="#4-visao-de-casos-de-uso">4. Visão de Casos de Uso</a></li>
+<li><a href="#5-visao-logica">5. Visão Lógica</a></li>
+<li><a href="#6-visao-de-processo">6. Visão de Processo</a></li>
+<li><a href="#7-visao-de-implementacao">7. Visão de Implementação</a></li>
+<li><a href="#8-visao-de-implantacao">8. Visão de Implantação</a></li>
+<li><a href="#10-tamanho-e-desempenho">9. Tamanho e Desempenho</a></li>
+<li><a href="#11-qualidade">10. Qualidade</a></li>
+</ul>
+<h2 id="1-introducao">1. Introdução</h2>
+<h3 id="11-objetivo">1.1 Objetivo</h3>
+<p>Este documento apresenta a arquitetura proposta para o projeto Cafofo, realizado na disciplina de Desenho de Software no segundo semestre de 2019. Com o objetivo de capturar e formalizar as principais decisões tomadas com relação à arquitetura do sistema e fornecer uma visão arquitetural abrangente deste, fazendo uso de diversas visões para representar diferentes aspectos da aplicação.</p>
+<h3 id="12-escopo">1.2 Escopo</h3>
+<p>O projeto Cafofo tem como principal objetivo auxiliar alunos de uma Universidade, sejam eles calouros ou veteranos, a encontrarem um local para morar. É bastante comum as Universidades receberem alunos vindos de outros estados e países e muitas vezes esses tem dificuldade para encontrar uma moradia que seja próxima a faculdade, ou ambientes habitacionais universítarios. A proposta é que a plataforma seja capaz de centralizar oferta e demanda de apartamentos e quartos universitários. Portanto, as principais funcionalidades do Cafofo são:</p>
+<ul>
+<li>Buscar moradias que tenham o foco em receber estudantes universitários.</li>
+<li>Anunciar casas/repúblicas para aluguel.</li>
+<li>Editar ou excluir anúncios existentes.</li>
+<li>Filtrar os anúncios de acordo com suas preferências.</li>
+<li>Entrar em contato com o anunciante, através de link para o whatsapp, para concretizar o aluguel.</li>
+</ul>
+<h3 id="13-definicoes-acronimos-e-abreviacoes">1.3 Definições, Acrônimos e Abreviações</h3>
+<ul>
+<li>DAS: Documento de Arquitetura de Software</li>
+<li>DRF: Django Rest Framework</li>
+<li>API: Application Programming Interface (Interface de Programação de Aplicativos)</li>
+<li>REST: Representational State Transfer (Transferência de Estado Representacional)</li>
+<li>HTTP: Hypertext Transfer Protocol (Protocolo de Transferência de Hipertexto)</li>
+<li>App: Application (Aplicativo)</li>
+<li>MVC: Model-View-Controller</li>
+<li>MVT: Model-View-Template</li>
+<li>UC: Use Case (Caso de Uso)</li>
+<li>UML: Unified Modeling Language</li>
+<li>URL: Uniform Resource Locator (Localizador Uniforme de Recursos)</li>
+<li>SGBD: Sistema de Gestão de Base de Dados</li>
+</ul>
+<h3 id="14-referencias">1.4 Referências</h3>
+<ul>
+<li><a href="http://sce.uhcl.edu/helm/RationalUnifiedProcess/webtmpl/templates/a_and_d/rup_sad.htm">DAS Template</a></li>
+<li><a href="https://pt.wikipedia.org/wiki/React_(JavaScript)">React</a></li>
+<li><a href="https://www.django-rest-framework.org/">DRF</a></li>
+<li><a href="https://www.educacaoetecnologia.org/artigo/2011/06/09/quais-as-vantagens-de-utilizar-postgresql/">Postgres</a></li>
+<li><a href="https://micreiros.com/diagrama-de-pacotes/">Diagrama de Pacotes</a></li>
+<li><a href="http://initd.org/psycopg/">Psycopg</a></li>
+<li><a href="https://developer.mozilla.org/pt-BR/docs/Tools/Network_Monitor/Performance_analysis">Análise de Performance</a></li>
+<li><a href="https://www.ateomomento.com.br/diagrama-de-sequencia-uml/">Diagrama de Sequência</a></li>
+</ul>
+<h3 id="15-visao-geral">1.5 Visão Geral</h3>
+<p>Neste documentos iremos detalhar as soluções de arquiteturar aplicadas neste projeto. Seguindo os seguitnes tópicos:</p>
+<ul>
+<li>Representação Arquitetural</li>
+<li>Restrições e Metas Arquiteturais</li>
+<li>Visão de Casos de Uso</li>
+<li>Visão Lógica</li>
+<li>Visão de Processos</li>
+<li>Visualização da Implementação</li>
+<li>Visão de Dados</li>
+<li>Tamanho e Desempenho</li>
+<li>Qualidade</li>
+</ul>
+<h2 id="2-representacao-arquitetural">2. Representação Arquitetural</h2>
+<h2 id="21-visao-geral">2.1. Visão Geral</h2>
+<p><a href="../img/arquiteturaDRF_REACT.png"><img alt="VisaoGeral" src="../img/arquiteturaDRF_REACT.png" /></a></p>
+<p>A Figura acima ilustra de forma simples como os componentes do projeto estão organizados. Existem 3 partes principais distintas, são elas: O Back-end, Front-end e o Banco de Dados.</p>
+<h2 id="22-front-end">2.2. Front-end</h2>
+<p>Essa é a camada de interação do usuário. Através dela o usuário é capaz interagir com a aplicação. O acesso se dá pela utilização de um web browser, através de um endereço http específico. Conforme o escopo do projeto e decisão da equipe, essa é a única plataforma disponível ao usuário, não havendo um aplicativo para smartphones ou semelhante.</p>
+<p>A nível técnico, sua principal funcionalidade é a comunicação com a API.</p>
+<h3 id="221-tecnologias">2.2.1 Tecnologias</h3>
+<p><a href="../img/react.png"><img alt="WebApp" src="../img/react.png" /></a></p>
+<p>"O React é uma biblioteca JavaScript de código aberto com foco em criar interfaces de usuário em páginas web. É mantido pelo Facebook, Instagram, outras empresas e uma comunidade de desenvolvedores individuais. É utilizado nos sites da Netflix, Imgur, Feedly, Airbnb, SeatGeek, HelloSign, Walmart e outros." [2]</p>
+<p>A ferramenta foi escolhida devido a sua facilidade de implementação, visto o conhecimento da equipe, grande suporte da comunidade e documentação abrangente. A sua capacidade de reaproveitamento de código torna a ferramenta desejável no desenvolvimento de produtos de software.</p>
+<h2 id="23-back-end">2.3. Back-end</h2>
+<p>Essa é a camada de integração entre o Front-end e o Banco de Dados. A API é um conjunto de comandos, funções, protocolos e objetos usados para interagir com sistemas externos. Sua função é armazenar e disponibilizar os dados da aplicação para a visualização por parte do usuário.</p>
+<h3 id="231-tecnologias">2.3.1 Tecnologias</h3>
+<p><a href="../img/pythonrest.png"><img alt="API" src="../img/pythonrest.png" /></a></p>
+<p>Representational State Transfer (REST) é um estilo de projeto de arquitetura de desenvolvimento web que se refere à separação lógica dos recursos da API, habilitando fácil acesso, manipulação e dimensionamento. Componentes reusáveis são escritos para serem facilmente adminitrados através de requisições HTTP simples e intuitivas, como GET, POST, PUT, PATCH e DELETE (pode ter mais, mas essas são as mais usadas).</p>
+<p>"A estrutura REST do Django é um kit de ferramentas poderoso e flexível para criar APIs da Web."[5]</p>
+<h2 id="drf">DRF</h2>
+<p><a href="../img/DRF.png"><img alt="API" src="../img/DRF.png" /></a></p>
+<p>Para desenvolver a API, utilizaremos REST com Python e Django Rest Framework. O Django Rest Framework é proveniente do Django que é um Python Web Framework de alto nível possibilitando um desenvolvimento mais rápido e limpo. Trabalhando de forma singular seguindo o modelo MVT(Model - Views - Template), onde considera-se que a própria plataforma exerce o papel de Controler.</p>
+<p>Sendo assim utilizado o Django Rest Framework para facilmente integrar Rest API às funcinalidades do Django</p>
+<h2 id="24-banco-de-dados">2.4. Banco de Dados</h2>
+<p><a href="../img/postgresql.png"><img alt="BancoDeDados" src="../img/postgresql.png" /></a></p>
+<p>O PostgreSQL é um sistema gerenciador de banco de dados objeto relacional (SGBD), desenvolvido como projeto de código aberto. As principais vantagens do PostgreSQL são:
+  - Imunidade ao fato de não ter que pagar por uma licença, muito menos para várias.
+  - Performance bastante admirável.
+  - Multi-plataforma.
+  - Altamente escalável.</p>
+<p>O PostgreSQL foi escolhido por atender a necessidade da equipe e pela facilidade na sua implantação e utilização por parte da equipe de desenvolvimento. Além disso, é um banco de dados consolidado na comunidade e possui uma documentação e suporte vastos.</p>
+<h2 id="3-restricoes-e-metas-arquiteturais">3. Restrições e Metas Arquiteturais</h2>
+<h3 id="31-restricoes">3.1 Restrições</h3>
+<p>As restrições para o projeto Cafofo são as seguintes:<br>
+- Para utilizar a aplicação é preciso ter conexão com a internet;</p>
+- A aplicação será suportada apenas por Web browsers, tais como Google Chrome e Mozilla Firefox;</p>
+- Para a API, será utilizado o framework Django versão 2.1, baseado na linguagem de programação Python, que será utilizada na versão 3.6.</p>
+- Para o Front end, será utilizado React, na versão 16.10.1, que é uma biblioteca JavaScript;</p>
+- A versão do Docker utilizada é 18.09.7 e Docker-compose 1.21.2;</p>
+- A equipe possui 8 integrantes;</p>
+- Tempo limitado à aproximadamente 4 meses, que é o tempo de duração da disciplina.</p></p>
+<h3 id="32-metas">3.2 Metas</h3>
+<ul>
+<li>A aplicação deve ser desenvolvida de tal maneira que seja de fácil manutenibilidade;</p></li>
+<li>A aplicação deve estar pronta para ser apresentada ao final da disciplina;</li>
+</ul>
+<h2 id="4-visao-de-casos-de-uso">4. Visão de Casos de Uso</h2>
+<h3 id="41-atores">4.1 Atores</h3>
+<table>
+<thead>
+<tr>
+<th align="center">Atores</th>
+<th align="center">Descrição</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center">Usuário</td>
+<td align="center">Quem irá utilizar a plataforma, pessoas que desejam encontrar e/ou anunciar vagas em Cafofos.</td>
+</tr>
+<tr>
+<td align="center">Visitante</td>
+<td align="center">Pessoas que não são cadastradas, só podem fazer a pesquisa de Cafofos</td>
+</tr>
+<tr>
+<td align="center">Cafofo</td>
+<td align="center">Responsável por conectar os usuários às vagas ofertadas.</td>
+</tr>
+</tbody>
+</table>
+<h3 id="42-diagrama-de-casos-de-uso">4.2 Diagrama de Casos de uso</h3>
+<p><strong>Versão 1.0</strong>
+<img alt="Diagrama de Casos de Uso" src="../img/diagrama_casos_de_uso_v2.jpg" /></p>
+<p><strong>Versão 2.0</strong>
+<img alt="Diagrama de Casos de Uso" src="../img/UserCase.png" /></p>
+<h3 id="43-descricao-dos-casos-de-uso">4.3 Descrição dos casos de Uso</h3>
+<table>
+<thead>
+<tr>
+<th align="center">Caso de Uso</th>
+<th align="center">Descrição</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center">UC01 - Cadastro</td>
+<td align="center">O usuário se cadastra na aplicação</td>
+</tr>
+<tr>
+<td align="center">UC02 - Login</td>
+<td align="center">O usuário cadastrado faz login na aplicação</td>
+</tr>
+<tr>
+<td align="center">UC03 - Criar anuncio de Cafofo</td>
+<td align="center">O usuário anuncia uma vaga em algum Cafofo</td>
+</tr>
+<tr>
+<td align="center">UC04 - Buscar Cafofo</td>
+<td align="center">O usuário busca uma vaga em um Cafofo</td>
+</tr>
+<tr>
+<td align="center">UC05 - Conversar com anunciante</td>
+<td align="center">O usuário pode tirar dúvidas sobre o cafofo com o anunciante</td>
+</tr>
+<tr>
+<td align="center">UC06 - Reservar Cafofo</td>
+<td align="center">O usuário reserva a vaga em um Cafofo que gostou</td>
+</tr>
+<tr>
+<td align="center">UC07 - Avaliar Cafofo</td>
+<td align="center">O usuário faz uma avaliação sobre um cafofo onde tenha se hospedado</td>
+</tr>
+<tr>
+<td align="center">UC08 - Adicionar Cafofo aos favoritos</td>
+<td align="center">O usuário adiciona um cafofo que goste aos seus favoritos</td>
+</tr>
+</tbody>
+</table>
+<h3 id="44-realizacao-dos-casos-de-uso">4.4 Realização dos Casos de Uso</h3>
+<p>É uma visão do funcionamento do sistema escolhendo alguns casos de uso e os cenários nos quais podem ser aplicados.</p>
+<p><strong>Versão 1.0</strong>
+<img alt="Realização dos Casos de Uso" src="../img/UCRealizations.png" /></p>
+<h2 id="5-visao-logica">5. Visão Lógica</h2>
+<h3 id="51-visao-geral">5.1 Visão geral</h3>
+<p>O framework Django utiliza a arquitetura MVT(Model, View, Template), que é uma variação de padrão MVC, onde a camada Controller é substituída pela camada View e é adicionada a camada de Template, que é a camada de apresentação que será visualizada pelo usuário.</p>
+<ul>
+<li>
+<p><strong>Models</strong><br>
+  As models são as classes que representam os dados, e são responsáveis pela manutenção desses dados. </p></p>
+</li>
+<li>
+<p><strong>Views</strong><br>
+  A view é responsável por formatar os dados das Models. Ela se comunica com o banco de dados e transfere os dados para o template, onde serão visualizados.</p>  </p>
+</li>
+<li>
+<p><strong>Templates</strong> <br />
+  Templates consistem na camada estática que o usuário irá interagir.<br>
+  No caso deste projeto, esta camada será representada com a biblioteca de JavaScript, React.</p></p>
+</li>
+<li>
+<p><strong>Banco de Dados</strong> <br />
+  Além da arquitetura tradicional do django, o projeto Cafofo terá um banco de dados em PostgreSQL, para o armazenamento dos dados de usuários e dos anuncios de Cafofos.</p>
+</li>
+</ul>
+<h4 id="511-diagrama-de-colaboracao">5.1.1 Diagrama de Colaboração</h4>
+<p>Com esse diagrama podemos ver as funcionalidades dos principais elementos do software, mostrando a Colaboração dinâmica entre os objetos com ênfase no contexto do sistema.</p>
+<p><img alt="Diagrama de Colaboração" src="../img/diagrama_colaboracao_v2.png" /></p>
+<h3 id="52-pacotes-significativos-para-a-visao-de-arquitetural">5.2 Pacotes Significativos para a Visão de Arquitetural</h3>
+<h4 id="521-diagrama-de-pacotes">5.2.1 Diagrama de Pacotes</h4>
+<p>O diagrama de pacotes é um conceito definido pela UML como um mecanismo de agrupamento genérico, utilizado para dividir um software grande e complexo em partes menores, para que seja mais fácil o entendimento de quem irá contribuir com ele, além de tornar mais prática a manutenção do mesmo. Essas partes menores interagem entre si.</p></p>
+<p><strong>Versão 1.0</strong>
+  <img alt="Diagrama de Pacotes" src="../img/Pacotes2.png" /></p>
+<p><strong>Versão 2.0</strong>
+  <img alt="Diagrama de Pacotes" src="../img/Pacotes3.png" /></p>
+<h2 id="6-visao-de-processo">6. Visão de Processo</h2>
+<h3 id="61-diagrama-de-sequencia">6.1 Diagrama de Sequência</h3>
+<p>O diagrama de sequência tem como objetivo representar o comportamento de uma funcionalidade, retratando a interação entre os componentes que são utilizados no cenário em que essa funcionalidade é ativada.</p></p>
+<p><strong>Diagrama de sequência do fluxo principal da aplicação</strong>
+  <img alt="Diagrama de Sequência" src="../img/Sequencia.png" /></p>
+<h2 id="7-visao-de-implementacao">7. Visão de Implementação</h2>
+<h3 id="71-visao-geral">7.1 Visão geral</h3>
+<p>O padrão arquitetural utilizado no projeto Cafofo é o padrão MVT com Rest framework, que foi dividido em duas camadas.</p>
+  A API, feita em Django, e utilizando o Rest Framework, é composto em três camadas: Model, View e Serializer.</p>
+  O Front end, foi feito com o React e representa o Template do projeto, que é a camada com a qual o usuário interage.</p></p>
+<h4 id="711-api">7.1.1 API</h4>
+<ul>
+<li>
+<p><strong>Model</strong><br>
+  O Cafofo apresenta, na camada Model, os dados de usuários, anuncios e vagas que são persistidos.</p>
+</li>
+<li>
+<p><strong>View</strong><br>
+  A view controla o fluxo de informações entre a model e o template da aplicação. É a camada que contém a lógica por trás das informações que serão extraídas e exibidas ao usuário.</p>
+</li>
+<li>
+<p><strong>Serializer</strong><br>
+  Os serializers permitem a conversão de dados em dados nativos do python, o que facilita a renderização de arquivos. São utilizados no projeto para facilitar a comunicação da API com o Front end.</p>
+</li>
+</ul>
+<h4 id="712-front-end">7.1.2 Front-end</h4>
+<ul>
+<li>
+<p><strong>Elementos</strong><br>
+  Os elementos do React são objetos simples que representam o tipo do componente e as props.</p>
+</li>
+<li>
+<p><strong>Components</strong><br>
+  Os componentes podem ser classes ou funções mas todos eles "se renderizam" a um elemento.</p>
+</li>
+<li>
+<p><strong>Montagem</strong><br>
+  “Montagem” é um processo recursivo que cria uma árvore DOM ou Nativa dado um elemento React de nível superior (e.g. <App />).</p>
+</li>
+</ul>
+<h2 id="8-visao-de-implantacao">8. Visão de Implantação</h2>
+<p>O diagrama a seguir mostra como os nós físicos do sistema se comunicam.<br>
+  <strong>Versão 1.0</strong>
+  <img alt="Diagrama de Implementação" src="../img/DiagramaImplementação2.png" /></p>
+<h3 id="81-servidor-postgresql">8.1 Servidor PostgreSQL</h3>
+<p>Onde está armazenado o banco de dados contendo as informações dos usuários e anuncios do projeto Cafofo.</p>
+<h3 id="82-servidor-da-api">8.2 Servidor da API</h3>
+<p>A API faz o envio das informações, buscando e interpretanto os dados do banco e os mandando para o template, seguindo o padrão REST.</p>
+<h3 id="83-psycopg">8.3 Psycopg</h3>
+<p>Psycopg é um adaptador do PostgreSQL para a linguagem de programação Python. Ele implementa as especificações do "Python DB API 2.0".  </p>
+<h3 id="84-navegador">8.4 Navegador</h3>
+<p>O Web browser(navegador) recebe o WebApp Cafofo, que é a camada de interação do usuário com o sistema.</p>
+<h2 id="9-tamanho-e-desempenho">9. Tamanho e Desempenho</h2>
+<p>No primeiro acesso do usuário ao aplicativo, na página principal, o tamanho de todos os recursos totalizam juntos cerca de 473,21KB com um tempo total de 62,63 segundos de carregamento, esses valores diminuem nos acessos subseqüentes, onde cerca de 64KB são armazenados no computador do usuário, melhorando assim o desempenho e diminuindo o tempo de carregamento do aplicativo. [7]</p>
+<p><a href="../img/desempenho.png"><img alt="" src="../img/desempenho.png" /></a></p>
+<h2 id="10-qualidade">10. Qualidade</h2>
+<p>Os padrões arquiteturais utilizados no projeto Cafofo contribuem fortemente para a escalabilidade e para a manutenabilidade da aplicação, como o facade por exemplo, presente tanto no back end quanto no front end, que ao ser aplicado reduz a complexidade ao mesmo tempo em que produz uma interface simplificada e reduz o acoplamento entre as camadas do projeto.</p>
+                
+                  
+                
+              
+              
+                
+
+
+              
+            </article>
+          </div>
+        </div>
+      </main>
+      
+        
+<footer class="md-footer">
+  
+    <div class="md-footer-nav">
+      <nav class="md-footer-nav__inner md-grid">
+        
+          <a href="../../Dinâmica e Seminário IV/gofs_padroes/" title="GOFs" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
+            </div>
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  Anterior
+                </span>
+                GOFs
+              </span>
+            </div>
+          </a>
+        
+        
+          <a href="../../Iniciativas extras/Introspecção/" title="Introspecção" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  Próximo
+                </span>
+                Introspecção
+              </span>
+            </div>
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-forward md-footer-nav__button"></i>
+            </div>
+          </a>
+        
+      </nav>
+    </div>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-footer-copyright">
+        
+        powered by
+        <a href="https://www.mkdocs.org">MkDocs</a>
+        and
+        <a href="https://squidfunk.github.io/mkdocs-material/">
+          Material for MkDocs</a>
+      </div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    
+      <script src="../../assets/javascripts/application.a8b5e56f.js"></script>
+      
+        
+        
+          
+          <script src="../../assets/javascripts/lunr/lunr.stemmer.support.js"></script>
+          
+            
+              
+              
+                <script src="../../assets/javascripts/lunr/lunr.pt.js"></script>
+              
+            
+          
+          
+        
+      
+      <script>app.initialize({version:"1.0.4",url:{base:"../.."}})</script>
+      
+    
+  </body>
+</html>

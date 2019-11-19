@@ -1,0 +1,1329 @@
+
+
+
+
+<!doctype html>
+<html lang="pt" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      <meta http-equiv="x-ua-compatible" content="ie=edge">
+      
+      
+      
+      
+        <meta name="lang:clipboard.copy" content="Copiar para área de transferência">
+      
+        <meta name="lang:clipboard.copied" content="Copiado para área de transferência">
+      
+        <meta name="lang:search.language" content="pt">
+      
+        <meta name="lang:search.pipeline.stopwords" content="True">
+      
+        <meta name="lang:search.pipeline.trimmer" content="True">
+      
+        <meta name="lang:search.result.none" content="Nenhum resultado encontrado">
+      
+        <meta name="lang:search.result.one" content="1 resultado encontrado">
+      
+        <meta name="lang:search.result.other" content="# resultados encontrados">
+      
+        <meta name="lang:search.tokenizer" content="[\s\-]+">
+      
+      <link rel="shortcut icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.0.4, mkdocs-material-4.5.0">
+    
+    
+      
+        <title>Elicitação de Requisitos - Cafofo</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/application.1b62728e.css">
+      
+        <link rel="stylesheet" href="../../assets/stylesheets/application-palette.a8b3c06d.css">
+      
+      
+        
+        
+        <meta name="theme-color" content="#00bcd4">
+      
+    
+    
+      <script src="../../assets/javascripts/modernizr.268332fc.js"></script>
+    
+    
+      
+        <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700|Roboto+Mono&display=fallback">
+        <style>body,input{font-family:"Roboto","Helvetica Neue",Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Roboto Mono","Courier New",Courier,monospace}</style>
+      
+    
+    <link rel="stylesheet" href="../../assets/fonts/material-icons.css">
+    
+    
+    
+      
+    
+    
+  </head>
+  
+    
+    
+    <body dir="ltr" data-md-color-primary="cyan" data-md-color-accent="orange">
+  
+    <svg class="md-svg">
+      <defs>
+        
+        
+          <svg xmlns="http://www.w3.org/2000/svg" width="416" height="448" viewBox="0 0 416 448" id="__github"><path fill="currentColor" d="M160 304q0 10-3.125 20.5t-10.75 19T128 352t-18.125-8.5-10.75-19T96 304t3.125-20.5 10.75-19T128 256t18.125 8.5 10.75 19T160 304zm160 0q0 10-3.125 20.5t-10.75 19T288 352t-18.125-8.5-10.75-19T256 304t3.125-20.5 10.75-19T288 256t18.125 8.5 10.75 19T320 304zm40 0q0-30-17.25-51T296 232q-10.25 0-48.75 5.25Q229.5 240 208 240t-39.25-2.75Q130.75 232 120 232q-29.5 0-46.75 21T56 304q0 22 8 38.375t20.25 25.75 30.5 15 35 7.375 37.25 1.75h42q20.5 0 37.25-1.75t35-7.375 30.5-15 20.25-25.75T360 304zm56-44q0 51.75-15.25 82.75-9.5 19.25-26.375 33.25t-35.25 21.5-42.5 11.875-42.875 5.5T212 416q-19.5 0-35.5-.75t-36.875-3.125-38.125-7.5-34.25-12.875T37 371.5t-21.5-28.75Q0 312 0 260q0-59.25 34-99-6.75-20.5-6.75-42.5 0-29 12.75-54.5 27 0 47.5 9.875t47.25 30.875Q171.5 96 212 96q37 0 70 8 26.25-20.5 46.75-30.25T376 64q12.75 25.5 12.75 54.5 0 21.75-6.75 42 34 40 34 99.5z"/></svg>
+        
+      </defs>
+    </svg>
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" data-md-component="overlay" for="__drawer"></label>
+    
+      <a href="#historico-de-revisoes" tabindex="1" class="md-skip">
+        Ir para o conteúdo
+      </a>
+    
+    
+      <header class="md-header" data-md-component="header">
+  <nav class="md-header-nav md-grid">
+    <div class="md-flex">
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <a href="../.." title="Cafofo" class="md-header-nav__button md-logo">
+          
+            <img src="../../favicon.png" width="24" height="24">
+          
+        </a>
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <label class="md-icon md-icon--menu md-header-nav__button" for="__drawer"></label>
+      </div>
+      <div class="md-flex__cell md-flex__cell--stretch">
+        <div class="md-flex__ellipsis md-header-nav__title" data-md-component="title">
+          
+            <span class="md-header-nav__topic">
+              Cafofo
+            </span>
+            <span class="md-header-nav__topic">
+              
+                Elicitação de Requisitos
+              
+            </span>
+          
+        </div>
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        
+          <label class="md-icon md-icon--search md-header-nav__button" for="__search"></label>
+          
+<div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" placeholder="Buscar" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="query" data-md-state="active">
+      <label class="md-icon md-search__icon" for="__search"></label>
+      <button type="reset" class="md-icon md-search__icon" data-md-component="reset" tabindex="-1">
+        &#xE5CD;
+      </button>
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="result">
+          <div class="md-search-result__meta">
+            Digite para iniciar a busca
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+        
+      </div>
+      
+        <div class="md-flex__cell md-flex__cell--shrink">
+          <div class="md-header-nav__source">
+            
+
+
+  
+
+<a href="https://github.com/desenho-2019/" title="Ir ao repositório" class="md-source" data-md-source="github">
+  
+    <div class="md-source__icon">
+      <svg viewBox="0 0 24 24" width="24" height="24">
+        <use xlink:href="#__github" width="24" height="24"></use>
+      </svg>
+    </div>
+  
+  <div class="md-source__repository">
+    Cafofo
+  </div>
+</a>
+          </div>
+        </div>
+      
+    </div>
+  </nav>
+</header>
+    
+    <div class="md-container">
+      
+        
+      
+      
+      <main class="md-main" role="main">
+        <div class="md-main__inner md-grid" data-md-component="container">
+          
+            
+              <div class="md-sidebar md-sidebar--primary" data-md-component="navigation">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    <nav class="md-nav md-nav--primary" data-md-level="0">
+  <label class="md-nav__title md-nav__title--site" for="__drawer">
+    <a href="../.." title="Cafofo" class="md-nav__button md-logo">
+      
+        <img src="../../favicon.png" width="48" height="48">
+      
+    </a>
+    Cafofo
+  </label>
+  
+    <div class="md-nav__source">
+      
+
+
+  
+
+<a href="https://github.com/desenho-2019/" title="Ir ao repositório" class="md-source" data-md-source="github">
+  
+    <div class="md-source__icon">
+      <svg viewBox="0 0 24 24" width="24" height="24">
+        <use xlink:href="#__github" width="24" height="24"></use>
+      </svg>
+    </div>
+  
+  <div class="md-source__repository">
+    Cafofo
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../.." title="Arquitetura e Desenho de Software" class="md-nav__link">
+      Arquitetura e Desenho de Software
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-2" type="checkbox" id="nav-2">
+    
+    <label class="md-nav__link" for="nav-2">
+      Definições do Projeto
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-2">
+        Definições do Projeto
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Definições do Projeto/arquitetura/" title="Arquitetura" class="md-nav__link">
+      Arquitetura
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Definições do Projeto/tema/" title="Tema" class="md-nav__link">
+      Tema
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Definições do Projeto/tema_desc/" title="Tema descontinuado" class="md-nav__link">
+      Tema descontinuado
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-3" type="checkbox" id="nav-3">
+    
+    <label class="md-nav__link" for="nav-3">
+      Dinâmica e Seminário I
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-3">
+        Dinâmica e Seminário I
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Dinâmica e Seminário I/5w2h/" title="5W2H" class="md-nav__link">
+      5W2H
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Dinâmica e Seminário I/MapaMental/" title="Mapa Mental" class="md-nav__link">
+      Mapa Mental
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Dinâmica e Seminário I/ModeloCustoProdutivo/" title="Modelo de Custo Produtivo" class="md-nav__link">
+      Modelo de Custo Produtivo
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Dinâmica e Seminário I/argumentacao/" title="Argumentação" class="md-nav__link">
+      Argumentação
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Dinâmica e Seminário I/fishBone/" title="Diagrama Causa-Efeito" class="md-nav__link">
+      Diagrama Causa-Efeito
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Dinâmica e Seminário I/richPicture/" title="Rich Picture" class="md-nav__link">
+      Rich Picture
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Dinâmica e Seminário I/visao/" title="Documento de Visão" class="md-nav__link">
+      Documento de Visão <!-- omit in toc -->
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-4" type="checkbox" id="nav-4" checked>
+    
+    <label class="md-nav__link" for="nav-4">
+      Dinâmica e Seminário II
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-4">
+        Dinâmica e Seminário II
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Diagrama de Gantt/" title="Diagrama de Gantt" class="md-nav__link">
+      Diagrama de Gantt <!-- omit in toc -->
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+    
+      
+    
+    
+    <a href="./" title="Elicitação de Requisitos" class="md-nav__link md-nav__link--active">
+      Elicitação de Requisitos
+    </a>
+    
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Modelagem do Processo/" title="Modelagem do Processo" class="md-nav__link">
+      Modelagem do Processo
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../metodologia/" title="Metodologia" class="md-nav__link">
+      Metodologia
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../metodologia_montada/" title="Fundamentos da metodologia" class="md-nav__link">
+      Fundamentos da metodologia
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../planoDeGCS/" title="Plano de Gestão e Configuração de Software" class="md-nav__link">
+      Plano de Gestão e Configuração de Software
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-5" type="checkbox" id="nav-5">
+    
+    <label class="md-nav__link" for="nav-5">
+      Dinâmica e Seminário III
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-5">
+        Dinâmica e Seminário III
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Dinâmica e Seminário III/uml_dinamico/" title="Modelos UML Dinâmicos" class="md-nav__link">
+      Modelos UML Dinâmicos
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Dinâmica e Seminário III/uml_estatico/" title="Modelos UML Estáticos" class="md-nav__link">
+      Modelos UML Estáticos
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-6" type="checkbox" id="nav-6">
+    
+    <label class="md-nav__link" for="nav-6">
+      Dinâmica e Seminário IV
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-6">
+        Dinâmica e Seminário IV
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Dinâmica e Seminário IV/gofs_emergentes/" title="GOFs Emergentes" class="md-nav__link">
+      GOFs Emergentes
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Dinâmica e Seminário IV/gofs_padroes/" title="GOFs" class="md-nav__link">
+      GOFs
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-7" type="checkbox" id="nav-7">
+    
+    <label class="md-nav__link" for="nav-7">
+      Dinâmica e Seminário V
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-7">
+        Dinâmica e Seminário V
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Dinâmica e Seminário V/Documento de Arquitetura/" title="Documento de Arquitetura de Software" class="md-nav__link">
+      Documento de Arquitetura de Software
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-8" type="checkbox" id="nav-8">
+    
+    <label class="md-nav__link" for="nav-8">
+      Iniciativas extras
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-8">
+        Iniciativas extras
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Iniciativas extras/Introspecção/" title="Introspecção" class="md-nav__link">
+      Introspecção
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Iniciativas extras/backlog/" title="Backlog do produto" class="md-nav__link">
+      Backlog do produto
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Iniciativas extras/identidadevisual/" title="Identidade Visual" class="md-nav__link">
+      Identidade Visual
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Iniciativas extras/prototipo/" title="Protótipo" class="md-nav__link">
+      Protótipo
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-8-5" type="checkbox" id="nav-8-5">
+    
+    <label class="md-nav__link" for="nav-8-5">
+      Sprints
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+      <label class="md-nav__title" for="nav-8-5">
+        Sprints
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Iniciativas extras/Sprints/Sprint 0/" title="Sprint 0" class="md-nav__link">
+      Sprint 0
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Iniciativas extras/Sprints/Sprint 1/" title="Sprint 1" class="md-nav__link">
+      Sprint 1
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Iniciativas extras/Sprints/Sprint 2/" title="Sprint 2" class="md-nav__link">
+      Sprint 2
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-9" type="checkbox" id="nav-9">
+    
+    <label class="md-nav__link" for="nav-9">
+      Reuniões
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-9">
+        Reuniões
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Reuniões/Ata 01/" title="Ata 01" class="md-nav__link">
+      Ata 01
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Reuniões/Ata 02/" title="Ata 02" class="md-nav__link">
+      Ata 02
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Reuniões/Ata 03/" title="Ata 03" class="md-nav__link">
+      Ata 03
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Reuniões/Ata 04/" title="Ata 04" class="md-nav__link">
+      Ata 04
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Reuniões/Ata 05/" title="Ata 05" class="md-nav__link">
+      Ata 05
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Reuniões/Ata 06/" title="Ata 06" class="md-nav__link">
+      Ata 06
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Reuniões/Ata 07/" title="Ata 07" class="md-nav__link">
+      Ata 07
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Reuniões/Ata 08/" title="Ata 08" class="md-nav__link">
+      Ata 08
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Reuniões/Ata 09/" title="Ata 09" class="md-nav__link">
+      Ata 09
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Reuniões/Ata 10/" title="Ata 10" class="md-nav__link">
+      Ata 10
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Reuniões/Ata 11/" title="Ata 11" class="md-nav__link">
+      Ata 11
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="toc">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary">
+  
+  
+    
+  
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content">
+            <article class="md-content__inner md-typeset">
+              
+                
+                  <a href="https://github.com/desenho-2019/edit/master/docs/Dinâmica e Seminário II/Elicitação de Requisitos.md" title="Editar esta página" class="md-icon md-content__icon">&#xE3C9;</a>
+                
+                
+                <h4 id="historico-de-revisoes">Histórico de revisões</h4>
+<table>
+<thead>
+<tr>
+<th align="center">Data</th>
+<th align="center">Versão</th>
+<th align="center">Descrição</th>
+<th align="center">Autor(es)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center">02/09/2019</td>
+<td align="center">0.1</td>
+<td align="center">Iniciando o documento</td>
+<td align="center">João Gabriel</td>
+</tr>
+<tr>
+<td align="center">03/09/2019</td>
+<td align="center">0.2</td>
+<td align="center">Passando Introspecção Iniciativas extras</td>
+<td align="center">João Gabriel</td>
+</tr>
+<tr>
+<td align="center">04/09/2019</td>
+<td align="center">0.3</td>
+<td align="center">Continuando documento</td>
+<td align="center">João Gabriel</td>
+</tr>
+<tr>
+<td align="center">12/09/2019</td>
+<td align="center">0.4</td>
+<td align="center">Adicionando Épicos</td>
+<td align="center">João Gabriel e Caue</td>
+</tr>
+<tr>
+<td align="center">13/09/2019</td>
+<td align="center">0.5</td>
+<td align="center">Adicionando História de Usuário</td>
+<td align="center">João Gabriel e Lucas Gomes</td>
+</tr>
+<tr>
+<td align="center">18/11/2019</td>
+<td align="center">1.0</td>
+<td align="center">Correção de alguns erros na elicitação de requisitos</td>
+<td align="center"><a href="https://github.com/caue96">Cauê</a></td>
+</tr>
+</tbody>
+</table>
+<h1 id="elicitacao-de-requisitos-funcionais">Elicitação de requisitos funcionais</h1>
+<h2 id="1-objetivo">1. Objetivo</h2>
+<p>O objetivo visado neste documento é levantar os requisitos funcionais que serão desenvolvidos ao longo do segundo semestre letivo de 2019. Identificando assim as necessidades dos stakeholdes para que assim possa ser priorizado o desenvolvimento e se adequar ao tempo disponível.</p>
+<h2 id="2-tecnicas-utilizadas">2. Técnicas utilizadas</h2>
+<p>Ao longo da primeira dinâmica executada na matéria foram feitas algumas tecnicas de elicitação a fim de criar uma noção sobre o projeto a ser desenvolvido. Foram elas:</p>
+<ul>
+<li>5w2H</li>
+<li>Mapa mental</li>
+<li>Rich Picture</li>
+<li>Prototipação</li>
+</ul>
+<p>Contudo, uma outra tecnica será utilizada nesta fase do projeto (Dinâmica e Seminario II) a Introspecção.</p>
+<h2 id="3-modelo-de-priorizacao">3. Modelo de Priorização</h2>
+<p>A partir dos requisitos levantados pelas diversas técnicas utilizadas pelo time, serão priorizados de acordo com necessidade dos mesmos para o projeto seguindo o modelo de priorização MoSCoW. Tal modelo classifica os requisitos em uma escala pré definida, sendo ela:</p>
+<ul>
+<li>
+<p><strong>Must</strong>: Primeiro nível de prioridade. Requisitos essencias para o projeto</p>
+</li>
+<li>
+<p><strong>Should</strong>: Segundo nível de prioridade. Requisitos importantes para o projeto.</p>
+</li>
+<li>
+<p><strong>Could</strong>:Terceiro nível de prioridade. Requisitos interesantes para o projeto.</p>
+</li>
+<li>
+<p><strong>Would</strong>: Quarto nível de prioridade. Requisitos desejáveis ao projeto</p>
+</li>
+</ul>
+<h2 id="4-epicos">4. Épicos</h2>
+<h3 id="ep01">EP01</h3>
+<h4 id="perfis">Perfis</h4>
+<p>Permitir que usuários criem e alterem dados de suas respectivas contas.</p>
+<h3 id="ep02">EP02</h3>
+<h4 id="anuncios">Anúncios</h4>
+<p>Permitir que usuário-anunciante crie e altere dados referentes ao local.</p>
+<h3 id="ep03">EP03</h3>
+<h4 id="pesquisa">Pesquisa</h4>
+<p>Criar funcinonalidade que permita que qualquer usuário cadastrado ou não, possa efetuar pesquisa de locais.</p>
+<h3 id="ep04">EP04</h3>
+<h4 id="autenticacao">Autenticação</h4>
+<p>Criar funcionalidades de autenticar usuários.</p>
+<h3 id="ep05">EP05</h3>
+<h4 id="comunicacao">Comunicação</h4>
+<p>Criar meio de comunicação locador e locatário dentro da plataforma .</p>
+<h2 id="5-historia-de-usuario">5. História de usuário</h2>
+<table>
+<thead>
+<tr>
+<th align="center">US</th>
+<th align="center">Descrição</th>
+<th align="center">Priorização</th>
+<th align="center">Épico</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center">UC01</td>
+<td align="center">- Cadastrar-se no Cafofo</td>
+<td align="center">Must</td>
+<td align="center">Autenticação</td>
+</tr>
+<tr>
+<td align="center">UC02</td>
+<td align="center">- Cadastrar-se no Cafofo com o Facebook</td>
+<td align="center">Could</td>
+<td align="center">Autentificação</td>
+</tr>
+<tr>
+<td align="center">UC03</td>
+<td align="center">- Cadastrar-se no Cafofo com o Google</td>
+<td align="center">Could</td>
+<td align="center">Autentificação</td>
+</tr>
+<tr>
+<td align="center">UC04</td>
+<td align="center">- Visualizar anúncios.</td>
+<td align="center">Must</td>
+<td align="center">Pesquisa</td>
+</tr>
+<tr>
+<td align="center">UC05</td>
+<td align="center">- Buscar cafofo por localidade</td>
+<td align="center">Must</td>
+<td align="center">Pesquisa</td>
+</tr>
+<tr>
+<td align="center">UC06</td>
+<td align="center">- Filtrar por avaliações de anúncio</td>
+<td align="center">Should</td>
+<td align="center">Pesquisa</td>
+</tr>
+<tr>
+<td align="center">UC07</td>
+<td align="center">- Visualizar anúncios de cafofos.</td>
+<td align="center">Must</td>
+<td align="center">Anúncios</td>
+</tr>
+<tr>
+<td align="center">UC08</td>
+<td align="center">- Visualizar perfil de anunciante</td>
+<td align="center">Could</td>
+<td align="center">Perfis</td>
+</tr>
+<tr>
+<td align="center">UC09</td>
+<td align="center">- Visualizar avaliações de anunciante</td>
+<td align="center">Should</td>
+<td align="center">Perfis</td>
+</tr>
+<tr>
+<td align="center">UC10</td>
+<td align="center">- Favoritar anúncio de cafofo</td>
+<td align="center">Could</td>
+<td align="center">Anúncios</td>
+</tr>
+<tr>
+<td align="center">UC11</td>
+<td align="center">- Avaliar cafofo</td>
+<td align="center">Should</td>
+<td align="center">Anúncios</td>
+</tr>
+<tr>
+<td align="center">UC12</td>
+<td align="center">- Alterar dados pessoais</td>
+<td align="center">Should</td>
+<td align="center">Perfis</td>
+</tr>
+<tr>
+<td align="center">UC13</td>
+<td align="center">- Acessar Perfil de Usuário</td>
+<td align="center">Must</td>
+<td align="center">Perfis</td>
+</tr>
+<tr>
+<td align="center">UC14</td>
+<td align="center">- Filtrar cafofo por valor</td>
+<td align="center">Would</td>
+<td align="center">Pesquisa</td>
+</tr>
+<tr>
+<td align="center">UC15</td>
+<td align="center">- Efetuar login no Cafofo</td>
+<td align="center">Must</td>
+<td align="center">Autenticação</td>
+</tr>
+<tr>
+<td align="center">UC16</td>
+<td align="center">- Efetuar login no Cafofo com Facebook</td>
+<td align="center">Must</td>
+<td align="center">Autenticação</td>
+</tr>
+<tr>
+<td align="center">UC17</td>
+<td align="center">- Efetuar login no Cafofo com Google</td>
+<td align="center">Must</td>
+<td align="center">Autenticação</td>
+</tr>
+<tr>
+<td align="center">UC18</td>
+<td align="center">- Deslogar do site Cafofo</td>
+<td align="center">Must</td>
+<td align="center">Autenticação</td>
+</tr>
+<tr>
+<td align="center">UC19</td>
+<td align="center">- Filtrar cafofo por gênero  (Misto/Feminino/Masculino)</td>
+<td align="center">Should</td>
+<td align="center">Pesquisa</td>
+</tr>
+<tr>
+<td align="center">UC20</td>
+<td align="center">- Filtrar cafofo por contas inclusas</td>
+<td align="center">Could</td>
+<td align="center">Pesquisa</td>
+</tr>
+<tr>
+<td align="center">UC21</td>
+<td align="center">- Filtrar cafofo por nome</td>
+<td align="center">Should</td>
+<td align="center">Pesquisa</td>
+</tr>
+<tr>
+<td align="center">UC22</td>
+<td align="center">- Clicar no link para conversa com anunciante/usuário</td>
+<td align="center">Should</td>
+<td align="center">Comunicação</td>
+</tr>
+<tr>
+<td align="center">UC23</td>
+<td align="center">- Criar anúncio de vaga em cafofo</td>
+<td align="center">Must</td>
+<td align="center">Anúncio</td>
+</tr>
+<tr>
+<td align="center">UC24</td>
+<td align="center">- Alterar dados do anúncio do cafofo</td>
+<td align="center">Should</td>
+<td align="center">anúncio</td>
+</tr>
+<tr>
+<td align="center">UC25</td>
+<td align="center">- Adicionar dados ao anúncio</td>
+<td align="center">Must</td>
+<td align="center">Anúncio</td>
+</tr>
+<tr>
+<td align="center">UC26</td>
+<td align="center">- Avaliar anunciante</td>
+<td align="center">Should</td>
+<td align="center">Perfis</td>
+</tr>
+<tr>
+<td align="center">UC27</td>
+<td align="center">- Adicionar usuário ao perfil de membros do cafofo</td>
+<td align="center">Could</td>
+<td align="center">Anuncio/Perfis</td>
+</tr>
+<tr>
+<td align="center">UC28</td>
+<td align="center">- Adicionar comentário sobre cafofo</td>
+<td align="center">Could</td>
+<td align="center">Comunicação</td>
+</tr>
+<tr>
+<td align="center">UC29</td>
+<td align="center">- Avaliar Anunciante</td>
+<td align="center">Should</td>
+<td align="center">Perfis</td>
+</tr>
+</tbody>
+</table>
+<h2 id="5-conclusao">5. Conclusão</h2>
+<p>Com base nas tecnicas citadas acima foi criado uma melhor noção e assim levantados os requisitos funcionais do projeto. Tendo em vista que o mesmo será uma aplicação web, com 'CRUD' dos quartos/repúblicas a serem alugados. E um cadastro de usuários sendo divididos em dois tipos: quem aluga e quem loca.<br>
+Os requisitos elicitados foram feito no início do projeto em um brainstorm realizado entre os membros do grupo. Com isso esses requisitos inicialmente levantados acabaram ficando obsoleto com relação aos requisitos presentes no <a href="https://desenho-2019.github.io/Wiki/Iniciativas%20extras/backlog/">Backlog do Cafofo</a>. O último ajuste realizado nesse documento foi com o intuito de corrigir alguns erros que foram cometidos na elicitação inicial dos requisitos.</p>
+                
+                  
+                
+              
+              
+                
+
+
+              
+            </article>
+          </div>
+        </div>
+      </main>
+      
+        
+<footer class="md-footer">
+  
+    <div class="md-footer-nav">
+      <nav class="md-footer-nav__inner md-grid">
+        
+          <a href="../Diagrama de Gantt/" title="Diagrama de Gantt" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
+            </div>
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  Anterior
+                </span>
+                Diagrama de Gantt <!-- omit in toc -->
+              </span>
+            </div>
+          </a>
+        
+        
+          <a href="../Modelagem do Processo/" title="Modelagem do Processo" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  Próximo
+                </span>
+                Modelagem do Processo
+              </span>
+            </div>
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-forward md-footer-nav__button"></i>
+            </div>
+          </a>
+        
+      </nav>
+    </div>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-footer-copyright">
+        
+        powered by
+        <a href="https://www.mkdocs.org">MkDocs</a>
+        and
+        <a href="https://squidfunk.github.io/mkdocs-material/">
+          Material for MkDocs</a>
+      </div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    
+      <script src="../../assets/javascripts/application.a8b5e56f.js"></script>
+      
+        
+        
+          
+          <script src="../../assets/javascripts/lunr/lunr.stemmer.support.js"></script>
+          
+            
+              
+              
+                <script src="../../assets/javascripts/lunr/lunr.pt.js"></script>
+              
+            
+          
+          
+        
+      
+      <script>app.initialize({version:"1.0.4",url:{base:"../.."}})</script>
+      
+    
+  </body>
+</html>
