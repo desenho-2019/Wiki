@@ -35,9 +35,8 @@
   - [6. Visão de Processo](#6-visao-de-processo)
   - [7. Visão de Implementação](#7-visao-de-implementacao)
   - [8. Visão de Implantação](#8-visao-de-implantacao)
-  - [9. Visão de dados](#9-visao-de-dados)
-  - [10. Tamanho e Desempenho](#10-tamanho-e-desempenho)
-  - [11. Qualidade](#11-qualidade)
+  - [9. Tamanho e Desempenho](#10-tamanho-e-desempenho)
+  - [10. Qualidade](#11-qualidade)
 
 ## 1. Introdução
 
@@ -254,7 +253,15 @@ Com esse diagrama podemos ver as funcionalidades dos principais elementos do sof
 - **Serializer**<br>
   Os serializers permitem a conversão de dados em dados nativos do python, o que facilita a renderização de arquivos. São utilizados no projeto para facilitar a comunicação da API com o Front end.
 
-#### 7.1.2 WebApp
+#### 7.1.2 Front-end
+- **Elementos**<br>
+  Os elementos do React são objetos simples que representam o tipo do componente e as props.
+
+- **Components**<br>
+  Os componentes podem ser classes ou funções mas todos eles "se renderizam" a um elemento.
+
+- **Montagem**<br>
+  “Montagem” é um processo recursivo que cria uma árvore DOM ou Nativa dado um elemento React de nível superior (e.g. <App />).
 
 
 
@@ -272,15 +279,12 @@ O diagrama a seguir mostra como os nós físicos do sistema se comunicam.<br>
 ### 8.4 Navegador
   O Web browser(navegador) recebe o WebApp Cafofo, que é a camada de interação do usuário com o sistema.
 
-
-## 9. Visão de dados
-
-## 10. Tamanho e Desempenho
+## 9. Tamanho e Desempenho
 
 No primeiro acesso do usuário ao aplicativo, na página principal, o tamanho de todos os recursos totalizam juntos cerca de 473,21KB com um tempo total de 62,63 segundos de carregamento, esses valores diminuem nos acessos subseqüentes, onde cerca de 64KB são armazenados no computador do usuário, melhorando assim o desempenho e diminuindo o tempo de carregamento do aplicativo. [7]
 
 [![](img/desempenho.png)](img/desempenho.png)
 
-## 11. Qualidade
+## 10. Qualidade
 
 Os padrões arquiteturais utilizados no projeto Cafofo contribuem fortemente para a escalabilidade e para a manutenabilidade da aplicação, como o facade por exemplo, presente tanto no back end quanto no front end, que ao ser aplicado reduz a complexidade ao mesmo tempo em que produz uma interface simplificada e reduz o acoplamento entre as camadas do projeto.
