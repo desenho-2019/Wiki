@@ -397,7 +397,27 @@ class Middleware(models.Model):
 
 ```
 
+##### As classes e objetos desse padrão sao:
+###### Componente: Class Vacancy
+* Declara a interface para  os objetos.
 
+###### Folha: Leaf
+* Define o comportamento para os objetos primitivos na composição.
+
+###### Composite: composite
+* Armazena os componentes filho
+
+A classe card possui uma relação direta pois armazena o objeto de vacancy.
+
+O diagrama seguir ilustra a modelagem do padrão no projeto.
+
+[![](img/compositeDiagram.png)](img/compositeDiagram.png)
+
+### Adapter
+
+<p align = "justify">No diagrama acima, no item do composite, podemos observar a presença da classe Middleware. Ela se faz necessária porque a tecnologia utilizada pela equipe, apesar de bastante permissiva, possui algumas limitações e dificuldades que só puderam ser contornadas com a adicação dessa relação.</p>
+
+<p align = "justify">A Middleware age como um "meio de campo" para a comunicação entre a Vacancy e a Composite. Isso se dá porque o banco relacional não perimitiu uma implementação pura do padrão proposto. As chaves e as chamadas necessárias colocavam as classes em um loop de chamadas que foi contornado conforme o apresentado no diagrama.</p>
 
 
 
