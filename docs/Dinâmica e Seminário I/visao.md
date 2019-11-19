@@ -12,6 +12,7 @@
 | 01/09/2019 |  0.7   | Instrução do problema | [Cauê](https://github.com/caue96) |
 | 01/09/2019 |  0.8   | Correção de erros e revisão | [Cauê](https://github.com/caue96) |
 | 04/09/2019 | 1.0 | Sumário e revisão | Victor Rodrigues |
+| 18/11/2019 | 1.1 | Adaptação do documento para o que foi implementado | [Cauê](https://github.com/caue96) |
 
 ## Sumário <!-- omit in toc -->
 - [1. Introdução](#1-introdu%c3%a7%c3%a3o)
@@ -63,13 +64,20 @@ O principal recurso do produto é reunir em um só lugar todos as ofertas de mor
 
 * Anunciar moradias com:
   * Descrição;
-  * Contato;
-  * Fotos;
+  * Título;
+  * Preço;
   * Localização;
+  * Itens;
+  * Despesas;
+  * Comodidades;
+  * Contato;
+  * Status;
+  * Sexo;
+  * Políticas.
 * Ter recursos como:
-  * Salvar/Favoritar anúncios;
-  * Filtrar anúncios;
-* Gerenciar perfil;
+  * Favoritar anúncios;
+  * Filtrar anúncios.
+* Gerenciar perfil de usuário.
 
 # 4. Visão geral do usuário
 

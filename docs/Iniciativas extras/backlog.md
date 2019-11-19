@@ -11,6 +11,7 @@
 | 25/09/2019 | 0.6 | Adicionando histórias de usuário do EP01 e EP04 | Lucas Gomes e André Lucas |
 | 26/09/2019 | 0.7 | Aplicando correções e adicionando coluna de pontuação | Weiller Fernandes |
 | 11/10/2019 | 0.8 | Adicionando tabela de USs adicionadas | Weiller Fernandes |
+| 18/11/2019 | 1.0 | Adição do épico comunicação, suas US e tópico de observações | [Cauê](https://github.com/caue96) |
 
 ## 1. Introdução
 
@@ -65,7 +66,7 @@ Construimos um backlog completo para o produto com base nos requisitos elicitado
 | US30 | Visitante/Usuário | Filtar anúncios por número de pessoas que compartilham o local| Saber por quantas pessoas as despesas serão divididas |Could | |
 | US31 | Visitante/Usuário | Filtrar anúncios por presença de animais de estimação | Saber se existe ou se é permitido cachorro, gato ou outro animal morando no cafofo | Would | |
 | US32 | Visitante/Usuário | Filtrar anúncios por possibilidade de fumar no local | Saber se pode fumar ou não no Cafofo | Would| |
-
+| US40 | Visitante/Usuário | Filtrar anúncios por nome | Filtrar pelo nome aberto dos anúncios | Would| |
 
 
 ### 2.4 EP04 Autenticação
@@ -79,10 +80,24 @@ Construimos um backlog completo para o produto com base nos requisitos elicitado
 | US37 | Usuário | Realizar o login na aplicação pelo Facebook | Acessar os recursos da aplicação com integração à conta do facebook | Should | |
 | US38 | Usuário | Realizar o login na aplicação pelo Google | Acessar os recursos da aplicação com integração à conta do Google | Should | |
 
+
+### 2.5 EP05 Comunicação
+
+| ID | Eu, como | Gostaria de | Para poder | Priorização | Pontuação |
+| :---: | :---: | :---: | :---: | :---: | :---: |
+| US41 | Usuário | Clicar no link para conversa com anunciante/usuário | Ver mais detalhes sobre o anúncio | Should | |
+| US42 | Usuário | Adicionar comentário sobre cafofo | Deixar o feedback com relação ao Cafofo para os que já ficaram nele por um tempo | Should | |
+
+
 ### 2.5 USs Adicionadas
 
-Abaixo estão listadas as User Stories que foram identificadas e adicionadas após o início do projeto, uma coluna de épico foi incluída para associar a US á um dos quatro épicos descritos anteriormente.
+Abaixo estão listadas as User Stories que foram identificadas e adicionadas após o início do projeto, uma coluna de épico foi incluída para associar a US à um dos cinco épicos descritos anteriormente.
 
 | ID | Épico | Eu, como | Gostaria de | Para poder | Priorização | Pontuação |
 | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
 | US39 | - | Visitante/Usuário | visualizar a página principal | Começar a utilizar as funcionalidades do site | Must | 3 |
+
+
+## 3. Observações
+
+As US aqui presentes no backlog foram especificadas após o primeiro brainstorm gerado que resultou no documento de [Elicitação de Requisitos](https://desenho-2019.github.io/Wiki/Din%C3%A2mica%20e%20Semin%C3%A1rio%20II/Elicita%C3%A7%C3%A3o%20de%20Requisitos/). Além de termos feito as especificações, fizemos incrementos de requisitos que não haviam inicialmente sido listadas no primeiro brainstorm realizado, com isso esse Backlog ficou mais atualizado que o documento de elicitação de requisitos e acabamos utilizando o Backlog como a base para desenvolver as histórias de usuário.

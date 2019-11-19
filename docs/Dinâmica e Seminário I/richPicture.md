@@ -6,6 +6,7 @@
 |22/08/2019|   0.1    | Iniciando o documento       |  Rafael Bragança   |
 |28/08/2019|   0.2    | Adicionando Rich Picture       |  Caio César Beleza   |
 |01/09/2019|   0.3    | Adicionando Rich Picture v2      |  Lucas Gomes   |
+|18/11/2019|   0.4    | Rich Picture Versão Implementada | [Cauê](https://github.com/caue96) |
 
 ## 1. Introdução
 
@@ -32,6 +33,14 @@ Autor: Caio César Beleza
 ![Rich Picture 2.0](img/RichPictureCafofo.png)
 
 Autor: Lucas Gomes
+
+**Versão 3**
+
+As funcionalidades que estão marcadas em cinza representa o que não foi implementado no Cafofo.
+
+![Rich Picture 3.0](img/RichPictureCafofoV3.png)
+
+Autor: [Cauê](https://github.com/caue96)
 
 ## Referências
 
