@@ -125,6 +125,60 @@ Implementamos o composite na estrutura de Vacancy. Vacancy é referente a um cô
 
 A seguir, segue o código implementado na aplicação.
 
+#### Vacancy Model
+
+```
+from django.db import models
+from cards.models import Card
+from person.models import Person
+
+class Vacancy(models.Model):
+    pictures = []
+    state = models.BooleanField(default=True)
+    card = models.ForeignKey(
+        Card,
+        related_name = 'vacancies',
+        on_delete = models.CASCADE,
+        verbose_name = 'card',
+        blank=True, null=True
+    )
+
+    # class Meta:
+    #     abstract = True
+
+    def get_price(self):
+        if hasattr(self, 'composite'):
+            return self.composite.get_price()
+        if hasattr(self, 'leaf'):
+            return self.leaf.get_price()
+
+    def get_area(self):
+        if hasattr(self, 'composite'):
+            return self.composite.get_area()
+        if hasattr(self, 'leaf'):
+            return self.leaf.get_area()
+
+    def updateState(self):
+        self.state = not self.state
+```
+
+#### Composite Model
+```
+class Composite(Vacancy):
+
+    def get_price(self):
+        price = 0
+        for vacancy in self.vacancies.all():
+            price+= vacancy.get_price()
+        return price
+
+    def get_area(self):
+        area = 0
+        for vacancy in self.vacancies.all():
+            area+= vacancy.get_area()
+        return area
+```
+
 
 ## 2. GOFs Comportamentais
 ### 2.1 Observer
